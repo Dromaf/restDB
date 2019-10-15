@@ -1,0 +1,10 @@
+.menu_item {
+    display: inline-block;
+}
+.menu_item a {
+    margin-right: 20px;
+}
+
+a.activeLink {
+    color:red;
+}
