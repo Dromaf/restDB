@@ -3,31 +3,33 @@ import s from "./home.module.css";
 import time from "./img/time.png";
 import place from "./img/place.png";
 import fork from "./img/fork.png";
+import Location from '../location/location';
 
 const Home = props => {
   return (
     <div >
       <div className={s.main}>
         <div className={`${s.main_item} ${s.main_item_first}`} >
-          <div className={s.main_text}>
+          <button className={s.main_text}>
             <img src={place} alt={place} />
             Расположение
-          </div>
+          </button>
         </div>
         <div className={s.main_item}>
-          <div className={s.main_text}>
+          <button className={s.main_text}>
             <img src={time} alt={time} />
             Время работы
-          </div>
+          </button>
         </div>
         <div className={s.main_item}>
-          <div className={s.main_text}>
+          <button className={s.main_text}>
             <img src={fork} alt={fork} />
             Тип заведения
-          </div>
+          </button>
         </div>
       </div>
     </div>
+
   );
 };
 

@@ -1,0 +1,9 @@
+.header {
+    max-width: 300px;
+    margin: 45px auto 0px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 115px;
+    flex-wrap: wrap;
+    background-color: #00000025;
+}

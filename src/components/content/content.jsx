@@ -1,11 +1,43 @@
 import React from "react";
 import s from "./content.module.css";
-
-
+import Header from "../header/header";
+import valber from "./img/valber.png";
 const Content = (props) => {
 
   return (
-    <div>
+    <div className={s.bgfon}>
+      <Header />
+      <div className={s.main_content}>
+        <div className={s.main_content_item}>
+         <img src={valber} alt={valber} />
+          <div className={s.item_name}>Irish Pub Valber</div>
+        </div>
+        <div className={s.main_content_item}>
+         <img src={valber} alt={valber} />
+          <div className={s.item_name}>Irish Pub Valber</div>
+        </div>
+        <div className={s.main_content_item}>
+         <img src={valber} alt={valber} />
+          <div className={s.item_name}>Irish Pub Valber</div>
+        </div>
+        <div className={s.main_content_item}>
+         <img src={valber} alt={valber} />
+          <div className={s.item_name}>Irish Pub Valber</div>
+        </div>
+        <div className={s.main_content_item}>
+         <img src={valber} alt={valber} />
+          <div className={s.item_name}>Irish Pub Valber</div>
+        </div>
+        <div className={s.main_content_item}>
+         <img src={valber} alt={valber} />
+          <div className={s.item_name}>Irish Pub Valber</div>
+        </div>
+        <div className={s.main_content_item}>
+         <img src={valber} alt={valber} />
+          <div className={s.item_name}>Irish Pub Valber</div>
+        </div>
+        
+      </div>
     </div>
   );
 };

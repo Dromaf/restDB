@@ -1,30 +1,24 @@
 import React from "react";
 import s from "./location.module.css";
-import time from "./img/time.png";
-import place from "./img/place.png";
-import fork from "./img/fork.png";
 
 const Location = props => {
   return (
-    <div >
+    <div className={s.bgfon}>
       <div className={s.main}>
         <div className={`${s.main_item} ${s.main_item_first}`} >
-          <div className={s.main_text}>
-            <img src={place} alt={place} />
-            Расположение
-          </div>
+          <button className={s.main_text}> 
+          Шевченковский
+          </button>
         </div>
         <div className={s.main_item}>
-          <div className={s.main_text}>
-            <img src={time} alt={time} />
-            Время работы
-          </div>
+          <button className={s.main_text}> 
+          Киевский
+          </button>
         </div>
         <div className={s.main_item}>
-          <div className={s.main_text}>
-            <img src={fork} alt={fork} />
-            Тип заведения
-          </div>
+          <button className={s.main_text}>
+          Подольский
+          </button>
         </div>
       </div>
     </div>

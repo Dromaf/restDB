@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../header/header";
 import Content from "../content/content";
 import Home from "../home/home";
+import Location from "../location/location";
 import "normalize.css";
 import "./app.css";
 import { BrowserRouter, Route } from "react-router-dom";
@@ -10,12 +11,16 @@ const App = props => {
   return (
     <BrowserRouter>
       <div id="container">
-        <Header />
+        
+        {/*<Header />*/}
+        {/* <Home/>*/}
+       
+         <Location />
         <Route
           exact
           path="/"
           render={() => (
-            <Home movies={props.state.movies} moviesBd={props.state.moviesBd} />
+            <Content />
           )}
         />
         <Route
