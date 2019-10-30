@@ -8,10 +8,10 @@ import Search from "../search/search";
 const Header = () => {
   return (
     <header className={s.header}>
-      <div><img src={back} alt={back}/></div>
-      <div><img src={filter} alt={filter}/></div>
-      <Search/>
-     
+      <div className={s.header_arrow}><img src={back} alt={back} /></div>
+      <div className={s.header_menu}><img src={filter} alt={filter} /></div>
+      <Search />
+
     </header>
 
   );

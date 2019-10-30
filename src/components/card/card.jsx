@@ -1,15 +1,13 @@
 import React from "react";
-import s from "./content.module.css";
+import s from "./card.module.css";
 import Header from "../header/header";
-import valber from "./img/valber.png";
-const Content = (props) => {
-  console.log(props)
+const Card = (props) => {
   return (
     <div className={s.bgfon}>
-      <Header />
       <div className={s.main_content}>
         <div className={s.main_content_item}>
-          <img src={valber} alt={valber} />
+          <div className={s.item_name}>1</div>
+          <div className={s.item_name}>1</div>
           <div className={s.item_name}>1</div>
         </div>
 
@@ -19,4 +17,4 @@ const Content = (props) => {
   );
 };
 
-export default Content;
+export default Card;

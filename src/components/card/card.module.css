@@ -1,0 +1,29 @@
+.main_content {
+    display: flex;
+    flex-flow: column;
+}
+.main_content_item{
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+    border-bottom: 1px solid #ee876930;;
+    cursor: pointer;
+}
+
+.bgfon {
+    background: url(./img/bgloc.png) no-repeat top center;
+    background-color: rgb(0, 0, 0);
+    min-height: 640px;
+}
+
+.main_content_item img{
+    width: 40px;
+    display: block;
+    margin: 0;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.item_name{
+    align-self: center;
+}

@@ -11,21 +11,21 @@ const App = props => {
   return (
     <BrowserRouter>
       <div id="container">
-        
+
         {/*<Header />*/}
-        {/* <Home/>*/}
-       
-         <Location />
         <Route
           exact
           path="/"
-          render={() => (
-            <Content />
-          )}
+          render={() => <Home {...props} />}
         />
         <Route
+          path="/loc"
+          render={() => <Location />}
+        />
+
+        <Route
           path="/info"
-          render={() => <Content moviesBd={props.state.moviesBd} />}
+          render={() => <Content {...props} />}
         />
       </div>
     </BrowserRouter>
