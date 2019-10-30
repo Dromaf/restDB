@@ -12,7 +12,18 @@ const Content = (props) => {
           <img src={valber} alt={valber} />
           <div className={s.item_name}>1</div>
         </div>
-
+        <div className={s.main_content_item}>
+          <img src={valber} alt={valber} />
+          <div className={s.item_name}>1</div>
+        </div>
+        <div className={s.main_content_item}>
+          <img src={valber} alt={valber} />
+          <div className={s.item_name}>1</div>
+        </div>
+        <div className={s.main_content_item}>
+          <img src={valber} alt={valber} />
+          <div className={s.item_name}>1</div>
+        </div>
 
       </div>
     </div>

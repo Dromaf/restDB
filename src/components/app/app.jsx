@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../header/header";
 import Content from "../content/content";
+import Card from "../card/card";
 import Home from "../home/home";
 import Location from "../location/location";
 import "normalize.css";
@@ -11,8 +11,6 @@ const App = props => {
   return (
     <BrowserRouter>
       <div id="container">
-
-        {/*<Header />*/}
         <Route
           exact
           path="/"
@@ -26,6 +24,10 @@ const App = props => {
         <Route
           path="/info"
           render={() => <Content {...props} />}
+        />
+        <Route
+          path="/card/:id"
+          render={() => <Card {...props} />}
         />
       </div>
     </BrowserRouter>
