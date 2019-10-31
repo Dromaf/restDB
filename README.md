@@ -35,7 +35,7 @@
 5) Detailed information in the card
 6) Fast communication by phone number
 7) User’s personal account (in plans)
-8) Add to favorites (plans)
+8) Add to favorites (in plans)
 9) Search for nearby establishments (in plans)
 
 
