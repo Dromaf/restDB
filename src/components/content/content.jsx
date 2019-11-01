@@ -3,26 +3,14 @@ import s from "./content.module.css";
 import Header from "../header/header";
 import valber from "./img/valber.png";
 const Content = (props) => {
-  console.log(props)
+  console.log(props.state.restaurDb[0])
   return (
     <div className={s.bgfon}>
       <Header />
       <div className={s.main_content}>
         <div className={s.main_content_item}>
-          <img src={valber} alt={valber} />
-          <div className={s.item_name}>1</div>
-        </div>
-        <div className={s.main_content_item}>
-          <img src={valber} alt={valber} />
-          <div className={s.item_name}>1</div>
-        </div>
-        <div className={s.main_content_item}>
-          <img src={valber} alt={valber} />
-          <div className={s.item_name}>1</div>
-        </div>
-        <div className={s.main_content_item}>
-          <img src={valber} alt={valber} />
-          <div className={s.item_name}>1</div>
+          <img src={props.state.restaurDb[0].image} alt={valber} />
+          <div className={s.item_name}>{props.state.restaurDb[0].title}</div>
         </div>
 
       </div>
