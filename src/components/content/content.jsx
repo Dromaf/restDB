@@ -7,13 +7,14 @@ const Content = (props) => {
   return (
     <div className={s.bgfon}>
       <Header />
-      <div className={s.main_content}>
-        <div className={s.main_content_item}>
-          <img src={props.state.restaurDb[0].image} alt={valber} />
-          <div className={s.item_name}>{props.state.restaurDb[0].title}</div>
+      {props.state.restaurDb.map(restaurDb => (
+        <div className={s.main_content}>
+          <div className={s.main_content_item}>
+            <img src={restaurDb.image} alt={valber} />
+            <div className={s.item_name}>{restaurDb.title}</div>
+          </div>
         </div>
-
-      </div>
+      ))}
     </div>
   );
 };
