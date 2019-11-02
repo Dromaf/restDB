@@ -22,12 +22,15 @@ const App = props => {
         />
 
         <Route
-          path="/info"
+          path="/card"
+          exact
           render={() => <Content {...props} />}
         />
         <Route
-          path="/card/:id"
-          render={() => <Card {...props} />}
+          path="/card/:id" render={({ match }) => {
+            const { id } = match.params;
+            return < Card itemId={id} {...props} />
+          }}
         />
       </div>
     </BrowserRouter>

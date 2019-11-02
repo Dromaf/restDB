@@ -1,16 +1,23 @@
 import React from "react";
 import s from "./card.module.css";
 const Card = (props) => {
+  console.log()
+  const restdb = props.state.restaurDb[`${props.itemId - 1}`]
   return (
     <div className={s.bgfon}>
       <div className={s.main_content}>
-        <div className={s.main_content_item}>
-          <div className={s.item_name}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, pariatur sunt error numquam expedita enim distinctio consectetur et iusto, aut ipsam autem eaque blanditiis nam fugit officiis quod fugiat doloribus?</div>
-          <div className={s.item_name}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, pariatur sunt error numquam expedita enim distinctio consectetur et iusto, aut ipsam autem eaque blanditiis nam fugit officiis quod fugiat doloribus?</div>
-          <div className={s.item_name}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, pariatur sunt error numquam expedita enim distinctio consectetur et iusto, aut ipsam autem eaque blanditiis nam fugit officiis quod fugiat doloribus?</div>
-        </div>
+        <h2>{restdb.title}</h2>
+        <img src={restdb.image} alt={restdb.image} />
+        <div className={s.item_name}>{restdb.description}</div>
+        <hr />
+        <div className={s.item_name}>{restdb.adress}</div>
+        <hr />
+        <div className={s.item_name}>{restdb.links}</div>
+        <hr />
+        <div className={s.item_name}>{restdb.map}</div>
       </div>
     </div>
+
   );
 };
 

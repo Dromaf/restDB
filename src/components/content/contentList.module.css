@@ -1,0 +1,25 @@
+.main_content {
+    display: flex;
+    flex-flow: column;
+}
+.main_content_item{
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+    border-bottom: 1px solid #ee876930;;
+    cursor: pointer;
+}
+
+
+.item_name{
+    align-self: center;
+}
+
+.main_content_item img{
+    width: 40px;
+    display: block;
+    margin: 0;
+    margin-right: 15px;
+    margin-left: 10px;    
+    border-radius: 50%;
+}
