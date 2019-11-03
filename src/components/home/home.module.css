@@ -14,14 +14,14 @@
     margin: 15px;
     display: flex;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.50);
+  
 }
 .main_item_first {
     margin: 50px 41px 12px 41px;
 }
 .main_text{
  align-self: center;
- background-color: #ff000000;
+   background-color: rgba(0, 0, 0, 0.50);
     border: 1px solid #e7cec6;
     color: #fff;
     cursor: pointer;
@@ -29,6 +29,8 @@
     padding-top: 30px;
     padding-left: 19px;
     padding-right: 19px;
+    width: 140px;
+    height: 140px;
     padding-bottom: 30px;
 }
 .main_img{

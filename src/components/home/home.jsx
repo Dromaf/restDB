@@ -36,7 +36,7 @@ const Home = props => {
           <Link to={`/card`}>
             <button className={s.main_text}>
               <img src={fork} alt={fork} />
-              Список заведений(тест)
+              Список заведений
           </button>
           </Link>
         </div>
