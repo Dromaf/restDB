@@ -1,9 +1,16 @@
 .header {
     max-width: 300px;
-    margin: 45px auto 0px;
+    margin: 0px auto;
     display: flex;
     justify-content: space-between;
-    min-height: 115px;
+    min-height: 150px;
     flex-wrap: wrap;
     background-color: #00000025;
+}
+.header_menu{
+    align-self: flex-end;
+}
+
+.header_arrow{
+    align-self: flex-end;
 }

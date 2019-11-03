@@ -4,8 +4,8 @@ import s from "./search.module.css";
 const Search = props => {
   return (
     <form>
-  <input type="text"/>
-  <button className={s.search} type="submit"><i class="fas fa-search"></i></button>
+      <input type="text" />
+      <button className={s.search} type="submit"><i className="fas fa-search"></i></button>
     </form>
   );
 };

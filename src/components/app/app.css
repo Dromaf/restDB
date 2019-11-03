@@ -9,6 +9,7 @@ body {
     font-family: 'appetite';
     src: local('appetite'), url(./fonts/appetite.woff) format('woff');
   }
+  
 a {
     color: #fff;
     text-decoration: none;
@@ -27,13 +28,11 @@ a {
     padding: 0 15px;
 }
 
-
 #content .wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 
 i.fas.fa-search{
     color: #FFE4DC;

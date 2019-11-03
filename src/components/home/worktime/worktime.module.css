@@ -7,6 +7,7 @@
 .main_item {
     width: 140px;
     height: 140px;
+    border: 1px solid #FFE4DC;
     border-radius: 70px;
     text-align: center;
     box-sizing: border-box;
@@ -14,24 +15,13 @@
     margin: 15px;
     display: flex;
     justify-content: center;
-  
+    background-color: rgba(0, 0, 0, 0.50);
 }
 .main_item_first {
     margin: 50px 41px 12px 41px;
 }
 .main_text{
  align-self: center;
-   background-color: rgba(0, 0, 0, 0.50);
-    border: 1px solid #e7cec6;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 50%;
-    padding-top: 30px;
-    padding-left: 19px;
-    padding-right: 19px;
-    width: 140px;
-    height: 140px;
-    padding-bottom: 30px;
 }
 .main_img{
     align-self: center;
