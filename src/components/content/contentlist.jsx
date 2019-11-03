@@ -1,6 +1,7 @@
 import React from "react";
 import s from "./contentList.module.css";
 const ContentList = (props) => {
+    console.log(props)
     return (
         <div className={s.main_content}>
             <div className={s.main_content_item}>

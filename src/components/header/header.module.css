@@ -3,7 +3,7 @@
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
-    min-height: 150px;
+    min-height: 70px;
     flex-wrap: wrap;
     background-color: #00000025;
 }
