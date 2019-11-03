@@ -61,7 +61,7 @@ let state = {
     {
       id: 2,
       image: 'https://image.freepik.com/free-vector/chef_20448-9.jpg',
-      title: 'Beer House-Прима Пицца - 2',
+      title: 'Шейд meat & wine кафе',
       type: {
         pub: true,
         restaurant: false,
@@ -119,7 +119,7 @@ let state = {
     {
       id: 3,
       image: 'https://previews.123rf.com/images/imogi/imogi1901/imogi190100101/116383392-vintage-monochrome-chef-skull-with-crossbones-isolated-vector-illustration.jpg',
-      title: 'Beer House-Прима Пицца - 3',
+      title: 'Ресторан Палаццо',
       type: {
         pub: true,
         restaurant: false,
@@ -177,7 +177,7 @@ let state = {
     {
       id: 4,
       image: 'https://media-cdn.tripadvisor.com/media/photo-s/0d/97/d8/21/caption.jpg',
-      title: 'Beer House-Прима Пицца - 4',
+      title: 'Meat Wood',
       type: {
         pub: true,
         restaurant: false,

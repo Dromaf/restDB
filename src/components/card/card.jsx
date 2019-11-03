@@ -1,7 +1,6 @@
 import React from "react";
 import s from "./card.module.css";
 const Card = (props) => {
-  console.log()
   const restdb = props.state.restaurDb[`${props.itemId - 1}`]
   return (
     <div className={s.bgfon}>
