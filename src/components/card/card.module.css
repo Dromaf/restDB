@@ -1,6 +1,36 @@
 .main_content {
     display: flex;
     flex-flow: column;
+    background: url(/static/media/bgloc.94c9d204.png) no-repeat top center;
+}
+.buttons_card_container {
+    display: flex;
+    justify-content: space-between;
+}
+.arrow_back {
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.call_button {
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+.main_content h2 {
+    margin-top: 20px;
+    height: 51px;
+    font-family: Appetite;
+    font-size: 36px;
+    text-align: center;
+    color: #FFE4DC;
+
+}
+.card_info_container {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    padding: 20px;
 }
 
 
@@ -10,13 +40,26 @@
 }
 
 .main_content img{
-    width: 140px;
+    width: 165px;
     display: block;
-    margin: 0;
-    margin-right: 15px;
-    margin-left: 10px;
+    border: 1px solid #FFE4DC;
+    border-radius: 100px;
+    box-sizing: border-box;
+    margin-top: 25px;
 }
 
-.item_name{
-    align-self: center;
+.description{
+    font-family: Appetite;
+    font-size: 12px;
+    text-align: center;
+    padding: 25px;
 }
+
+.item_name {
+    font-family: Appetite;
+    font-size: 12px;
+    text-align: center;
+    padding: 25px;
+}
+
+
