@@ -6,10 +6,10 @@
     display: flex;
     justify-content: left;
     padding: 10px;
+    height: 60px;
     border-bottom: 1px solid #ee876930;;
     cursor: pointer;
 }
-
 
 .item_name{
     align-self: center;
