@@ -4,6 +4,7 @@ import Header from "../header/header";
 import ContentList from "./contentlist";
 import Search from "../search/search";
 import { Link } from 'react-router-dom';
+import Filter from "../filter/filter";
 class Content extends React.Component {
   constructor(props) {
     super(props)
@@ -36,6 +37,7 @@ class Content extends React.Component {
     return (
       <div className={s.bgfon} >
         <Header />
+        <Filter />
         <Search onSearchChange={this.onSearchChange.bind(this)} />
         {visibleItems.slice(0, numberOfItems).map((visibleItems) => {
           return (
