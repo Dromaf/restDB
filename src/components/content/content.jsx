@@ -10,6 +10,7 @@ class Content extends React.Component {
     this.state = {
       showMore: false,
       term: '',
+      options: [],
     }
   }
   handleClick() {
@@ -29,30 +30,99 @@ class Content extends React.Component {
   };
 
   getItems() {
-     const district = 'Shevchenkovskiy';
+    let list = this.props.state.restaurDb;
+    let restParams = [`district`, `type`, `cuisine`, `advantages`]
+    let filterRests = list;
+
+    for (let i = 0; i < this.state.options.length; i++) {
+      const key = this.state.options[i];
+      for (let j = 0; j < restParams.length; j++) {
+        const restParam = restParams[j];
+        if (!list[0][restParam].hasOwnProperty(key)) {
+          continue;
+        }
+        filterRests = filterRests.filter(item => item[restParam][key] === true);
+      }
+    }
+
+    return filterRests;
+  }
 
 
-     let list = this.props.state.restaurDb;
+  renderCheckboxesDistrict() {
+    const status = this.props.state.restaurDb[0].district
+    return Object.keys(status).map((district, index) => {
+      return (
+        <div className={s.checkboxHeight} key={index}>
+          <label className="checkbox" >
+            <input
+              onChange={this.onChange.bind(this)}
+              type="checkbox"
+              name={district}
+            />
+            <div className="checkbox__text"> {district}</div>
+          </label>
+        </div>
+      );
+    });
+  }
+  renderCheckboxesType() {
+    const status = this.props.state.restaurDb[0].type
+    return Object.keys(status).map((type, index) => {
+      return (
+        <div className={s.checkboxHeight} key={index}>
+          <label className="checkbox" >
+            <input
+              onChange={this.onChange.bind(this)}
+              type="checkbox"
+              name={type}
+            />
+            <div className="checkbox__text"> {type}</div>
+          </label>
+        </div>
+      );
+    });
+  }
 
-     if (district) {
-      list = list.filter(item => item.district[district] === true);       
-     }
+  renderCheckboxesСuisine() {
+    const status = this.props.state.restaurDb[0].cuisine
+    return Object.keys(status).map((cuisine, index) => {
+      return (
+        <div className={s.checkboxHeight} key={index}>
+          <label className="checkbox" >
+            <input
+              onChange={this.onChange.bind(this)}
+              type="checkbox"
+              name={cuisine}
+            />
+            <div className="checkbox__text"> {cuisine}</div>
+          </label>
+        </div>
+      );
+    });
+  }
 
-     // more filters
-
-     return list;
+  onChange(e) {
+    const options = this.state.options
+    let index
+    if (e.target.checked) {
+      options.push(e.target.name)
+    } else {
+      index = options.indexOf(e.target.name)
+      options.splice(index, 1)
+    }
+    this.setState({ options: options })
   }
 
   render() {
     const visibleItems = this.search(this.props.state.restaurDb, this.state.term);
     const numberOfItems = this.state.showMore ? visibleItems.length : 5
-
-    console.log(visibleItems)
     return (
       <div className={s.bgfon} >
         <Header />
+
         <Search onSearchChange={this.onSearchChange.bind(this)} />
-        {this.getItems().map((visibleItems) => {
+        {this.getItems().slice(0, numberOfItems).map((visibleItems) => {
           return (
             <Link to={`/card/${visibleItems.id}`} key={visibleItems.id}>
               <ContentList restaurDb={visibleItems} />

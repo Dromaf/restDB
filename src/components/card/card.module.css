@@ -1,12 +1,9 @@
 .main_content {
     display: flex;
     flex-flow: column;
-    background: url(/static/media/bgloc.94c9d204.png) no-repeat top center;
+    background: url(/static/media/bgloc.94c9d204.png) no-repeat center center /cover;
 }
-.buttons_card_container {
-    display: flex;
-    justify-content: space-between;
-}
+
 .arrow_back {
     margin-left: 40px;
     margin-top: 30px;
@@ -17,8 +14,9 @@
     margin-top: 30px;
 }
 
-.main_content h2 {
+.main_content h1 {
     margin-top: 20px;
+    margin-bottom: 10px;
     height: 51px;
     font-family: Appetite;
     font-size: 36px;
@@ -26,12 +24,21 @@
     color: #FFE4DC;
 
 }
-.card_info_container {
+.main_content h2 {
+    margin-top: 20px;
+    font-family: Appetite;
+    font-size: 25px;
+    text-align: center;
+    color: #FFE4DC;
+
+}
+
+/* .card_info_container {
     display: flex;
     justify-content: space-between;
     width: 200px;
     padding: 20px;
-}
+} */
 
 
 .bgfon {
@@ -48,11 +55,10 @@
     margin-top: 25px;
 }
 
-.description{
-    font-family: Appetite;
-    font-size: 12px;
-    text-align: center;
-    padding: 25px;
+.type, .work_time, .adress, .telephone, .cuisine, .links, .advantages{
+    font-size: 16px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .item_name {
@@ -60,6 +66,20 @@
     font-size: 12px;
     text-align: center;
     padding: 25px;
+}
+
+.make_route_button{
+    background: rgba(255, 228, 220, 0.2);
+    border: 1px solid #FFE4DC;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFE4DC;
+    padding: 15px 15px;
+    margin: 25px auto;
+    display: block;
+    cursor: pointer;
 }
 
 
