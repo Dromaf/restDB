@@ -51,8 +51,9 @@ class Content extends React.Component {
     return (
       <div className={s.bgfon} >
         <Header />
+        
         <Search onSearchChange={this.onSearchChange.bind(this)} />
-        {this.getItems().map((visibleItems) => {
+        {this.getItems().slice(0, numberOfItems).map((visibleItems) => {
           return (
             <Link to={`/card/${visibleItems.id}`} key={visibleItems.id}>
               <ContentList restaurDb={visibleItems} />
