@@ -30,7 +30,10 @@ const App = props => {
           <Route
             path="/card/:id" render={({ match }) => {
               const { id } = match.params;
-              return < Card itemId={id} {...props} />
+              // 'Beer House-Прима Пицца - 1'.toLocaleLowerCase().replace(/ /g, '_')
+              const item = props.state.restaurDb.find(item => item.id === id);
+
+              return < Card item={item} />
             }}
           />
         </Switch>

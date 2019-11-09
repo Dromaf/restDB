@@ -28,6 +28,21 @@ class Content extends React.Component {
     this.setState({ term });
   };
 
+  getItems() {
+     const district = 'Shevchenkovskiy';
+
+
+     let list = this.props.state.restaurDb;
+
+     if (district) {
+      list = list.filter(item => item.district[district] === true);       
+     }
+
+     // more filters
+
+     return list;
+  }
+
   render() {
     const visibleItems = this.search(this.props.state.restaurDb, this.state.term);
     const numberOfItems = this.state.showMore ? visibleItems.length : 5
@@ -37,7 +52,7 @@ class Content extends React.Component {
       <div className={s.bgfon} >
         <Header />
         <Search onSearchChange={this.onSearchChange.bind(this)} />
-        {visibleItems.slice(0, numberOfItems).map((visibleItems) => {
+        {this.getItems().map((visibleItems) => {
           return (
             <Link to={`/card/${visibleItems.id}`} key={visibleItems.id}>
               <ContentList restaurDb={visibleItems} />
