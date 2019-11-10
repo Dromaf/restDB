@@ -4,35 +4,35 @@ import PopUpTel from "./popUpTel/popUpTel";
 
 const translation = { 
   pub: "Паб",
-  restaurant: "Ресторан",
-  cafe: "Кафе",
-  teahouse: "Чайная",
-  coffeehouse: "Кофейня",
-  bar: "Бар",
-  hookah: "Кальянная",
-  steakhouse: "Гриль",
-  ukrainian: "Украинская", 
-  europinian: "Европейская",
-  сaucasian: "Кавказская",
-  itlian: "Итальянская",
-  grill: "Гриль",
-  seafood: "Морепродукты",
-  japaneese: "Японская",
-  desserts: "Дессерты",
-  asian: "Азиатская",
-  chineese: "Китайская",
-  mexican: "Мексиканская",
-  american: "Американская",
-  kidsRoom: "Детская комната ", //Детские комнаты
-  reservation: "Бронь столов",  // Бронь столов
-  DressingRoom: "Гардеробная",//гардероб
-  cardPayment: "Оплата картой", //Оплата картой
-  parking: "Парковка", //Парковка
-  delivery: "Доставка", //доставка
-  wifi: "Wi-Fi",
-  takeaway:  "Вынос еды с собой", //еда или напитки на вынос
-  plaseForSmoking: "Место для курения",
-  iqosFriendly: "Iqos friendly",
+  restaurant: " Ресторан",
+  cafe: " Кафе",
+  teahouse: " Чайная",
+  coffeehouse: " Кофейня",
+  bar: " Бар",
+  hookah: " Кальянная",
+  steakhouse: " Cтейк-хаус",
+  ukrainian: " Украинская", 
+  europinian: " Европейская",
+  сaucasian: " Кавказская",
+  itlian: " Итальянская",
+  grill: " Гриль",
+  seafood: " Морепродукты",
+  japaneese: " Японская",
+  desserts: " Дессерты",
+  asian: " Азиатская",
+  chineese: " Китайская",
+  mexican: " Мексиканская",
+  american: " Американская",
+  kidsRoom: " Детская комната ", //Детские комнаты
+  reservation: " Бронь столов",  // Бронь столов
+  DressingRoom: " Гардеробная",//гардероб
+  cardPayment: " Оплата картой", //Оплата картой
+  parking: " Парковка", //Парковка
+  delivery: " Доставка", //доставка
+  wifi: " Wi-Fi",
+  takeaway:  " Вынос еды с собой", //еда или напитки на вынос
+  plaseForSmoking: " Место для курения",
+  iqosFriendly: " Iqos friendly",
 }
 class Card extends React.Component {
   constructor(props) {
@@ -90,7 +90,6 @@ class Card extends React.Component {
       if (value) {
         childadvFilter.push(`${translation[key]}`);
       }
-
     }
     return childadvFilter;
   }
@@ -105,7 +104,6 @@ class Card extends React.Component {
     return (
       <div className={s.bgfon}>
             <div className={s.main_content}>
-              <div className={s.buttons_card_container}>
                 <div className={s.arrow_back}>
                   <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0)">
@@ -119,7 +117,6 @@ class Card extends React.Component {
                   </svg>
               </div>  
               {this.state.telephoneBlockStatus && <PopUpTel telephone={restdb.telephone} />}
-            </div>
           <img src={restdb.image} alt={restdb.image} />
           <h1>{restdb.title}</h1>
             <h2 className={s.type}>
