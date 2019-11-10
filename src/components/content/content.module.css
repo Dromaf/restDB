@@ -20,3 +20,20 @@
     display: block;
     cursor: pointer; 
 }
+.header {
+    max-width: 300px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    flex-wrap: wrap;
+    background-color: #00000025;
+}
+.header_menu{
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.header_arrow{
+    align-self: flex-end;
+}

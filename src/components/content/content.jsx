@@ -1,10 +1,12 @@
 import React from "react";
 import s from "./content.module.css";
-import Header from "../header/header";
+// import Header from "../header/header";
 import ContentList from "./contentlist";
 import Search from "../search/search";
 import { Link } from 'react-router-dom';
 import Filter from "../filter/filter";
+import filter from "./img/filter.svg";
+import back from "./img/back.svg";
 
 class Content extends React.Component {
   constructor(props) {
@@ -66,9 +68,12 @@ class Content extends React.Component {
 
     return (
       <div className={s.bgfon} >
-        <Header />
+        {/* <Header /> */}
+        <header className={s.header}>
+            <div className={s.header_arrow}><img src={back} alt={back} /></div>
+            <div className={s.header_menu} onClick={this.togglePopup.bind(this)}><img src={filter} alt={filter} /></div>
+        </header>
 
-        <button onClick={this.togglePopup.bind(this)}>show popup</button>
         {this.state.showPopup ?
           <Filter {...this.props} onOptionChange={this.onOptionChange.bind(this)}
             text='Close Me'
