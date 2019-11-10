@@ -135,6 +135,7 @@ export default class Filter extends Component {
                 <div className={s.checkboxName}>Кухня
           <div className={s.checkboxSize}> {this.renderCheckboxesСuisine()}</div>
                 </div>
+                <button onClick={this.props.closePopup} className={s.closePopupClose}>Фильтровать</button>
             </div>
         );
     }

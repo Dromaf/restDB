@@ -13,7 +13,13 @@ class Content extends React.Component {
       showMore: false,
       term: '',
       options: [],
+      showPopup: false
     }
+  }
+  togglePopup() {
+    this.setState({
+      showPopup: !this.state.showPopup
+    });
   }
   handleClick() {
     this.setState({ showMore: true })
@@ -61,7 +67,19 @@ class Content extends React.Component {
     return (
       <div className={s.bgfon} >
         <Header />
-        <Filter {...this.props} onOptionChange={this.onOptionChange.bind(this)} />
+
+        <button onClick={this.togglePopup.bind(this)}>show popup</button>
+        {this.state.showPopup ?
+          <Filter {...this.props} onOptionChange={this.onOptionChange.bind(this)}
+            text='Close Me'
+            closePopup={this.togglePopup.bind(this)}
+          />
+          : null
+        }
+
+
+
+
         <Search onSearchChange={this.onSearchChange.bind(this)} />
         {visibleItems.slice(0, numberOfItems).map((item) => {
           return (
