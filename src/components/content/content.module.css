@@ -19,3 +19,16 @@
     display: block;
     cursor: pointer; 
 }
+
+.checkboxHeight{
+	height: 30px;
+	position: relative;
+}
+.checkboxSize{
+	margin: 20px 30px 
+}
+.checkboxName{
+	margin: 10px;
+    text-align: center;
+    font-size: 16px;
+}
