@@ -12,7 +12,7 @@ export default class Filter extends Component {
     render() {
         return (
             <div className={s.main}>
-                Filter
+
             </div>
         );
     }

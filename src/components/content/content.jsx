@@ -5,6 +5,42 @@ import ContentList from "./contentlist";
 import Search from "../search/search";
 import { Link } from 'react-router-dom';
 import Filter from "../filter/filter";
+
+const translation = {
+  Shevchenkovskiy: "Шевченковский",
+  Oktyabrksiy: "Подольский",
+  Kievskiy: "Киевский",
+  pub: "Паб",
+  restaurant: " Ресторан",
+  cafe: " Кафе",
+  teahouse: " Чайная",
+  coffeehouse: " Кофейня",
+  bar: " Бар",
+  hookah: " Кальянная",
+  steakhouse: " Cтейк-хаус",
+  ukrainian: " Украинская",
+  europinian: " Европейская",
+  сaucasian: " Кавказская",
+  itlian: " Итальянская",
+  grill: " Гриль",
+  seafood: " Морепродукты",
+  japaneese: " Японская",
+  desserts: " Дессерты",
+  asian: " Азиатская",
+  chineese: " Китайская",
+  mexican: " Мексиканская",
+  american: " Американская",
+  kidsRoom: " Детская комната ", //Детские комнаты
+  reservation: " Бронь столов",  // Бронь столов
+  DressingRoom: " Гардеробная",//гардероб
+  cardPayment: " Оплата картой", //Оплата картой
+  parking: " Парковка", //Парковка
+  delivery: " Доставка", //доставка
+  wifi: " Wi-Fi",
+  takeaway: " Вынос еды с собой", //еда или напитки на вынос
+  plaseForSmoking: " Место для курения",
+  iqosFriendly: " Iqos friendly",
+}
 class Content extends React.Component {
   constructor(props) {
     super(props)
@@ -53,6 +89,10 @@ class Content extends React.Component {
   renderCheckboxesDistrict() {
     const status = this.props.state.restaurDb[0].district
     return Object.keys(status).map((district, index) => {
+      let childtypeFilter = [];
+      for (let key in status) {
+        childtypeFilter.push(`${translation[key]}`);
+      }
       return (
         <div className={s.checkboxHeight} key={index}>
           <label className="checkbox" >
@@ -61,7 +101,7 @@ class Content extends React.Component {
               type="checkbox"
               name={district}
             />
-            <div className="checkbox__text"> {district}</div>
+            <div className="checkbox__text"> {childtypeFilter[index]}</div>
           </label>
         </div>
       );
@@ -70,6 +110,10 @@ class Content extends React.Component {
   renderCheckboxesType() {
     const status = this.props.state.restaurDb[0].type
     return Object.keys(status).map((type, index) => {
+      let childtypeFilter = [];
+      for (let key in status) {
+        childtypeFilter.push(`${translation[key]}`);
+      }
       return (
         <div className={s.checkboxHeight} key={index}>
           <label className="checkbox" >
@@ -78,7 +122,7 @@ class Content extends React.Component {
               type="checkbox"
               name={type}
             />
-            <div className="checkbox__text"> {type}</div>
+            <div className="checkbox__text"> {childtypeFilter[index]}</div>
           </label>
         </div>
       );
@@ -88,6 +132,10 @@ class Content extends React.Component {
   renderCheckboxesСuisine() {
     const status = this.props.state.restaurDb[0].cuisine
     return Object.keys(status).map((cuisine, index) => {
+      let childtypeFilter = [];
+      for (let key in status) {
+        childtypeFilter.push(`${translation[key]}`);
+      }
       return (
         <div className={s.checkboxHeight} key={index}>
           <label className="checkbox" >
@@ -96,7 +144,7 @@ class Content extends React.Component {
               type="checkbox"
               name={cuisine}
             />
-            <div className="checkbox__text"> {cuisine}</div>
+            <div className="checkbox__text"> {childtypeFilter[index]}</div>
           </label>
         </div>
       );
@@ -122,9 +170,15 @@ class Content extends React.Component {
       <div className={s.bgfon} >
         <Header />
         <Filter />
-        <div className={s.checkboxSize}><div className={s.checkboxName}>Районы</div> {this.renderCheckboxesDistrict()}</div>
-        <div className={s.checkboxSize}><div className={s.checkboxName}>Типы заведений</div> {this.renderCheckboxesType()}</div>
-        <div className={s.checkboxSize}><div className={s.checkboxName}>Кухня</div> {this.renderCheckboxesСuisine()}</div>
+        <div className={s.checkboxName}>Районы
+          <div className={s.checkboxSize_distr}> {this.renderCheckboxesDistrict()}</div>
+        </div>
+        <div className={s.checkboxName}>Типы заведений
+          <div className={s.checkboxSize}>{this.renderCheckboxesType()}</div>
+        </div>
+        <div className={s.checkboxName}>Кухня
+          <div className={s.checkboxSize}> {this.renderCheckboxesСuisine()}</div>
+        </div>
 
         <Search onSearchChange={this.onSearchChange.bind(this)} />
         {visibleItems.slice(0, numberOfItems).map((item) => {
