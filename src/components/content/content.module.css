@@ -19,23 +19,3 @@
     display: block;
     cursor: pointer; 
 }
-
-.checkboxHeight{
-	height: 30px;
-    position: relative;
-    width: 170px;
-    text-align: left;
-}
-.checkboxSize{
-    margin: 20px 0px;
-    display: flex;
-    flex-wrap: wrap;
-}
-.checkboxName{
-	margin: 10px;
-    text-align: center;
-    font-size: 15px;
-}
-.checkboxSize_distr{
-    margin: 20px 0px;
-}
