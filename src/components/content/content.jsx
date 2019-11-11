@@ -1,10 +1,13 @@
 import React from "react";
 import s from "./content.module.css";
-import Header from "../header/header";
+// import Header from "../header/header";
 import ContentList from "./contentlist";
 import Search from "../search/search";
 import { Link } from 'react-router-dom';
 import Filter from "../filter/filter";
+import filter from "./img/filter.svg";
+import back from "./img/back.svg";
+
 class Content extends React.Component {
   constructor(props) {
     super(props)
@@ -12,7 +15,13 @@ class Content extends React.Component {
       showMore: false,
       term: '',
       options: [],
+      showPopup: false
     }
+  }
+  togglePopup() {
+    this.setState({
+      showPopup: !this.state.showPopup
+    });
   }
   handleClick() {
     this.setState({ showMore: true })
@@ -20,6 +29,9 @@ class Content extends React.Component {
 
   onSearchChange(term) {
     this.setState({ term });
+  };
+  onOptionChange(options) {
+    this.setState({ options });
   };
 
   search(items, term) {
@@ -50,81 +62,28 @@ class Content extends React.Component {
     return filterRests;
   }
 
-  renderCheckboxesDistrict() {
-    const status = this.props.state.restaurDb[0].district
-    return Object.keys(status).map((district, index) => {
-      return (
-        <div className={s.checkboxHeight} key={index}>
-          <label className="checkbox" >
-            <input
-              onChange={this.onChange.bind(this)}
-              type="checkbox"
-              name={district}
-            />
-            <div className="checkbox__text"> {district}</div>
-          </label>
-        </div>
-      );
-    });
-  }
-  renderCheckboxesType() {
-    const status = this.props.state.restaurDb[0].type
-    return Object.keys(status).map((type, index) => {
-      return (
-        <div className={s.checkboxHeight} key={index}>
-          <label className="checkbox" >
-            <input
-              onChange={this.onChange.bind(this)}
-              type="checkbox"
-              name={type}
-            />
-            <div className="checkbox__text"> {type}</div>
-          </label>
-        </div>
-      );
-    });
-  }
-
-  renderCheckboxesСuisine() {
-    const status = this.props.state.restaurDb[0].cuisine
-    return Object.keys(status).map((cuisine, index) => {
-      return (
-        <div className={s.checkboxHeight} key={index}>
-          <label className="checkbox" >
-            <input
-              onChange={this.onChange.bind(this)}
-              type="checkbox"
-              name={cuisine}
-            />
-            <div className="checkbox__text"> {cuisine}</div>
-          </label>
-        </div>
-      );
-    });
-  }
-
-  onChange(e) {
-    const options = this.state.options
-    let index
-    if (e.target.checked) {
-      options.push(e.target.name)
-    } else {
-      index = options.indexOf(e.target.name)
-      options.splice(index, 1)
-    }
-    this.setState({ options: options })
-  }
-
   render() {
     const visibleItems = this.search(this.getItems(), this.state.term);
     const numberOfItems = this.state.showMore ? visibleItems.length : 5;
+
     return (
       <div className={s.bgfon} >
-        <Header />
-        <Filter />
-        <div className={s.checkboxSize}><div className={s.checkboxName}>Районы</div> {this.renderCheckboxesDistrict()}</div>
-        <div className={s.checkboxSize}><div className={s.checkboxName}>Типы заведений</div> {this.renderCheckboxesType()}</div>
-        <div className={s.checkboxSize}><div className={s.checkboxName}>Кухня</div> {this.renderCheckboxesСuisine()}</div>
+        {/* <Header /> */}
+        <header className={s.header}>
+            <div className={s.header_arrow}><img src={back} alt={back} /></div>
+            <div className={s.header_menu} onClick={this.togglePopup.bind(this)}><img src={filter} alt={filter} /></div>
+        </header>
+
+        {this.state.showPopup ?
+          <Filter {...this.props} onOptionChange={this.onOptionChange.bind(this)}
+            text='Close Me'
+            closePopup={this.togglePopup.bind(this)}
+          />
+          : null
+        }
+
+
+
 
         <Search onSearchChange={this.onSearchChange.bind(this)} />
         {visibleItems.slice(0, numberOfItems).map((item) => {

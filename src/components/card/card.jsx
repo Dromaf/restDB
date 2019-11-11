@@ -51,9 +51,7 @@ class Card extends React.Component {
   typeFilter = (obj) => {
     let childtypeFilter = [];
     for (let key in obj) {
-      // skip loop if the property is from prototype
       if (!obj.hasOwnProperty(key)) continue;
-
       let value = obj[key];
       console.log(value, key)
       if (value) {

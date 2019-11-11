@@ -43,11 +43,10 @@ i.fas.fa-search{
 	position: absolute;
 	z-index: -1;
 	opacity: 0;
-	margin: 10px 0 0 20px;
 }
 .checkbox__text {
 	position: relative;
-	padding: 0 0 0 60px;
+	padding: 2px 0px 0px 55px;
 	cursor: pointer;
 }
 .checkbox__text:before {
