@@ -1,7 +1,7 @@
 .main_content {
     display: flex;
     flex-flow: column;
-    background: url(/static/media/bgloc.94c9d204.png) no-repeat center center /cover;
+    background: url(../content/img/bgloc.png) no-repeat center center /cover;
 }
 
 .arrow_back {
