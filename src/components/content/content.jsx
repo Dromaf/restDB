@@ -6,7 +6,7 @@ import Search from "../search/search";
 import { Link } from 'react-router-dom';
 import Filter from "../filter/filter";
 import filter from "./img/filter.svg";
-import back from "./img/back.svg";
+import GoBack from "../back/back";
 
 class Content extends React.Component {
   constructor(props) {
@@ -70,7 +70,7 @@ class Content extends React.Component {
       <div className={s.bgfon} >
         {/* <Header /> */}
         <header className={s.header}>
-            <div className={s.header_arrow}><img src={back} alt={back} /></div>
+            <div className={s.header_arrow}><GoBack/></div>
             <div className={s.header_menu} onClick={this.togglePopup.bind(this)}><img src={filter} alt={filter} /></div>
         </header>
 
@@ -94,6 +94,7 @@ class Content extends React.Component {
           )
         })}
         <button className={s.button_more} onClick={() => this.handleClick()}>Показать все</button>
+        
       </div>
     );
   }
