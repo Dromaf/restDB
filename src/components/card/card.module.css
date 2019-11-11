@@ -4,10 +4,12 @@
     background: url(../content/img/bgloc.png) no-repeat center center /cover;
 }
 
-.arrow_back {
-    padding-left: 40px;
+.arrow_back{
     padding-top: 30px;
-
+}
+.arrow_back img{
+    cursor: pointer;
+    margin: 0 36px;
 }
 
 .call_button {

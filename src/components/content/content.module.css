@@ -36,4 +36,5 @@
 
 .header_arrow{
     align-self: flex-end;
+    cursor: pointer;
 }
