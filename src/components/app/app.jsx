@@ -2,7 +2,9 @@ import React from "react";
 import Content from "../content/content";
 import Card from "../card/card";
 import Home from "../home/home";
-import Location from "../location/location";
+import Location from "../home/location/location";
+import Worktime from "../home/worktime/worktime";
+import Fork from "../home/fork/fork";
 import "normalize.css";
 import "./app.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -18,8 +20,16 @@ const App = props => {
             render={() => <Home {...props} />}
           />
           <Route
-            path="/loc"
+            path="/location"
             render={() => <Location />}
+          />
+          <Route
+            path="/worktime"
+            render={() => <Worktime />}
+          />
+          <Route
+            path="/fork"
+            render={() => <Fork />}
           />
 
           <Route

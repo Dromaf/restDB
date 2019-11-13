@@ -1,15 +1,18 @@
 import React from "react";
-import s from "./work.module.css";
-import time from "./img/time.png";
-import place from "./img/place.png";
-import fork from "./img/fork.png";
+import s from "./worktime.module.css";
 
-const Work = props => {
+const Worktime = props => {
   return (
     <div >
-
+      <div className={s.main}>
+        <div className={s.main_item}>
+          <div className={s.main_text}>
+            Worktime
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Work;
+export default Worktime;
