@@ -19,7 +19,7 @@ export default class Search extends Component {
         <input type="text"
           value={this.state.term}
           onChange={this.onSearchChange} />
-        <button className={s.search} type="submit"><i className="fas fa-search"></i></button>
+        <button className={s.search} type="submit" disabled><i className="fas fa-search"></i></button>
       </form>
     );
   }

@@ -8,6 +8,7 @@ import Fork from "../home/fork/fork";
 import "normalize.css";
 import "./app.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Favorite from "../card/favorite/favorite";
 
 const App = props => {
   return (
@@ -22,6 +23,10 @@ const App = props => {
           <Route
             path="/location"
             render={() => <Location />}
+          />
+          <Route
+            path="/favorite"
+            render={() => <Favorite  {...props} />}
           />
           <Route
             path="/worktime"
