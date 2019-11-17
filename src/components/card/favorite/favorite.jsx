@@ -5,17 +5,16 @@ import { Link } from 'react-router-dom';
 import GoBack from "../../back/back";
 import Filter from "../../filter/filter";
 import filter from "../../content/img/filter.svg";
-
-let favorite = JSON.parse(localStorage.getItem('favorite'));
 class Favorite extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            favorite: favorite || [],
+            favorite: JSON.parse(localStorage.getItem('favorite')) || [],
             showPopup: false,
             options: [],
         }
     }
+
 
     togglePopup() {
         this.setState({
@@ -28,7 +27,7 @@ class Favorite extends React.Component {
     };
 
     render() {
-
+        console.log(this.state.favorite)
         return (
             <div className={s.bgfon} >
                 {/* <Header /> */}
@@ -44,7 +43,7 @@ class Favorite extends React.Component {
                     />
                     : null
                 }
-                {this.state.favorite.map((item) => {
+                {this.state.favorite && this.state.favorite.map((item) => {
                     return (
                         <div key={item.id}>
                             <Link to={`/card/${item.id}`}>

@@ -80,6 +80,7 @@ class Content extends React.Component {
     }
     this.setState({ favoriteList: favoriteList })
 
+
     let favorlocal = [];
     for (let j = 0; j < favoriteList.length; j++) {
       const key = favoriteList[j];
@@ -90,19 +91,16 @@ class Content extends React.Component {
       }
     }
     console.log(favorlocal);
-    let newLocal = JSON.parse(localStorage.getItem('favorite'))
-    console.log(newLocal);
-
+    let newLocal = JSON.parse(localStorage.getItem('favorite')) || []
     let hash = new Map();
-    if (newLocal !== null) {
-      newLocal.concat(favorlocal).forEach(function (obj) {
-        hash.set(obj.id, Object.assign(hash.get(obj.id) || {}, obj))
-      });
-    } else {
-      localStorage.setItem('favorite', JSON.stringify(favorlocal));
-    }
+    newLocal.concat(favorlocal).forEach(function (obj) {
+      hash.set(obj.id, Object.assign(hash.get(obj.id) || {}, obj))
+    });
+    localStorage.setItem('favorite', JSON.stringify(favorlocal));
     let a3 = Array.from(hash.values());
     localStorage.setItem('favorite', JSON.stringify(a3));
+
+    console.log(a3);
   }
 
   render() {
