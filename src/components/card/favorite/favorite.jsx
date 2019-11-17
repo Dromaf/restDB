@@ -26,8 +26,23 @@ class Favorite extends React.Component {
         this.setState({ options });
     };
 
+    deleteFavorite(e) {
+        const { favorite } = this.state
+        console.log(favorite, e.target.id)
+        for (var i = 0; i < favorite.length; i++) {
+            var obj = favorite[i];
+
+            if (e.target.id.indexOf(obj.id) !== -1) {
+                favorite.splice(i, 1);
+            }
+        }
+        localStorage.setItem('favorite', JSON.stringify(favorite));
+        this.setState({ favorite: favorite })
+        console.log(favorite)
+
+    }
+
     render() {
-        console.log(this.state.favorite)
         return (
             <div className={s.bgfon} >
                 {/* <Header /> */}
@@ -45,11 +60,15 @@ class Favorite extends React.Component {
                 }
                 {this.state.favorite && this.state.favorite.map((item) => {
                     return (
-                        <div key={item.id}>
+                        <div key={item.id} className={s.favorCont}>
                             <Link to={`/card/${item.id}`}>
                                 <ContentList restaurDb={item} />
                             </Link>
-
+                            <button
+                                id={item.id}
+                                onClick={this.deleteFavorite.bind(this)}
+                                className={s.delfavorButtorn}>
+                            </button>
                         </div>
                     )
                 })}

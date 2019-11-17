@@ -50,7 +50,7 @@
 .favorCont{
     position: relative;
 }
-.favorButtorn{
+.favorButton{
     color: #fff;
     cursor: pointer;
     padding: 20px;
@@ -61,6 +61,6 @@
     top: 9px;
     background: url(/static/media/star.7157e475.svg) no-repeat center center;
 }
-.favorButtorn:hover{
+.favorButton:hover{
    opacity: 0.7;
 }

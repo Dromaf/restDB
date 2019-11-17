@@ -133,7 +133,7 @@ class Content extends React.Component {
               <button
                 id={item.id}
                 onClick={this.addFavorite.bind(this)}
-                className={s.favorButtorn}>
+                className={s.favorButton}>
               </button>
             </div>
           )
