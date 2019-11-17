@@ -19,10 +19,9 @@ input {
 }
 .search {
   border: none;
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
   position: absolute;
   top: 0;
   right: 0;
-  cursor: pointer;
 }
