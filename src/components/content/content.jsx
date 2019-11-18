@@ -15,11 +15,11 @@ class Content extends React.Component {
     this.state = {
       showMore: false,
       term: '',
-      options: [],
       favoriteList: [],
       showPopup: false
     }
   }
+
   togglePopup() {
     this.setState({
       showPopup: !this.state.showPopup
@@ -50,8 +50,8 @@ class Content extends React.Component {
     let restParams = [`district`, `type`, `cuisine`, `advantages`];
     let filterRests = list;
 
-    for (let i = 0; i < this.state.options.length; i++) {
-      const key = this.state.options[i];
+    for (let i = 0; i < this.props.options.length; i++) {
+      const key = this.props.options[i];
       for (let j = 0; j < restParams.length; j++) {
         const restParam = restParams[j];
         if (!list[0][restParam].hasOwnProperty(key)) {
@@ -104,6 +104,7 @@ class Content extends React.Component {
   }
 
   render() {
+    console.log(this.props)
     const visibleItems = this.search(this.getItems(), this.state.term);
     const numberOfItems = this.state.showMore ? visibleItems.length : 5;
 
@@ -117,7 +118,7 @@ class Content extends React.Component {
         </header>
 
         {this.state.showPopup ?
-          <Filter {...this.props} onOptionChange={this.onOptionChange.bind(this)}
+          <Filter {...this.props}
             text='Close Me'
             closePopup={this.togglePopup.bind(this)}
           />

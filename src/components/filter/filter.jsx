@@ -49,8 +49,14 @@ export default class Filter extends Component {
         const status = this.props.state.restaurDb[0].district
         return Object.keys(status).map((district, index) => {
             let childtypeFilter = [];
+            let proverka = false;
             for (let key in status) {
                 childtypeFilter.push(`${translation[key]}`);
+            }
+            for (let i = 0; i < this.props.options.length; i++) {
+                if (this.props.options[i] === district) {
+                    proverka = true;
+                }
             }
             return (
                 // <div className={s.checkboxHeight} key={index}>
@@ -63,8 +69,8 @@ export default class Filter extends Component {
                 //         <div className="checkbox__text"> {childtypeFilter[index]}</div>
                 //     </label>
                 // </div>
-                    <option value={district} key={index} name={district}>{childtypeFilter[index]}</option>
-                
+                <option value={district} key={index} selected={proverka} name={district}>{childtypeFilter[index]}</option>
+
             );
         });
     }
@@ -72,16 +78,23 @@ export default class Filter extends Component {
         const status = this.props.state.restaurDb[0].type
         return Object.keys(status).map((type, index) => {
             let childtypeFilter = [];
+            let proverka = ``;
             for (let key in status) {
                 childtypeFilter.push(`${translation[key]}`);
+            }
+            for (let i = 0; i < this.props.options.length; i++) {
+                if (this.props.options[i] === type) {
+                    proverka = `checked`
+                }
             }
             return (
                 <div className={s.checkboxHeight} key={index}>
                     <label className="checkbox" >
                         <input
-                            onChange={this.onOptionChange.bind(this)}
+                            onChange={this.props.onOptionChange}
                             type="checkbox"
                             name={type}
+                            defaultChecked={proverka}
                         />
                         <div className="checkbox__text"> {childtypeFilter[index]}</div>
                     </label>
@@ -94,16 +107,23 @@ export default class Filter extends Component {
         const status = this.props.state.restaurDb[0].cuisine
         return Object.keys(status).map((cuisine, index) => {
             let childtypeFilter = [];
+            let proverka = ``;
             for (let key in status) {
                 childtypeFilter.push(`${translation[key]}`);
+            }
+            for (let i = 0; i < this.props.options.length; i++) {
+                if (this.props.options[i] === cuisine) {
+                    proverka = `checked`
+                }
             }
             return (
                 <div className={s.checkboxHeight} key={index}>
                     <label className="checkbox" >
                         <input
-                            onChange={this.onOptionChange.bind(this)}
+                            onChange={this.props.onOptionChange}
                             type="checkbox"
                             name={cuisine}
+                            defaultChecked={proverka}
                         />
                         <div className="checkbox__text"> {childtypeFilter[index]}</div>
                     </label>
@@ -111,62 +131,26 @@ export default class Filter extends Component {
             );
         });
     }
-    onOptionChange(e) {
-        const options = this.state.options
-        console.log(e.target.name)
-        let index
-        if (e.target.checked) {
-            options.push(e.target.name)
-        }
-        else {
-            index = options.indexOf(e.target.name)
-            options.splice(index, 1) 
-        } 
-        this.setState({ options: options })
-        this.props.onOptionChange(options);
-        console.log(options)
-    }
-    onOptionChangeSelect(e) {
-        let options = this.state.options
-        let value1 = "Shevchenkovskiy";
-        let value2 = "Kievskiy";
-        let value3 = "Oktyabrksiy";
-        console.log(e.target.value)
-        if (e.target.value === "Shevchenkovskiy") {
-            options = options.filter(item => item !== value2)
-            options = options.filter(item => item !== value3)
-            options.push(e.target.value)
-        } else if (e.target.value === "Kievskiy") {
-            options = options.filter(item => item !== value1)
-            options = options.filter(item => item !== value3)
-            options.push(e.target.value)
-        } else if (e.target.value === "Oktyabrksiy") {
-            options = options.filter(item => item !== value2)
-            options = options.filter(item => item !== value1)
-            options.push(e.target.value)
-        }
-        this.setState({ options: options })
-        this.props.onOptionChange(options);
-        console.log(options)
-    }
+
+
 
 
     render() {
         return (
             <div className={s.main}>
                 <div className={s.checkboxName}>Районы
-          <div className={s.checkboxSize_distr}> 
-            <select value={this.props.value} onChange={this.onOptionChangeSelect.bind(this)} >
-                <option value="">Выберите район</option>
-                {this.renderCheckboxesDistrict()}
-            </select>
-          </div>
+                     <div className={s.checkboxSize_distr}>
+                        <select value={this.props.value} onChange={this.props.onOptionChangeSelect} className={s.selectReg}>
+                            <option value="">Выберите район:</option>
+                            {this.renderCheckboxesDistrict()}
+                        </select>
+                    </div>
                 </div>
                 <div className={s.checkboxName}>Типы заведений
-          <div className={s.checkboxSize}>{this.renderCheckboxesType()}</div>
+                    <div className={s.checkboxSize}>{this.renderCheckboxesType()}</div>
                 </div>
                 <div className={s.checkboxName}>Кухня
-          <div className={s.checkboxSize}> {this.renderCheckboxesСuisine()}</div>
+                    <div className={s.checkboxSize}> {this.renderCheckboxesСuisine()}</div>
                 </div>
                 <button onClick={this.props.closePopup} className={s.closePopupClose}>Фильтровать</button>
             </div>

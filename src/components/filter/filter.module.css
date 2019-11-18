@@ -41,3 +41,9 @@
     display: block;
     cursor: pointer;
 }
+
+.selectReg{
+    border-radius: 10px;
+    background: #53403c;
+    color: #ffe4dc;
+}
