@@ -26,15 +26,22 @@ export default class Fork extends Component {
     const status = this.props.state.restaurDb[0].type
     return Object.keys(status).map((type, index) => {
       let childtypeFilter = [];
+      let proverka = '';
       for (let key in status) {
         childtypeFilter.push(`${translation[key]}`);
       }
+      for (let i = 0; i < this.props.options.length; i++) {
+        if (this.props.options[i] === type) {
+          proverka = `checked`
+        }
+      }
       return (
         <div key={index} >
-          <input 
+          <input
             onChange={this.props.onOptionChangeFork}
             type="checkbox"
             name={type}
+            defaultChecked={proverka}
           /> {childtypeFilter[index]}
         </div>
       );

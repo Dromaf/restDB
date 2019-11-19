@@ -10,30 +10,36 @@ export default class Worktime extends Component {
   //   }
   // }
 
-  renderType() {
-    console.log(this.props.state.restaurDb[0].closeTime)
-    
-    this.props.state.restaurDb.map((item) => {
-      console.log(item.closeTime)
-      return (
-        <option key={item.id} value={item.closeTime}>
-          {item.closeTime}
-        </option>
-      );
-    });
-  }
   render() {
     return (
       <div >
-          <select value={this.props.value}  className={s.selectReg}>
-            <option value="" >Время открытия:</option>
-            {this.renderType()}
-          </select>
-          <select value={this.props.value}  className={s.selectReg}>
-            <option value="" >Время закрытия:</option>
-            {this.renderType()}
-          </select>
-       
+        <select value={this.props.value} className={s.selectReg}>
+          <option value="" >Время открытия:</option>
+          {
+            this.props.state.restaurDb.map((item) => {
+              console.log(item.openTime)
+              return (
+                <option key={item.id} value={item.openTime} name={item.openTime}>
+                  {item.openTime}
+                </option>
+              );
+            })
+          };
+        </select>
+        <select value={this.props.value} className={s.selectReg}>
+          <option value="" >Время закрытия:</option>
+          {
+            this.props.state.restaurDb.map((item) => {
+              console.log(item.closeTime)
+              return (
+                <option key={item.id} value={item.closeTime} name={item.closeTime}>
+                  {item.closeTime}
+                </option>
+              );
+            })
+          };
+        </select>
+
         <Link to={`/card`}>
           <button className={s.workFilterBtn}
             type="button"
