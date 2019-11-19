@@ -1,28 +1,55 @@
-import React from "react";
+import React, { Component } from 'react';
 import s from "./location.module.css";
+import { Link } from "react-router-dom";
+const translation = {
+  Shevchenkovskiy: "Шевченковский",
+  Oktyabrksiy: "Подольский",
+  Kievskiy: "Киевский",
+}
+export default class Location extends Component {
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     options: [],
+  //   }
+  // }
 
-const Location = props => {
-  return (
-    <div className={s.bgfon}>
-      <div className={s.main}>
-        <div className={`${s.main_item} ${s.main_item_first}`} >
-          <button className={s.main_text}> 
-          Шевченковский
-          </button>
+  renderType() {
+    console.log(this.props)
+    console.log(this.props)
+
+    const status = this.props.state.restaurDb[0].district
+    return Object.keys(status).map((type, index) => {
+      let childtypeFilter = [];
+      for (let key in status) {
+        childtypeFilter.push(`${translation[key]}`);
+      }
+      return (
+        <div key={index} >
+          <input 
+            onChange={this.props.onOptionChangeFork}
+            type="checkbox"
+            name={type}
+          /> {childtypeFilter[index]}
         </div>
-        <div className={s.main_item}>
-          <button className={s.main_text}> 
-          Киевский
-          </button>
+      );
+    });
+  }
+  render() {
+    return (
+      <div >
+        <div >
+          {this.renderType()}
         </div>
-        <div className={s.main_item}>
-          <button className={s.main_text}>
-          Подольский
+        <Link to={`/card`}>
+          <button className={s.locFilterBtn}
+            type="button"
+          > Filter
           </button>
-        </div>
+        </Link>
+
+
       </div>
-    </div>
-  );
-};
-
-export default Location;
+    )
+  }
+}

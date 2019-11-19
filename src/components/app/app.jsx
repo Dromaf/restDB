@@ -35,7 +35,7 @@ export default class App extends Component {
   onOptionChangeFork = (e) => {
     const { options } = this.state;
     let index
-    if (e.target.name) {
+    if (e.target.checked) {
       options.push(e.target.name)
     }
     else {
@@ -84,7 +84,7 @@ export default class App extends Component {
             />
             <Route
               path="/location"
-              render={() => <Location {...props} />}
+              render={() => <Location {...props} options={this.state.options} onOptionChangeFork={this.onOptionChangeFork} />}
             />
             <Route
               path="/favorite"

@@ -31,15 +31,11 @@ export default class Fork extends Component {
       }
       return (
         <div key={index} >
-
-
-          <button className={s.forkButton}
-            onClick={this.props.onOptionChangeFork}
-            type="button"
+          <input 
+            onChange={this.props.onOptionChangeFork}
+            type="checkbox"
             name={type}
-          > {childtypeFilter[index]}
-          </button>
-
+          /> {childtypeFilter[index]}
         </div>
       );
     });
@@ -47,11 +43,11 @@ export default class Fork extends Component {
   render() {
     return (
       <div >
-        <div className={s.mainFork}>
+        <div >
           {this.renderType()}
         </div>
         <Link to={`/card`}>
-          <button className={s.forkButton}
+          <button className={s.forkFilterBtn}
             type="button"
           > Filter
           </button>

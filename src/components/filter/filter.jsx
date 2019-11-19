@@ -131,17 +131,13 @@ export default class Filter extends Component {
             );
         });
     }
-
-
-
-
     render() {
         return (
             <div className={s.main}>
                 <div className={s.checkboxName}>Районы
                      <div className={s.checkboxSize_distr}>
-                        <select value={this.props.value} onChange={this.props.onOptionChangeSelect} className={s.selectReg}>
-                            <option value="">Выберите район:</option>
+                        <select value={this.props.value}  onChange={this.props.onOptionChangeSelect} className={s.selectReg}>
+                            <option value="" >Выберите район:</option>
                             {this.renderCheckboxesDistrict()}
                         </select>
                     </div>
