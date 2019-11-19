@@ -13,26 +13,26 @@ const Home = props => {
     <div >
       <div className={s.main}>
         <div className={`${s.main_item} ${s.main_item_first}`} >
-        <Link to={`/worktime`}>
-          <button className={s.main_text}>
-            <img src={place} alt={place} />
-            Расположение
+          <Link to={`/location`}>
+            <button className={s.main_text}>
+              <img src={place} alt={place} />
+              Расположение
           </button>
           </Link>
         </div>
         <div className={s.main_item}>
-        <Link to={`/worktime`}>
-          <button className={s.main_text}>
-            <img src={time} alt={time} />
-            Время работы
+          <Link to={`/worktime`}>
+            <button className={s.main_text}>
+              <img src={time} alt={time} />
+              Время работы
           </button>
           </Link>
         </div>
         <div className={s.main_item}>
-        <Link to={`/fork`}>
-          <button className={s.main_text}>
-            <img src={fork} alt={fork} />
-            Тип заведения
+          <Link to={`/fork`}>
+            <button className={s.main_text}>
+              <img src={fork} alt={fork} />
+              Тип заведения
           </button>
           </Link>
         </div>

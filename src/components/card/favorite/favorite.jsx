@@ -29,8 +29,8 @@ class Favorite extends React.Component {
     deleteFavorite(e) {
         const { favorite } = this.state
         console.log(favorite, e.target.id)
-        for (var i = 0; i < favorite.length; i++) {
-            var obj = favorite[i];
+        for (let i = 0; i < favorite.length; i++) {
+            let obj = favorite[i];
 
             if (e.target.id.indexOf(obj.id) !== -1) {
                 favorite.splice(i, 1);

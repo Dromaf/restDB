@@ -1,35 +1,13 @@
-.main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;  
-}
-.main_item {
-    width: 140px;
-    height: 140px;
+.workFilterBtn{
+    background: rgba(255, 228, 220, 0.2);
     border: 1px solid #FFE4DC;
-    border-radius: 70px;
-    text-align: center;
     box-sizing: border-box;
-    color:#FFE4DC;
-    margin: 15px;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.50);
-}
-.main_item_first {
-    margin: 50px 41px 12px 41px;
-}
-.main_text{
- align-self: center;
-}
-.main_img{
-    align-self: center;
-}
-
-img {
-    border-style: none;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFE4DC;
+    padding: 10px 15px;
+    margin: 19px auto;
     display: block;
-    margin: 0px auto;
-    margin-bottom: 15px;
+    cursor: pointer; 
 }
