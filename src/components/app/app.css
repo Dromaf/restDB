@@ -1,7 +1,7 @@
 body {
     font-family: 'appetite', sans-serif;
     font-size: 14px;
-    background-color: #383838;
+    background-color: #000000;
     color: #fff;
    
 }
@@ -17,7 +17,8 @@ a {
 #container {
     background: url(../app/img/bg-fon.jpg) no-repeat top center;
     background-color: rgb(0, 0, 0);
-    min-height: 640px;
+	min-height: 640px;
+	background-size: cover;
     max-width: 360px;
     margin: 0px auto;
 }
