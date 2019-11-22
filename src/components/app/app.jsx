@@ -66,6 +66,10 @@ export default class App extends Component {
       options = options.filter(item => item !== value2)
       options = options.filter(item => item !== value1)
       options.push(e.target.value)
+    } else {
+      options = options.filter(item => item !== value3)
+      options = options.filter(item => item !== value2)
+      options = options.filter(item => item !== value1)
     }
     this.setState({ options: options })
     console.log(options)
