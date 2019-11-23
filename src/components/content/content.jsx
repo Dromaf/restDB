@@ -47,10 +47,15 @@ class Content extends React.Component {
   };
 
   timeFilter(rests){
+    let start = Date.parse(`Wed, 09 Aug 1990 ${this.props.filterTime.start}:00 GMT`);
+    let end = Date.parse(`Wed, 09 Aug 1990 ${this.props.filterTime.end}:00 GMT`);
+
     return rests.filter((item)=>{
-      // item.openTime
-      // item.closeTime
-      return true
+      let itemStart = Date.parse(`Wed, 09 Aug 1990 ${item.openTime}:00 GMT`);
+      let itemEnd = Date.parse(`Wed, 09 Aug 1990 ${item.closeTime}:00 GMT`);
+      
+     console.log( this.props.filterTime)
+      return (start <= itemStart && end >=itemEnd)
     })
   }
 
