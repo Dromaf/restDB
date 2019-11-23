@@ -32,10 +32,14 @@ export default class Worktime extends Component {
 
   changeCompleteHandler(time) {
     console.log("Complete Handler Called", time);
+    let {options} = this.props
+    options.push(time)
+    console.log(options)
   }
 
 
   render() {
+    console.log(this.props)
     return (
       <div className={s.bgfon}>
         <header className={s.header}>

@@ -96,7 +96,7 @@ export default class App extends Component {
             />
             <Route
               path="/worktime"
-              render={() => <Worktime {...props} />}
+              render={() => <Worktime {...props} options={this.state.options}/>}
             />
             <Route
               path="/fork"

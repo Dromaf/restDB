@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import s from "./location.module.css";
 import { Link } from "react-router-dom";
+import GoBack from "../../back/back";
 const translation = {
   Shevchenkovskiy: "Шевченковский",
   Oktyabrksiy: "Подольский",
@@ -38,6 +39,10 @@ export default class Location extends Component {
   render() {
     return (
       <div >
+         <header className={s.header}>
+          <div className={s.header_arrow}> <GoBack /> </div>
+          <div className={s.star}> <Link to={`/favorite`} ></Link></div>
+        </header>
         <div >
           {this.renderType()}
         </div>

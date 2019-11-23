@@ -13,6 +13,7 @@ class Content extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      favorite: JSON.parse(localStorage.getItem('favorite')) || [],
       showMore: false,
       term: '',
       favoriteList: [],
@@ -45,6 +46,14 @@ class Content extends React.Component {
     })
   };
 
+  timeFilter(rests){
+    return rests.filter((item)=>{
+      // item.openTime
+      // item.closeTime
+      return true
+    })
+  }
+
   getItems() {
     let list = this.props.state.restaurDb;
     let restParams = [`district`, `type`, `cuisine`, `advantages`];
@@ -61,29 +70,30 @@ class Content extends React.Component {
       }
     }
     console.log(filterRests);
-    return filterRests;
+    return this.timeFilter(filterRests);
   }
 
   addFavorite(e) {
     let list = this.props.state.restaurDb;
     let local = list;
     // let indexLocal
-    const { favoriteList } = this.state
-    if (favoriteList.indexOf(e.target.id) === -1) {
-      favoriteList.push(e.target.id);
-      console.log(favoriteList);
+    
+    const { favorite } = this.state
+    if (favorite.indexOf(e.target.id) === -1) {
+      favorite.push(e.target.id);
+      console.log(favorite);
       console.log(`значение добавлено`);
     } else {
       // indexLocal = favoriteList.indexOf(e.target.id)
       // favoriteList.splice(indexLocal, 1)
       console.log(`значение удалено`);
     }
-    this.setState({ favoriteList: favoriteList })
+    this.setState({ favorite: favorite })
 
 
     let favorlocal = [];
-    for (let j = 0; j < favoriteList.length; j++) {
-      const key = favoriteList[j];
+    for (let j = 0; j < favorite.length; j++) {
+      const key = favorite[j];
       for (let i = 0; i < local.length; i++) {
         if (local[i].id === +key) {
           favorlocal.push(local[i]);
@@ -100,7 +110,56 @@ class Content extends React.Component {
     let a3 = Array.from(hash.values());
     localStorage.setItem('favorite', JSON.stringify(a3));
 
+    this.setState({ favorite: a3 })
+
     console.log(a3);
+  }
+  deleteFavorite(e) {
+    const { favorite } = this.state
+
+    console.log("filter")
+    console.log(favorite)
+    let favorNew = favorite.filter((fav)=>{
+      return parseInt(fav.id) !== parseInt(e.target.id);
+    })
+    
+    console.log(favorNew)
+    console.log("filter END")
+    localStorage.setItem('favorite', JSON.stringify(favorNew));
+    this.setState({ favorite: favorNew })
+
+}
+  favoriteDeleteButton(item){
+    return(
+      <button
+                id={item.id}
+                onClick={this.deleteFavorite.bind(this)}
+                className={s.delfavorButtorn}>
+      </button>
+    );
+  }
+  favoriteAddButton(item){
+    return(
+      <button
+                id={item.id}
+                onClick={this.addFavorite.bind(this)}
+                className={s.favorButton}>
+                
+      </button>
+    );
+    
+  }
+
+  favButton(item) {
+    let localFavors = JSON.parse(localStorage.getItem('favorite')) || [];
+    let favorIds = localFavors.map((item) => {
+     return item.id;
+    });
+    if(favorIds.indexOf(item.id) === -1){
+      return this.favoriteAddButton(item)
+    } else {
+      return this.favoriteDeleteButton(item)
+    }
   }
 
   render() {
@@ -126,16 +185,15 @@ class Content extends React.Component {
         }
         <Search onSearchChange={this.onSearchChange.bind(this)} />
         {visibleItems.slice(0, numberOfItems).map((item) => {
+          
+          
           return (
             <div key={item.id} className={s.favorCont}>
               <Link to={`/card/${item.id}`}>
                 <ContentList restaurDb={item} />
               </Link>
-              <button
-                id={item.id}
-                onClick={this.addFavorite.bind(this)}
-                className={s.favorButton}>
-              </button>
+              {this.favButton(item)}
+            
             </div>
           )
         })}
