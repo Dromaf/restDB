@@ -7,6 +7,7 @@ import Worktime from "../home/worktime/worktime";
 import Fork from "../home/fork/fork";
 import "normalize.css";
 import "./app.css";
+
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Favorite from "../card/favorite/favorite";
 
@@ -15,8 +16,11 @@ export default class App extends Component {
     super(props);
     this.state = {
       options: [],
+      filterTime: {
+        start: "00:00",
+        end: "23:59"
+      }
     }
-
   }
   onOptionChange = (e) => {
     const { options } = this.state;
@@ -28,7 +32,10 @@ export default class App extends Component {
       index = options.indexOf(e.target.name)
       options.splice(index, 1)
     }
-    this.setState({ options: options })
+    this.setState({
+      ...this.state,
+      options: options,
+     })
     //this.props.onOptionChange(options);
     console.log(options)
   }
@@ -42,11 +49,20 @@ export default class App extends Component {
       index = options.indexOf(e.target.name)
       options.splice(index, 1)
     }
-    this.setState({ options: options })
+    this.setState({ 
+      ...this.state,
+      options: options, })
     //this.props.onOptionChange(options);
     console.log(options)
   }
 
+  timeChangeHandler=(time)=>  {
+    console.log(time)
+    this.setState({
+      ...this.state,
+      filterTime: time
+    });
+  }
 
   onOptionChangeSelect = (e) => {
     let options = this.state.options
@@ -96,7 +112,13 @@ export default class App extends Component {
             />
             <Route
               path="/worktime"
-              render={() => <Worktime {...props} />}
+              render={() => <Worktime
+              timeValue={this.state.filterTime}
+              options={this.state.options} 
+              timeChangeHandler={this.timeChangeHandler}
+              />
+                        
+            }
             />
             <Route
               path="/fork"
@@ -108,6 +130,7 @@ export default class App extends Component {
               exact
               render={() => <Content {...props}
                 options={this.state.options}
+                filterTime={this.state.filterTime}
                 onOptionChangeSelect={this.onOptionChangeSelect}
                 onOptionChange={this.onOptionChange} />}
             />
