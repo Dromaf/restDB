@@ -202,7 +202,10 @@ class Content extends React.Component {
             </div>
           )
         })}
-        <button className={s.button_more} onClick={() => this.handleClick()}>Показать все</button>
+        { !this.state.showMore && visibleItems.length > 5 ?
+         <button className={s.button_more} onClick={() => this.handleClick()} >Показать все</button> 
+         : null }
+        
 
       </div>
     );
