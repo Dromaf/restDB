@@ -22,15 +22,25 @@ export default class Location extends Component {
     const status = this.props.state.restaurDb[0].district
     return Object.keys(status).map((type, index) => {
       let childtypeFilter = [];
+      let checkedTarget = '';
       for (let key in status) {
         childtypeFilter.push(`${translation[key]}`);
+      } 
+      for (let i = 0; i < this.props.options.length; i++) {
+        if (this.props.options[i] === type) {
+          checkedTarget = `checked`
+        }
       }
       return (
         <div key={index} >
+         
           <input 
-            onChange={this.props.onOptionChangeFork}
-            type="checkbox"
-            name={type}
+            id={index}
+            onChange={this.props.onOptionChangeLocation}
+            type="radio"
+            name="location"
+            value={type}
+            defaultChecked={checkedTarget}
           /> {childtypeFilter[index]}
         </div>
       );
@@ -52,7 +62,6 @@ export default class Location extends Component {
           > Filter
           </button>
         </Link>
-
 
       </div>
     )

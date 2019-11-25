@@ -136,7 +136,7 @@ export default class Filter extends Component {
             <div className={s.main}>
                 <div className={s.checkboxName}>Районы
                      <div className={s.checkboxSize_distr}>
-                        <select value={this.props.value}  onChange={this.props.onOptionChangeSelect} className={s.selectReg}>
+                        <select value={this.props.value} onChange={this.props.onOptionChangeSelect} className={s.selectReg}>
                             <option value="" >Выберите район:</option>
                             {this.renderCheckboxesDistrict()}
                         </select>
@@ -149,7 +149,8 @@ export default class Filter extends Component {
                     <div className={s.checkboxSize}> {this.renderCheckboxesСuisine()}</div>
                 </div>
                 <button onClick={this.props.closePopup} className={s.closePopupClose}>Фильтровать</button>
-            </div>
+                <button onClick={() => { this.props.resetOptionsChange(); this.props.closePopup() }} className={s.closePopupClose}>Сбросить фильтр</button>
+            </div >
         );
     }
 }
