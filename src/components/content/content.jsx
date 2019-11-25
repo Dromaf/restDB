@@ -46,16 +46,43 @@ class Content extends React.Component {
     })
   };
 
+  dateRangeOverlaps(a_start, a_end, b_start, b_end) {
+    if (a_start <= b_start && b_start <= a_end) return true; // b starts in a
+    if (a_start <= b_end   && b_end   <= a_end) return true; // b ends in a
+    if (b_start <  a_start && a_end   <  b_end) return true; // a in b
+    return false;
+}
+  multipleDateRangeOverlaps() {
+    var i, j;
+    if (arguments.length % 2 !== 0)
+        throw new TypeError('Arguments length must be a multiple of 2');
+    for (i = 0; i < arguments.length - 2; i += 2) {
+        for (j = i + 2; j < arguments.length; j += 2) {
+            if (
+                this.dateRangeOverlaps(
+                    arguments[i], arguments[i+1],
+                    arguments[j], arguments[j+1]
+                )
+            ) return true;
+        }
+    }
+    return false;
+}
   timeFilter(rests) {
+    // let start = Date.parse(`Wed, 09 Aug 1990 ${this.props.filterTime.start}:00 GMT`);
+    // let end = Date.parse(`Wed, 09 Aug 1990 ${this.props.filterTime.end}:00 GMT`);
+   
     let start = Date.parse(`Wed, 09 Aug 1990 ${this.props.filterTime.start}:00 GMT`);
     let end = Date.parse(`Wed, 09 Aug 1990 ${this.props.filterTime.end}:00 GMT`);
 
     return rests.filter((item) => {
       let itemStart = Date.parse(`Wed, 09 Aug 1990 ${item.openTime}:00 GMT`);
-      let itemEnd = Date.parse(`Wed, 09 Aug 1990 ${item.closeTime}:00 GMT`);
+      let itemEnd = Date.parse(`Wed, 10 Aug 1990 ${item.closeTime}:00 GMT`);
 
       console.log(this.props.filterTime)
-      return (start <= itemStart && end >= itemEnd)
+      console.log(item.openTime, item.closeTime, this.props.filterTime.start, this.props.filterTime.end)
+      return  this.dateRangeOverlaps( start, end, itemStart, itemEnd)
+
     })
   }
 
@@ -149,7 +176,6 @@ class Content extends React.Component {
         id={item.id}
         onClick={this.addFavorite.bind(this)}
         className={s.favorButton}>
-
       </button>
     );
 
