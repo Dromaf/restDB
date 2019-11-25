@@ -56,6 +56,36 @@ export default class App extends Component {
     //this.props.onOptionChange(options);
     console.log(options)
   }
+  onOptionChangeLocation = (e) => {
+    let { options } = this.state;
+    let value1 = "Shevchenkovskiy";
+    let value2 = "Kievskiy";
+    let value3 = "Oktyabrksiy";
+    console.log(e.target.value)
+    if (e.target.value === "Shevchenkovskiy" && e.target.checked === true) {
+      options = options.filter(item => item !== value2)
+      options = options.filter(item => item !== value3)
+      options.push(e.target.value)
+    } else if (e.target.value === "Kievskiy" && e.target.checked === true) {
+      options = options.filter(item => item !== value3)
+      options = options.filter(item => item !== value1)
+      options.push(e.target.value)
+    } else if (e.target.value === "Oktyabrksiy" && e.target.checked === true) {
+      options = options.filter(item => item !== value2)
+      options = options.filter(item => item !== value1)
+      options.push(e.target.value)
+    } else {
+      options = options.filter(item => item !== value3)
+      options = options.filter(item => item !== value2)
+      options = options.filter(item => item !== value1)
+    }
+    this.setState({
+      ...this.state,
+      options: options,
+    })
+    //this.props.onOptionChange(options);
+    console.log(options)
+  }
 
   timeChangeHandler = (time) => {
     console.log(time)
@@ -118,7 +148,7 @@ export default class App extends Component {
             />
             <Route
               path="/location"
-              render={() => <Location {...props} options={this.state.options} onOptionChangeFork={this.onOptionChangeFork} />}
+              render={() => <Location {...props} options={this.state.options} onOptionChangeLocation={this.onOptionChangeLocation} />}
             />
             <Route
               path="/favorite"
