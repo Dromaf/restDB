@@ -59,7 +59,7 @@ export default class Location extends Component {
         <Link to={`/card`}>
           <button className={s.locFilterBtn}
             type="button"
-          > Filter
+          > Фильтровать
           </button>
         </Link>
 

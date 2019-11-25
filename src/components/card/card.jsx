@@ -2,7 +2,8 @@ import React from "react";
 import s from "./card.module.css";
 import PopUpTel from "./popUpTel/popUpTel";
 import GoBack from "../back/back";
-
+import { Link } from "react-router-dom";
+import star from "../home/worktime/img/star.svg";
 
 const translation = {
   pub: "Паб",
@@ -103,9 +104,10 @@ class Card extends React.Component {
 
     return (
       <div className={s.bgfon}>
-        <div className={s.arrow_back}>
-            <GoBack/>
-          </div>
+         <header className={s.header}>
+          <div className={s.header_arrow}> <GoBack /> </div>
+          <div className={s.star}> <Link to={`/favorite`} ><img src={star} alt={star} /></Link></div>
+        </header>
         <div className={s.main_content}>
           
           {this.state.telephoneBlockStatus && <PopUpTel telephone={restdb.telephone} />}

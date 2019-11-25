@@ -65,7 +65,7 @@ export default class Fork extends Component {
         <Link to={`/card`}>
           <button className={s.forkFilterBtn}
             type="button"
-          > Filter
+          > Фильтровать
           </button>
         </Link>
 
