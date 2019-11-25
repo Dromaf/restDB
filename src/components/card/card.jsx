@@ -109,7 +109,7 @@ class Card extends React.Component {
         <div className={s.main_content}>
           
           {this.state.telephoneBlockStatus && <PopUpTel telephone={restdb.telephone} />}
-          <img src={restdb.image} alt={restdb.image} />
+          <img src={restdb.image} alt={restdb.image}/>
           <h1>{restdb.title}</h1>
           <h2 className={s.type}>
             {type + ''}
@@ -117,27 +117,42 @@ class Card extends React.Component {
           <div className={s.work_time}>
             Время работы:
               <br />
-            {'с ' + restdb.openTime + ' '}{'до ' + restdb.closeTime}
+              <div className={s.insideInfoStyle}>
+                {'с ' + restdb.openTime + ' '}{'до ' + restdb.closeTime}
+              </div>
           </div>
           <br />
-          <div className={s.adress}>Адрес: {restdb.adress}</div>
+          <div className={s.adress}>Адрес: 
+          <div className={s.insideInfoStyle}>
+          {restdb.adress}</div>
+          </div>
           <br />
           <div className={s.telephone}>Телефон:
             <br />
+            <div className={s.insideInfoStyle}>
             {restdb.telephone + ' '}</div>
+            </div>
           <br />
           <div className={s.cuisine}>
             Кухня:
             <br />
+            <div className={s.insideInfoStyle}>
             {cuisine + ' '}
+            </div>
           </div>
           <br />
-          <div className={s.links}>{restdb.links}</div>
+          <div className={s.links}>
+            Соц. сети:
+            <div className={s.insideInfoStyle}>
+            {restdb.links}</div>
+            </div>
           <br />
           <div className={s.advantages}>
             Дополнительные услуги:
               <br />
+              <div className={s.insideInfoStyle}>
             {advantages + ' '}
+            </div>
             <br />
           </div>
           <button className={s.make_route_button}

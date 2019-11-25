@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import s from "./fork.module.css";
 import { Link } from "react-router-dom";
+import GoBack from "../../back/back";
+
 const translation = {
   pub: "Паб",
   restaurant: " Ресторан",
@@ -36,20 +38,27 @@ export default class Fork extends Component {
         }
       }
       return (
-        <div key={index} >
-          <input
+        <div className={`${s.checkboxHeight} ${s.typeStyles}`} style={{width:"100%"}} key={index}>
+        <label className="checkbox">
+        <input
             onChange={this.props.onOptionChangeFork}
             type="checkbox"
             name={type}
+            className={s.inputTypeStyle}
             defaultChecked={proverka}
-          /> {childtypeFilter[index]}
-        </div>
+          /> 
+            <div className="checkbox__text">{childtypeFilter[index]}</div>
+        </label>
+    </div>
+
       );
+      
     });
   }
   render() {
     return (
-      <div >
+      <div className={s.Background_container}>
+        <div className={s.arrow_back}><GoBack /></div>
         <div >
           {this.renderType()}
         </div>

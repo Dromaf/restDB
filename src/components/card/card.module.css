@@ -4,6 +4,14 @@
     background: url(../content/img/bgloc.png) no-repeat center center /cover;
 }
 
+.imgStyle{
+    border: solid white 2px;
+}
+
+h1{
+    color: #d89b89 !important;
+}
+
 .arrow_back{
     padding-top: 30px;
 }
@@ -58,10 +66,18 @@
     margin-top: 25px;
 }
 
+.insideInfoStyle{
+    color: #fff;
+    font-size: 17px;
+}
+
+
 .type, .work_time, .adress, .telephone, .cuisine, .links, .advantages{
     font-size: 16px;
     padding-left: 5%;
     padding-right: 5%;
+    color: #c47a64;
+
 }
 
 .links,  .cuisine, .advantages{
@@ -87,4 +103,10 @@
     margin: 25px auto;
     display: block;
     cursor: pointer;
+}
+
+.make_route_button:hover{
+    color: #3a2923;
+    background:#d8c6c0b5;
+
 }
