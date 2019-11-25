@@ -1,7 +1,6 @@
 .main_content {
     display: flex;
     flex-flow: column;
-    background: url(../content/img/bgloc.png) no-repeat center center /cover;
 }
 
 .imgStyle{
@@ -55,6 +54,7 @@ h1{
 .bgfon {
     background-color: rgb(0, 0, 0);
     min-height: 640px;
+    background: url(/static/media/bgloc.94c9d204.png) no-repeat center center /cover;
 }
 
 .main_content img{
@@ -110,3 +110,25 @@ h1{
     background:#d8c6c0b5;
 
 }
+
+
+.header {
+    max-width: 300px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    flex-wrap: wrap;
+    background-color: #00000025;
+  }
+  .star img{
+    width: 25px;
+  }
+  .star{
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  .header_arrow{
+    align-self: flex-end;
+    cursor: pointer;
+  }
