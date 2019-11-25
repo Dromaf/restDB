@@ -48,30 +48,30 @@ class Content extends React.Component {
 
   dateRangeOverlaps(a_start, a_end, b_start, b_end) {
     if (a_start <= b_start && b_start <= a_end) return true; // b starts in a
-    if (a_start < b_end   && b_end   <= a_end) return true; // b ends in a
-    if (b_start <  a_start && a_end   <  b_end) return true; // a in b
+    if (a_start < b_end && b_end <= a_end) return true; // b ends in a
+    if (b_start < a_start && a_end < b_end) return true; // a in b
     return false;
-}
+  }
   multipleDateRangeOverlaps() {
     var i, j;
     if (arguments.length % 2 !== 0)
-        throw new TypeError('Arguments length must be a multiple of 2');
+      throw new TypeError('Arguments length must be a multiple of 2');
     for (i = 0; i < arguments.length - 2; i += 2) {
-        for (j = i + 2; j < arguments.length; j += 2) {
-            if (
-                this.dateRangeOverlaps(
-                    arguments[i], arguments[i+1],
-                    arguments[j], arguments[j+1]
-                )
-            ) return true;
-        }
+      for (j = i + 2; j < arguments.length; j += 2) {
+        if (
+          this.dateRangeOverlaps(
+            arguments[i], arguments[i + 1],
+            arguments[j], arguments[j + 1]
+          )
+        ) return true;
+      }
     }
     return false;
-}
+  }
   timeFilter(rests) {
     // let start = Date.parse(`Wed, 09 Aug 1990 ${this.props.filterTime.start}:00 GMT`);
     // let end = Date.parse(`Wed, 09 Aug 1990 ${this.props.filterTime.end}:00 GMT`);
-   
+
     let start = Date.parse(`Wed, 09 Aug 1990 ${this.props.filterTime.start}:00 GMT`);
     let end = Date.parse(`Wed, 09 Aug 1990 ${this.props.filterTime.end}:00 GMT`);
 
@@ -81,7 +81,7 @@ class Content extends React.Component {
 
       console.log(this.props.filterTime)
       console.log(item.openTime, item.closeTime, this.props.filterTime.start, this.props.filterTime.end)
-      return  this.dateRangeOverlaps( start, end, itemStart, itemEnd)
+      return this.dateRangeOverlaps(start, end, itemStart, itemEnd)
 
     })
   }
@@ -215,23 +215,27 @@ class Content extends React.Component {
           : null
         }
         <Search onSearchChange={this.onSearchChange.bind(this)} />
-        {visibleItems.slice(0, numberOfItems).map((item) => {
 
 
-          return (
-            <div key={item.id} className={s.favorCont}>
-              <Link to={`/card/${item.id}`}>
-                <ContentList restaurDb={item} />
-              </Link>
-              {this.favButton(item)}
+        {
+          visibleItems.length > 0 ?
+            visibleItems.slice(0, numberOfItems).map((item) => {
+              return (
+                <div key={item.id} className={s.favorCont}>
+                  <Link to={`/card/${item.id}`}>
+                    <ContentList restaurDb={item} />
+                  </Link>
+                  {this.favButton(item)}
 
-            </div>
-          )
-        })}
-        { !this.state.showMore && visibleItems.length > 5 ?
-         <button className={s.button_more} onClick={() => this.handleClick()} >Показать все</button> 
-         : null }
-        
+                </div>
+              )
+            }) : <p style={{ textAlign: 'center' }}>По заданным критериям ничего не найдено!</p>
+
+        }
+        {!this.state.showMore && visibleItems.length > 5 ?
+          <button className={s.button_more} onClick={() => this.handleClick()} >Показать все</button>
+          : null}
+
 
       </div>
     );

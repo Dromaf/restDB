@@ -57,21 +57,29 @@ class Favorite extends React.Component {
                         closePopup={this.togglePopup.bind(this)}
                     />
                     : null
+                } {
+                    this.state.favorite.length > 0 ?
+                        this.state.favorite && this.state.favorite.map((item) => {
+                            return (
+
+                                <div key={item.id} className={s.favorCont}>
+                                    <Link to={`/card/${item.id}`}>
+                                        <ContentList restaurDb={item} />
+                                    </Link>
+                                    <button
+                                        id={item.id}
+                                        onClick={this.deleteFavorite.bind(this)}
+                                        className={s.delfavorButtorn}>
+                                    </button>
+                                </div>
+
+
+                            )
+
+                        })
+                        : <p style={{ textAlign: 'center' }}>Ваш список избранного пуст!</p>
                 }
-                {this.state.favorite && this.state.favorite.map((item) => {
-                    return (
-                        <div key={item.id} className={s.favorCont}>
-                            <Link to={`/card/${item.id}`}>
-                                <ContentList restaurDb={item} />
-                            </Link>
-                            <button
-                                id={item.id}
-                                onClick={this.deleteFavorite.bind(this)}
-                                className={s.delfavorButtorn}>
-                            </button>
-                        </div>
-                    )
-                })}
+
             </div>
         );
     }
