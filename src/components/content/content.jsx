@@ -48,7 +48,7 @@ class Content extends React.Component {
 
   dateRangeOverlaps(a_start, a_end, b_start, b_end) {
     if (a_start <= b_start && b_start <= a_end) return true; // b starts in a
-    if (a_start <= b_end   && b_end   <= a_end) return true; // b ends in a
+    if (a_start < b_end   && b_end   <= a_end) return true; // b ends in a
     if (b_start <  a_start && a_end   <  b_end) return true; // a in b
     return false;
 }
@@ -77,7 +77,7 @@ class Content extends React.Component {
 
     return rests.filter((item) => {
       let itemStart = Date.parse(`Wed, 09 Aug 1990 ${item.openTime}:00 GMT`);
-      let itemEnd = Date.parse(`Wed, 10 Aug 1990 ${item.closeTime}:00 GMT`);
+      let itemEnd = Date.parse(`Wed, 09 Aug 1990 ${item.closeTime}:00 GMT`);
 
       console.log(this.props.filterTime)
       console.log(item.openTime, item.closeTime, this.props.filterTime.start, this.props.filterTime.end)
