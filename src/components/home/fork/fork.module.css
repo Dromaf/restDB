@@ -2,6 +2,11 @@
     display: flex;
     flex-wrap: wrap;
 }
+.Background_container{
+  background: url(/static/media/bgloc.94c9d204.png) center center;
+  background-size: cover;
+  min-height: 650px;
+}
 
 .forkButton{
     align-self: center;
@@ -32,32 +37,27 @@
     cursor: pointer; 
 }
 
-/* 
-Style for button
-
-input.chk-btn {
-  display: none;
+.typeStyles{
+  font-size: 20px;
+  border-bottom: solid #5b4d4d 2px;
+  padding-right: 5px;
+  padding: 30px;
 }
-input.chk-btn + label {
-  border: 1px solid grey;
-  background: ghoswhite;
-  padding: 5px 8px;
+
+.checkboxHeight{
+	  height: 30px;
+    position: relative;
+    width: 170px;
+    text-align: left;
+}
+.typeStyles:first-child{
+  padding-top: 15px;
+}
+
+.arrow_back{
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-left: 15px;
+  display: inline-block;
   cursor: pointer;
-  border-radius: 5px;
 }
-input.chk-btn:not(:checked) + label:hover {
-  box-shadow: 0px 1px 3px;
-}
-input.chk-btn + label:active,
-input.chk-btn:checked + label {
-  box-shadow: 0px 0px 3px inset;
-  background: #eee;
-}
-
-<input type="checkbox" id='c1' class='chk-btn' />
-<label for='c1'>Check Button</label>
-<input type="checkbox" id='c2' class='chk-btn' />
-<label for='c2'>Toggle</label>
-
-http://qaru.site/questions/12141/how-to-make-a-check-button-hidden-checkbox-with-label-as-a-button-css-only
-*/
