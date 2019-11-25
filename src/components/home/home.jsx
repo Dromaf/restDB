@@ -3,6 +3,7 @@ import s from "./home.module.css";
 import time from "./img/time.png";
 import place from "./img/place.png";
 import fork from "./img/fork.png";
+import list from "./img/list.png";
 import { Link } from 'react-router-dom';
 import Content from "../content/content";
 import { BrowserRouter, Route } from "react-router-dom";
@@ -39,7 +40,7 @@ const Home = props => {
         <div className={s.main_item}>
           <Link to={`/card`}>
             <button className={s.main_text}>
-              <img src={fork} alt={fork} />
+              <img src={list} alt={list} />
               Список заведений
           </button>
           </Link>

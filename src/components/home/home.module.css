@@ -20,8 +20,8 @@
     margin: 50px 41px 12px 41px;
 }
 .main_text{
- align-self: center;
-   background-color: rgba(0, 0, 0, 0.50);
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.50);
     border: 1px solid #e7cec6;
     color: #fff;
     cursor: pointer;
@@ -32,6 +32,10 @@
     width: 140px;
     height: 140px;
     padding-bottom: 30px;
+}
+
+.main_text:hover{
+    background-color:#74565680;
 }
 .main_img{
     align-self: center;
