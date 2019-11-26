@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/restDB/static/css/main.d1b75204.chunk.css",
-    "main.js": "/restDB/static/js/main.6ab45e5e.chunk.js",
-    "main.js.map": "/restDB/static/js/main.6ab45e5e.chunk.js.map",
-    "runtime-main.js": "/restDB/static/js/runtime-main.ef90d2fd.js",
-    "runtime-main.js.map": "/restDB/static/js/runtime-main.ef90d2fd.js.map",
-    "static/css/2.72c2318d.chunk.css": "/restDB/static/css/2.72c2318d.chunk.css",
-    "static/js/2.a8e12b76.chunk.js": "/restDB/static/js/2.a8e12b76.chunk.js",
-    "static/js/2.a8e12b76.chunk.js.map": "/restDB/static/js/2.a8e12b76.chunk.js.map",
-    "index.html": "/restDB/index.html",
-    "precache-manifest.01bef2f8a4dffd2a0cb9ee56214c3162.js": "/restDB/precache-manifest.01bef2f8a4dffd2a0cb9ee56214c3162.js",
-    "service-worker.js": "/restDB/service-worker.js",
-    "static/css/2.72c2318d.chunk.css.map": "/restDB/static/css/2.72c2318d.chunk.css.map",
-    "static/css/main.d1b75204.chunk.css.map": "/restDB/static/css/main.d1b75204.chunk.css.map",
-    "static/media/app.css": "/restDB/static/media/bg-fon.dfbed061.jpg",
-    "static/media/back.svg": "/restDB/static/media/back.30893e0d.svg",
-    "static/media/favorite.module.css": "/restDB/static/media/trash.313b3291.svg",
-    "static/media/filter.svg": "/restDB/static/media/filter.2b8fb109.svg",
-    "static/media/star.svg": "/restDB/static/media/star.7157e475.svg"
+    "main.css": "/static/css/main.0cb9974f.chunk.css",
+    "main.js": "/static/js/main.17818674.chunk.js",
+    "main.js.map": "/static/js/main.17818674.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.016d065c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.016d065c.js.map",
+    "static/css/2.72c2318d.chunk.css": "/static/css/2.72c2318d.chunk.css",
+    "static/js/2.a8e12b76.chunk.js": "/static/js/2.a8e12b76.chunk.js",
+    "static/js/2.a8e12b76.chunk.js.map": "/static/js/2.a8e12b76.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.8f6ba4e9e38dd46042d3d86e77a14a80.js": "/precache-manifest.8f6ba4e9e38dd46042d3d86e77a14a80.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.72c2318d.chunk.css.map": "/static/css/2.72c2318d.chunk.css.map",
+    "static/css/main.0cb9974f.chunk.css.map": "/static/css/main.0cb9974f.chunk.css.map",
+    "static/media/app.css": "/static/media/bg-fon.dfbed061.jpg",
+    "static/media/back.svg": "/static/media/back.30893e0d.svg",
+    "static/media/favorite.module.css": "/static/media/trash.313b3291.svg",
+    "static/media/filter.svg": "/static/media/filter.2b8fb109.svg",
+    "static/media/star.svg": "/static/media/star.7157e475.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ef90d2fd.js",
+    "static/js/runtime-main.016d065c.js",
     "static/css/2.72c2318d.chunk.css",
     "static/js/2.a8e12b76.chunk.js",
-    "static/css/main.d1b75204.chunk.css",
-    "static/js/main.6ab45e5e.chunk.js"
+    "static/css/main.0cb9974f.chunk.css",
+    "static/js/main.17818674.chunk.js"
   ]
 }
