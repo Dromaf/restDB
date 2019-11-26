@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Dromaf/restDB/static/css/main.030453cc.chunk.css",
+    "main.js": "/Dromaf/restDB/static/js/main.bddd9e31.chunk.js",
+    "main.js.map": "/Dromaf/restDB/static/js/main.bddd9e31.chunk.js.map",
+    "runtime-main.js": "/Dromaf/restDB/static/js/runtime-main.4eca0bb9.js",
+    "runtime-main.js.map": "/Dromaf/restDB/static/js/runtime-main.4eca0bb9.js.map",
+    "static/css/2.72c2318d.chunk.css": "/Dromaf/restDB/static/css/2.72c2318d.chunk.css",
+    "static/js/2.a8e12b76.chunk.js": "/Dromaf/restDB/static/js/2.a8e12b76.chunk.js",
+    "static/js/2.a8e12b76.chunk.js.map": "/Dromaf/restDB/static/js/2.a8e12b76.chunk.js.map",
+    "index.html": "/Dromaf/restDB/index.html",
+    "precache-manifest.43220169a2f019dc702a48899b529a66.js": "/Dromaf/restDB/precache-manifest.43220169a2f019dc702a48899b529a66.js",
+    "service-worker.js": "/Dromaf/restDB/service-worker.js",
+    "static/css/2.72c2318d.chunk.css.map": "/Dromaf/restDB/static/css/2.72c2318d.chunk.css.map",
+    "static/css/main.030453cc.chunk.css.map": "/Dromaf/restDB/static/css/main.030453cc.chunk.css.map",
+    "static/media/app.css": "/Dromaf/restDB/static/media/bg-fon.dfbed061.jpg",
+    "static/media/back.svg": "/Dromaf/restDB/static/media/back.30893e0d.svg",
+    "static/media/favorite.module.css": "/Dromaf/restDB/static/media/trash.313b3291.svg",
+    "static/media/filter.svg": "/Dromaf/restDB/static/media/filter.2b8fb109.svg",
+    "static/media/star.svg": "/Dromaf/restDB/static/media/star.7157e475.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4eca0bb9.js",
+    "static/css/2.72c2318d.chunk.css",
+    "static/js/2.a8e12b76.chunk.js",
+    "static/css/main.030453cc.chunk.css",
+    "static/js/main.bddd9e31.chunk.js"
+  ]
+}
