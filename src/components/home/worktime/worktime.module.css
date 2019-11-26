@@ -11,6 +11,12 @@
     display: block;
     cursor: pointer; 
 }
+
+.workFilterBtn:hover{
+  color: #3a2923;
+  background:#d8c6c0b5;
+}
+
 .main {
   display: flex;
   flex-wrap: wrap;

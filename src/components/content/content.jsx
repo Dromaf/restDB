@@ -215,8 +215,6 @@ class Content extends React.Component {
           : null
         }
         <Search onSearchChange={this.onSearchChange.bind(this)} />
-
-
         {
           visibleItems.length > 0 ?
             visibleItems.slice(0, numberOfItems).map((item) => {

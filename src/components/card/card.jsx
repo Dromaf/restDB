@@ -146,7 +146,10 @@ class Card extends React.Component {
           <div className={s.links}>
             Соц. сети:
             <div className={s.insideInfoStyle}>
-            {restdb.links}</div>
+              <a href={restdb.links}>
+                {restdb.links}
+              </a>
+            </div>
             </div>
           <br />
           <div className={s.advantages}>
