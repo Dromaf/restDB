@@ -207,29 +207,30 @@ class Content extends React.Component {
           <div className={s.header_menu} onClick={this.togglePopup.bind(this)}><img src={filter} alt={filter} /></div>
         </header>
 
+        <Search onSearchChange={this.onSearchChange.bind(this)} />
         {this.state.showPopup ?
           <Filter {...this.props}
             text='Close Me'
             closePopup={this.togglePopup.bind(this)}
           />
-          : null
-        }
-        <Search onSearchChange={this.onSearchChange.bind(this)} />
-        {
-          visibleItems.length > 0 ?
-            visibleItems.slice(0, numberOfItems).map((item) => {
-              return (
-                <div key={item.id} className={s.favorCont}>
-                  <Link to={`/card/${item.id}`}>
-                    <ContentList restaurDb={item} />
-                  </Link>
-                  {this.favButton(item)}
 
-                </div>
-              )
-            }) : <p style={{ textAlign: 'center' }}>По заданным критериям ничего не найдено!</p>
-
+          : 
+            visibleItems.length > 0 ?
+              visibleItems.slice(0, numberOfItems).map((item) => {
+                return (
+                  <div key={item.id} className={s.favorCont}>
+                    <Link to={`/card/${item.id}`}>
+                      <ContentList restaurDb={item} />
+                    </Link>
+                    {this.favButton(item)}
+  
+                  </div>
+                )
+              }) : <p style={{ textAlign: 'center' }}>По заданным критериям ничего не найдено!</p>
+  
+          
         }
+        
         {!this.state.showMore && visibleItems.length > 5 ?
           <button className={s.button_more} onClick={() => this.handleClick()} >Показать все</button>
           : null}
