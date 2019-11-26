@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import s from "./filter.module.css";
-
+import TimeRangeSlider from 'react-time-range-slider';
 const translation = {
     Shevchenkovskiy: "Шевченковский",
     Oktyabrksiy: "Подольский",
@@ -142,12 +142,33 @@ export default class Filter extends Component {
                         </select>
                     </div>
                 </div>
+                <div className={s.time_range_position}>
+           
+                <div className={s.time_range}>
+                    <div className={s.time_title}> Время открытия: <div className={s.time_title_clock}>{this.props.timeValue.start}</div></div>
+                    <div className={s.time_title}> Время закрытия: <div className={s.time_title_clock}> {this.props.timeValue.end}</div></div>
+                </div>
+                <div className={s.time_range_slider}>
+                    <TimeRangeSlider
+                    disabled={false}
+                    format={24}
+                    maxValue={"23:59"}
+                    minValue={"00:00"}
+                    name={"time_range"}
+                    onChange={this.props.timeChangeHandler}
+                    step={60}
+                    value={this.props.timeValue} />
+                </div>
+           
+        </div>
                 <div className={s.checkboxName}>Типы заведений
                     <div className={s.checkboxSize}>{this.renderCheckboxesType()}</div>
                 </div>
                 <div className={s.checkboxName}>Кухня
                     <div className={s.checkboxSize}> {this.renderCheckboxesСuisine()}</div>
                 </div>
+        
+
                 <button onClick={this.props.closePopup} className={s.closePopupClose}>Фильтровать</button>
                 <button onClick={() => { this.props.resetOptionsChange(); this.props.closePopup() }} className={s.closePopupClose}>Сбросить фильтр</button>
             </div >
