@@ -32,8 +32,8 @@ export default class Location extends Component {
         }
       }
       return (
-        <div className={s.containerFlex}>
-            <div key={index} 
+        <div className={s.containerFlex} key={index} >
+            <div 
             className={s.radioStyleDisctrict}>
               <input 
                 id={index}
