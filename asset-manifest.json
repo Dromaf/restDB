@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/restdb/static/css/main.de507b77.chunk.css",
-    "main.js": "/restdb/static/js/main.0023a603.chunk.js",
-    "main.js.map": "/restdb/static/js/main.0023a603.chunk.js.map",
-    "runtime-main.js": "/restdb/static/js/runtime-main.6d10cf7c.js",
-    "runtime-main.js.map": "/restdb/static/js/runtime-main.6d10cf7c.js.map",
-    "static/css/2.72c2318d.chunk.css": "/restdb/static/css/2.72c2318d.chunk.css",
-    "static/js/2.a8e12b76.chunk.js": "/restdb/static/js/2.a8e12b76.chunk.js",
-    "static/js/2.a8e12b76.chunk.js.map": "/restdb/static/js/2.a8e12b76.chunk.js.map",
-    "index.html": "/restdb/index.html",
-    "precache-manifest.09c65d40329474cde07eb99a8dee8bc4.js": "/restdb/precache-manifest.09c65d40329474cde07eb99a8dee8bc4.js",
-    "service-worker.js": "/restdb/service-worker.js",
-    "static/css/2.72c2318d.chunk.css.map": "/restdb/static/css/2.72c2318d.chunk.css.map",
-    "static/css/main.de507b77.chunk.css.map": "/restdb/static/css/main.de507b77.chunk.css.map",
-    "static/media/app.css": "/restdb/static/media/bg-fon.dfbed061.jpg",
-    "static/media/back.svg": "/restdb/static/media/back.30893e0d.svg",
-    "static/media/favorite.module.css": "/restdb/static/media/trash.313b3291.svg",
-    "static/media/filter.svg": "/restdb/static/media/filter.2b8fb109.svg",
-    "static/media/star.svg": "/restdb/static/media/star.7157e475.svg"
+    "main.css": "/restDB.git/static/css/main.812ee646.chunk.css",
+    "main.js": "/restDB.git/static/js/main.97a5a378.chunk.js",
+    "main.js.map": "/restDB.git/static/js/main.97a5a378.chunk.js.map",
+    "runtime-main.js": "/restDB.git/static/js/runtime-main.9b6c9770.js",
+    "runtime-main.js.map": "/restDB.git/static/js/runtime-main.9b6c9770.js.map",
+    "static/css/2.72c2318d.chunk.css": "/restDB.git/static/css/2.72c2318d.chunk.css",
+    "static/js/2.a8e12b76.chunk.js": "/restDB.git/static/js/2.a8e12b76.chunk.js",
+    "static/js/2.a8e12b76.chunk.js.map": "/restDB.git/static/js/2.a8e12b76.chunk.js.map",
+    "index.html": "/restDB.git/index.html",
+    "precache-manifest.aa62090c97e8a3e03ac76b1c1b28f4ca.js": "/restDB.git/precache-manifest.aa62090c97e8a3e03ac76b1c1b28f4ca.js",
+    "service-worker.js": "/restDB.git/service-worker.js",
+    "static/css/2.72c2318d.chunk.css.map": "/restDB.git/static/css/2.72c2318d.chunk.css.map",
+    "static/css/main.812ee646.chunk.css.map": "/restDB.git/static/css/main.812ee646.chunk.css.map",
+    "static/media/app.css": "/restDB.git/static/media/bg-fon.dfbed061.jpg",
+    "static/media/back.svg": "/restDB.git/static/media/back.30893e0d.svg",
+    "static/media/favorite.module.css": "/restDB.git/static/media/trash.313b3291.svg",
+    "static/media/filter.svg": "/restDB.git/static/media/filter.2b8fb109.svg",
+    "static/media/star.svg": "/restDB.git/static/media/star.7157e475.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6d10cf7c.js",
+    "static/js/runtime-main.9b6c9770.js",
     "static/css/2.72c2318d.chunk.css",
     "static/js/2.a8e12b76.chunk.js",
-    "static/css/main.de507b77.chunk.css",
-    "static/js/main.0023a603.chunk.js"
+    "static/css/main.812ee646.chunk.css",
+    "static/js/main.97a5a378.chunk.js"
   ]
 }
