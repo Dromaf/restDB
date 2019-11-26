@@ -125,6 +125,7 @@ i.fas.fa-search{
 }
   .loader--hide {
     opacity: 0;
+    display: none;
   }
 
 h4 {
