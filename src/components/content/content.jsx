@@ -226,7 +226,11 @@ class Content extends React.Component {
   
                   </div>
                 )
-              }) : <p style={{ textAlign: 'center' }}>По заданным критериям ничего не найдено!</p>
+              }) : 
+              <div>
+              <p style={{ textAlign: 'center' }}>По заданным критериям ничего не найдено!</p>
+              <button onClick={() => { this.props.resetOptionsChange() }} className={s.button_more} >Сбросить фильтр</button>
+              </div>
   
           
         }
