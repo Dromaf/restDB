@@ -43,6 +43,11 @@
     cursor: pointer;
 }
 
+.closePopupClose:hover{
+    color: #3a2923;
+    background:#d8c6c0b5;
+}
+
 .selectReg{
     border-radius: 10px;
     background: #53403c;

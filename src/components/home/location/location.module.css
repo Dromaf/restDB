@@ -7,7 +7,43 @@
     letter-spacing: 0.06em;
     color: #FFE4DC;
     padding: 10px 15px;
-    margin: 19px auto;
+    margin: 0 auto;
+    margin-top: 4
+    0px;
     display: block;
     cursor: pointer; 
+    margin-top: 35px;
+ 
+}
+
+.locFilterBtn:hover{
+    color: #3a2923;
+    background:#d8c6c0b5;
+}
+
+.header_arrow{
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.containerFlex{
+    display: flex;
+    justify-content: center;
+}
+
+.containerFlex:hover{
+    opacity: 0.8;
+}
+
+.radioStyleDisctrict{
+    font-size: 25px;
+    border-bottom: solid #cd8b60 1px;
+    
+}
+.radioButtonStyle{
+    margin-bottom: 10px;
+    margin-top: 25px;
 }

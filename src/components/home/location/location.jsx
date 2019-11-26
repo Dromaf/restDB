@@ -32,17 +32,20 @@ export default class Location extends Component {
         }
       }
       return (
-        <div key={index} >
-         
-          <input 
-            id={index}
-            onChange={this.props.onOptionChangeLocation}
-            type="radio"
-            name="location"
-            value={type}
-            defaultChecked={checkedTarget}
-          /> {childtypeFilter[index]}
-        </div>
+        <div className={s.containerFlex}>
+            <div key={index} 
+            className={s.radioStyleDisctrict}>
+              <input 
+                id={index}
+                onChange={this.props.onOptionChangeLocation}
+                className={s.radioButtonStyle}
+                type="radio"
+                name="location"
+                value={type}
+                defaultChecked={checkedTarget}
+              /> {childtypeFilter[index]}
+            </div>
+          </div>
       );
     });
   }
