@@ -47,7 +47,16 @@
     color: #3a2923;
     background:#d8c6c0b5;
 }
-
+.time_range_position{
+    position: relative;
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.time_title_clock {
+    display: inline-block;
+    margin-bottom: 10px;
+}
 .selectReg{
     border-radius: 10px;
     background: #53403c;

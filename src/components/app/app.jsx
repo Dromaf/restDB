@@ -173,7 +173,9 @@ export default class App extends Component {
               path="/card"
               exact
               render={() => <Content {...props}
-                options={this.state.options}
+              timeValue={this.state.filterTime}
+              options={this.state.options}
+              timeChangeHandler={this.timeChangeHandler}
                 filterTime={this.state.filterTime}
                 onOptionChangeSelect={this.onOptionChangeSelect}
                 onOptionChange={this.onOptionChange}
