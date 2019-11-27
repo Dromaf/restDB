@@ -69,8 +69,6 @@ class Content extends React.Component {
     return false;
   }
   timeFilter(rests) {
-    // let start = Date.parse(`Wed, 09 Aug 1990 ${this.props.filterTime.start}:00 GMT`);
-    // let end = Date.parse(`Wed, 09 Aug 1990 ${this.props.filterTime.end}:00 GMT`);
 
     let start = Date.parse(`Wed, 09 Aug 1990 ${this.props.filterTime.start}:00 GMT`);
     let end = Date.parse(`Wed, 09 Aug 1990 ${this.props.filterTime.end}:00 GMT`);
@@ -79,9 +77,19 @@ class Content extends React.Component {
       let itemStart = Date.parse(`Wed, 09 Aug 1990 ${item.openTime}:00 GMT`);
       let itemEnd = Date.parse(`Wed, 09 Aug 1990 ${item.closeTime}:00 GMT`);
 
-      console.log(this.props.filterTime)
-      console.log(item.openTime, item.closeTime, this.props.filterTime.start, this.props.filterTime.end)
       return this.dateRangeOverlaps(start, end, itemStart, itemEnd)
+
+    })
+  }
+  timeFilterOnline(rests) {
+    let nowTime = new Date().getHours();
+    let date = Date.parse(`Wed, 09 Aug 1990 ${nowTime}:00 GMT`);
+
+    return rests.filter((item) => {
+      let itemStart = Date.parse(`Wed, 09 Aug 1990 ${item.openTime}:00 GMT`);
+      let itemEnd = Date.parse(`Wed, 09 Aug 1990 ${item.closeTime}:00 GMT`);
+
+      return (itemStart < date && date < itemEnd)
 
     })
   }
@@ -101,8 +109,11 @@ class Content extends React.Component {
         filterRests = filterRests.filter(item => item[restParam][key] === true);
       }
     }
-    console.log(filterRests);
-    return this.timeFilter(filterRests);
+    if (this.props.timeCurrent) {
+      return this.timeFilterOnline(filterRests);
+    } else {
+      return this.timeFilter(filterRests);
+    }
   }
 
   addFavorite(e) {
@@ -113,12 +124,9 @@ class Content extends React.Component {
     const { favorite } = this.state
     if (favorite.indexOf(e.target.id) === -1) {
       favorite.push(e.target.id);
-      console.log(favorite);
-      console.log(`значение добавлено`);
     } else {
       // indexLocal = favoriteList.indexOf(e.target.id)
       // favoriteList.splice(indexLocal, 1)
-      console.log(`значение удалено`);
     }
     this.setState({ favorite: favorite })
 
@@ -132,7 +140,6 @@ class Content extends React.Component {
         }
       }
     }
-    console.log(favorlocal);
     let newLocal = JSON.parse(localStorage.getItem('favorite')) || []
     let hash = new Map();
     newLocal.concat(favorlocal).forEach(function (obj) {
@@ -144,19 +151,14 @@ class Content extends React.Component {
 
     this.setState({ favorite: a3 })
 
-    console.log(a3);
   }
   deleteFavorite(e) {
     const { favorite } = this.state
 
-    console.log("filter")
-    console.log(favorite)
     let favorNew = favorite.filter((fav) => {
       return parseInt(fav.id) !== parseInt(e.target.id);
     })
 
-    console.log(favorNew)
-    console.log("filter END")
     localStorage.setItem('favorite', JSON.stringify(favorNew));
     this.setState({ favorite: favorNew })
 
@@ -194,13 +196,11 @@ class Content extends React.Component {
   }
 
   render() {
-    console.log(this.props)
     const visibleItems = this.search(this.getItems(), this.state.term);
     const numberOfItems = this.state.showMore ? visibleItems.length : 5;
 
     return (
       <div className={s.bgfon} >
-        {/* <Header /> */}
         <header className={s.header}>
           <div className={s.header_arrow}><GoBack /></div>
           <div className={s.star}> <Link to={`/favorite`} ><img src={star} alt={star} /></Link></div>
@@ -214,27 +214,27 @@ class Content extends React.Component {
             closePopup={this.togglePopup.bind(this)}
           />
 
-          : 
-            visibleItems.length > 0 ?
-              visibleItems.slice(0, numberOfItems).map((item) => {
-                return (
-                  <div key={item.id} className={s.favorCont}>
-                    <Link to={`/card/${item.id}`}>
-                      <ContentList restaurDb={item} />
-                    </Link>
-                    {this.favButton(item)}
-  
-                  </div>
-                )
-              }) : 
-              <div>
+          :
+          visibleItems.length > 0 ?
+            visibleItems.slice(0, numberOfItems).map((item) => {
+              return (
+                <div key={item.id} className={s.favorCont}>
+                  <Link to={`/card/${item.id}`}>
+                    <ContentList restaurDb={item} />
+                  </Link>
+                  {this.favButton(item)}
+
+                </div>
+              )
+            }) :
+            <div>
               <p style={{ textAlign: 'center' }}>По заданным критериям ничего не найдено!</p>
               <button onClick={() => { this.props.resetOptionsChange() }} className={s.button_more} >Сбросить фильтр</button>
-              </div>
-  
-          
+            </div>
+
+
         }
-        
+
         {!this.state.showMore && visibleItems.length > 5 ?
           <button className={s.button_more} onClick={() => this.handleClick()} >Показать все</button>
           : null}

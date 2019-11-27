@@ -49,27 +49,17 @@ export default class Filter extends Component {
         const status = this.props.state.restaurDb[0].district
         return Object.keys(status).map((district, index) => {
             let childtypeFilter = [];
-            let proverka = false;
+            let checkvalue = false;
             for (let key in status) {
                 childtypeFilter.push(`${translation[key]}`);
             }
             for (let i = 0; i < this.props.options.length; i++) {
                 if (this.props.options[i] === district) {
-                    proverka = true;
+                    checkvalue = true;
                 }
             }
             return (
-                // <div className={s.checkboxHeight} key={index}>
-                //     <label className="checkbox" >
-                //         <input
-                //             onChange={this.onOptionChange.bind(this)}
-                //             type="checkbox"
-                //             name={district}
-                //         />
-                //         <div className="checkbox__text"> {childtypeFilter[index]}</div>
-                //     </label>
-                // </div>
-                <option value={district} key={index} selected={proverka} name={district}>{childtypeFilter[index]}</option>
+                <option value={district} key={index} selected={checkvalue} name={district}>{childtypeFilter[index]}</option>
 
             );
         });
@@ -78,13 +68,13 @@ export default class Filter extends Component {
         const status = this.props.state.restaurDb[0].type
         return Object.keys(status).map((type, index) => {
             let childtypeFilter = [];
-            let proverka = ``;
+            let checkvalue = ``;
             for (let key in status) {
                 childtypeFilter.push(`${translation[key]}`);
             }
             for (let i = 0; i < this.props.options.length; i++) {
                 if (this.props.options[i] === type) {
-                    proverka = `checked`
+                    checkvalue = `checked`
                 }
             }
             return (
@@ -94,7 +84,7 @@ export default class Filter extends Component {
                             onChange={this.props.onOptionChange}
                             type="checkbox"
                             name={type}
-                            defaultChecked={proverka}
+                            defaultChecked={checkvalue}
                         />
                         <div className="checkbox__text"> {childtypeFilter[index]}</div>
                     </label>
@@ -107,13 +97,13 @@ export default class Filter extends Component {
         const status = this.props.state.restaurDb[0].cuisine
         return Object.keys(status).map((cuisine, index) => {
             let childtypeFilter = [];
-            let proverka = ``;
+            let checkvalue = ``;
             for (let key in status) {
                 childtypeFilter.push(`${translation[key]}`);
             }
             for (let i = 0; i < this.props.options.length; i++) {
                 if (this.props.options[i] === cuisine) {
-                    proverka = `checked`
+                    checkvalue = `checked`
                 }
             }
             return (
@@ -123,7 +113,7 @@ export default class Filter extends Component {
                             onChange={this.props.onOptionChange}
                             type="checkbox"
                             name={cuisine}
-                            defaultChecked={proverka}
+                            defaultChecked={checkvalue}
                         />
                         <div className="checkbox__text"> {childtypeFilter[index]}</div>
                     </label>
@@ -143,31 +133,38 @@ export default class Filter extends Component {
                     </div>
                 </div>
                 <div className={s.time_range_position}>
-           
-                <div className={s.time_range}>
-                    <div className={s.time_title}> Время открытия: <div className={s.time_title_clock}>{this.props.timeValue.start}</div></div>
-                    <div className={s.time_title}> Время закрытия: <div className={s.time_title_clock}> {this.props.timeValue.end}</div></div>
+
+                    <div className={s.time_range}>
+                        <div className={s.time_title}> Время открытия: <div className={s.time_title_clock}>{this.props.timeValue.start}</div></div>
+                        <div className={s.time_title}> Время закрытия: <div className={s.time_title_clock}> {this.props.timeValue.end}</div></div>
+                    </div>
+                    <div className={s.time_range_slider}>
+                        <TimeRangeSlider
+                            disabled={false}
+                            format={24}
+                            maxValue={"23:59"}
+                            minValue={"00:00"}
+                            name={"time_range"}
+                            onChange={this.props.timeChangeHandler}
+                            step={60}
+                            value={this.props.timeValue} />
+                    </div>
+
                 </div>
-                <div className={s.time_range_slider}>
-                    <TimeRangeSlider
-                    disabled={false}
-                    format={24}
-                    maxValue={"23:59"}
-                    minValue={"00:00"}
-                    name={"time_range"}
-                    onChange={this.props.timeChangeHandler}
-                    step={60}
-                    value={this.props.timeValue} />
+                <div>
+                    <button className={s.closePopupClose}
+                        onClick={() => { this.props.timeCheckOut(); this.props.closePopup() }}
+                        type="button"
+                    > Заведения которые сейчас открыты
+                     </button>
                 </div>
-           
-        </div>
                 <div className={s.checkboxName}>Типы заведений
                     <div className={s.checkboxSize}>{this.renderCheckboxesType()}</div>
                 </div>
                 <div className={s.checkboxName}>Кухня
                     <div className={s.checkboxSize}> {this.renderCheckboxesСuisine()}</div>
                 </div>
-        
+
 
                 <button onClick={this.props.closePopup} className={s.closePopupClose}>Фильтровать</button>
                 <button onClick={() => { this.props.resetOptionsChange(); this.props.closePopup() }} className={s.closePopupClose}>Сбросить фильтр</button>

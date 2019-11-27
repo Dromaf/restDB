@@ -27,7 +27,6 @@ class Favorite extends React.Component {
 
     deleteFavorite(e) {
         const { favorite } = this.state
-        console.log(favorite, e.target.id)
         for (let i = 0; i < favorite.length; i++) {
             let obj = favorite[i];
 
@@ -37,7 +36,6 @@ class Favorite extends React.Component {
         }
         localStorage.setItem('favorite', JSON.stringify(favorite));
         this.setState({ favorite: favorite })
-        console.log(favorite)
 
     }
 
