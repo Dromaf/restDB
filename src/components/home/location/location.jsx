@@ -51,7 +51,7 @@ export default class Location extends Component {
   }
   render() {
     return (
-      <div >
+      <div className={s.location_main}>
          <header className={s.header}>
           <div className={s.header_arrow}> <GoBack /> </div>
           <div className={s.star}> <Link to={`/favorite`} ></Link></div>

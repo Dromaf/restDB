@@ -11,7 +11,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 const Home = props => {
   console.log(props)
   return (
-    <div >
+    <div className={s.sizeContainer}>
       <div className={s.main}>
         <div className={`${s.main_item} ${s.main_item_first}`} >
           <Link to={`/location`}>
