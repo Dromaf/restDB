@@ -61,7 +61,7 @@
 .location_main{
     background: url(../../app/img/bg-fon.jpg) center center;
     background-size: cover;
-    height: 100vh;
+    min-height: 640px;
     padding-bottom: 10px;
     max-width: 414px;
     margin: 0 auto;

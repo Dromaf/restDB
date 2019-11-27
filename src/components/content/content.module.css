@@ -6,7 +6,7 @@
     position: relative;
     max-width: 414px;
     margin: 0 auto;
-    height: 100vh;
+    min-height: 640px;
 }
 
 

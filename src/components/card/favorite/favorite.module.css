@@ -2,7 +2,7 @@
     background: url(../../content/img/bgloc.png) no-repeat top center;
     background-color: rgb(0, 0, 0);
     background-size:cover;
-    height: 100vh;
+    min-height: 640px;
     padding-bottom: 10px;
     max-width: 414px;
     margin: 0 auto;
