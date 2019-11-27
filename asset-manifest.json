@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/restDB/static/css/main.872cdb02.chunk.css",
-    "main.js": "/restDB/static/js/main.5f53dd9b.chunk.js",
-    "main.js.map": "/restDB/static/js/main.5f53dd9b.chunk.js.map",
+    "main.css": "/restDB/static/css/main.d92f58c9.chunk.css",
+    "main.js": "/restDB/static/js/main.c83475cf.chunk.js",
+    "main.js.map": "/restDB/static/js/main.c83475cf.chunk.js.map",
     "runtime-main.js": "/restDB/static/js/runtime-main.ef90d2fd.js",
     "runtime-main.js.map": "/restDB/static/js/runtime-main.ef90d2fd.js.map",
     "static/css/2.72c2318d.chunk.css": "/restDB/static/css/2.72c2318d.chunk.css",
-    "static/js/2.a8e12b76.chunk.js": "/restDB/static/js/2.a8e12b76.chunk.js",
-    "static/js/2.a8e12b76.chunk.js.map": "/restDB/static/js/2.a8e12b76.chunk.js.map",
+    "static/js/2.b43c373f.chunk.js": "/restDB/static/js/2.b43c373f.chunk.js",
+    "static/js/2.b43c373f.chunk.js.map": "/restDB/static/js/2.b43c373f.chunk.js.map",
     "index.html": "/restDB/index.html",
-    "precache-manifest.7c79badb17a40c06fc75a6f75cab836f.js": "/restDB/precache-manifest.7c79badb17a40c06fc75a6f75cab836f.js",
+    "precache-manifest.820bfd8bf4486255c4a247e7ba5d90a4.js": "/restDB/precache-manifest.820bfd8bf4486255c4a247e7ba5d90a4.js",
     "service-worker.js": "/restDB/service-worker.js",
     "static/css/2.72c2318d.chunk.css.map": "/restDB/static/css/2.72c2318d.chunk.css.map",
-    "static/css/main.872cdb02.chunk.css.map": "/restDB/static/css/main.872cdb02.chunk.css.map",
-    "static/media/app.css": "/restDB/static/media/bg-fon.dfbed061.jpg",
+    "static/css/main.d92f58c9.chunk.css.map": "/restDB/static/css/main.d92f58c9.chunk.css.map",
+    "static/media/app.css": "/restDB/static/media/appetite.e9ebf518.woff",
     "static/media/back.svg": "/restDB/static/media/back.30893e0d.svg",
-    "static/media/fork.module.css": "/restDB/static/media/bgloc.94c9d204.png",
+    "static/media/location.module.css": "/restDB/static/media/bg-fon.dfbed061.jpg",
+    "static/media/favorite.module.css": "/restDB/static/media/trash.313b3291.svg",
     "static/media/filter.svg": "/restDB/static/media/filter.2b8fb109.svg",
-    "static/media/star.svg": "/restDB/static/media/star.7157e475.svg",
-    "static/media/favorite.module.css": "/restDB/static/media/trash.313b3291.svg"
+    "static/media/star.svg": "/restDB/static/media/star.7157e475.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ef90d2fd.js",
     "static/css/2.72c2318d.chunk.css",
-    "static/js/2.a8e12b76.chunk.js",
-    "static/css/main.872cdb02.chunk.css",
-    "static/js/main.5f53dd9b.chunk.js"
+    "static/js/2.b43c373f.chunk.js",
+    "static/css/main.d92f58c9.chunk.css",
+    "static/js/main.c83475cf.chunk.js"
   ]
 }
