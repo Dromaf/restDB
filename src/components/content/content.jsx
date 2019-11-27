@@ -109,7 +109,11 @@ class Content extends React.Component {
         filterRests = filterRests.filter(item => item[restParam][key] === true);
       }
     }
-    return this.timeFilter(filterRests);
+    if (this.props.timeCurrent) {
+      return this.timeFilterOnline(filterRests);
+    } else {
+      return this.timeFilter(filterRests);
+    }
   }
 
   addFavorite(e) {

@@ -151,6 +151,13 @@ export default class Filter extends Component {
                     </div>
 
                 </div>
+                <div>
+                    <button className={s.closePopupClose}
+                        onClick={() => { this.props.timeCheckOut(); this.props.closePopup() }}
+                        type="button"
+                    > Заведения которые сейчас открыты
+                     </button>
+                </div>
                 <div className={s.checkboxName}>Типы заведений
                     <div className={s.checkboxSize}>{this.renderCheckboxesType()}</div>
                 </div>

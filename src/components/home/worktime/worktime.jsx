@@ -7,14 +7,14 @@ import star from "./img/star.svg";
 export default class Worktime extends Component {
   constructor(props) {
     super(props);
-    
+
     this.featureRef = React.createRef();
     this.state = {
-      
+
     }
   }
 
-  
+
 
   render() {
     return (
@@ -44,6 +44,12 @@ export default class Worktime extends Component {
           <button className={s.workFilterBtn}
             type="button"
           > Фильтровать
+          </button>
+        </Link>
+        <Link to={`/card`}>
+          <button className={s.workFilterBtn} onClick={this.props.timeCheckOut}
+            type="button"
+          > Заведения которые сейчас открыты
           </button>
         </Link>
       </div>

@@ -21,11 +21,25 @@ export default class App extends Component {
       filterTime: {
         start: "00:00",
         end: "23:59"
-      }
+      },
+      currentTime: ''
     }
   }
+
+  timeCheckOut = (e) => {
+    let hours;
+    hours = new Date().getHours();
+    this.setState({
+      //Setting the value of the date time
+      ...this.state,
+      currentTime:
+        hours
+    });
+  }
   componentDidMount() {
+
     this.props.hideLoader();
+
   }
   onOptionChange = (e) => {
     const { options } = this.state;
@@ -94,13 +108,16 @@ export default class App extends Component {
 
   resetOptionsChange = (e) => {
     let { options } = this.state;
+    let { currentTime } = this.state;
     options = [];
+    currentTime = '';
     this.setState({
       filterTime: {
         start: "00:00",
         end: "23:59"
       },
-      options: options
+      options: options,
+      currentTime: currentTime
     })
   }
 
@@ -154,6 +171,7 @@ export default class App extends Component {
                 timeValue={this.state.filterTime}
                 options={this.state.options}
                 timeChangeHandler={this.timeChangeHandler}
+                timeCheckOut={this.timeCheckOut}
               />
 
               }
@@ -174,6 +192,8 @@ export default class App extends Component {
                 onOptionChangeSelect={this.onOptionChangeSelect}
                 onOptionChange={this.onOptionChange}
                 resetOptionsChange={this.resetOptionsChange}
+                timeCurrent={this.state.currentTime}
+                timeCheckOut={this.timeCheckOut}
               />}
             />
             <Route
