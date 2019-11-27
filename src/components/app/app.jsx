@@ -11,6 +11,8 @@ import "./app.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Favorite from "../card/favorite/favorite";
 
+
+
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -21,6 +23,9 @@ export default class App extends Component {
         end: "23:59"
       }
     }
+  }
+  componentDidMount() {
+    this.props.hideLoader();
   }
   onOptionChange = (e) => {
     const { options } = this.state;
@@ -134,6 +139,7 @@ export default class App extends Component {
     this.setState({ options: options })
     console.log(options)
   }
+  
   render() {
     const { props } = this;
     console.log(props)
