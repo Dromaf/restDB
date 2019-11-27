@@ -35,7 +35,7 @@ export default class Location extends Component {
         <div className={s.containerFlex} key={index} >
             <div 
             className={s.radioStyleDisctrict}>
-              <input 
+            <input 
                 id={index}
                 onChange={this.props.onOptionChangeLocation}
                 className={s.radioButtonStyle}
@@ -43,7 +43,7 @@ export default class Location extends Component {
                 name="location"
                 value={type}
                 defaultChecked={checkedTarget}
-              /> {childtypeFilter[index]}
+              />  <label for={index}>{childtypeFilter[index]}</label>
             </div>
           </div>
       );
