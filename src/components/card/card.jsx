@@ -40,9 +40,19 @@ const translation = {
 class Card extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       telephoneBlockStatus: false,
+      mapRouteUrl: null,
+    }
+    const restdb = this.props.state.restaurDb[`${this.props.itemId - 1}`];
+    if ('geolocation' in navigator) {
+      console.log("here");
+      navigator.geolocation.getCurrentPosition(
+        (res) => {
+          this.setState({mapRouteUrl: `https://www.google.com.ua/maps/dir/${res.coords.latitude},${res.coords.longitude}/${encodeURIComponent(restdb.adress)}`})
+        },
+        (rej) => console.log(rej),
+      );
     }
   }
   newTelephoneStatus = () => {
@@ -157,17 +167,7 @@ class Card extends React.Component {
             </div>
             <br />
           </div>
-          <button className={s.make_route_button}
-            onClick={() => {
-              if ('geolocation' in navigator) {
-                navigator.geolocation.getCurrentPosition(
-                  (res) => window.open(`https://www.google.com.ua/maps/dir/${res.coords.latitude},${res.coords.longitude}/${encodeURIComponent(restdb.adress)}`),
-                  (rej) => console.log(rej),
-                );
-              }
-            }}>
-            Построить маршрут
-              </button>
+          <a className={s.make_route_button} href={this.state.mapRouteUrl} target="_blank">Построить маршрут</a>
         </div>
       </div>
 
