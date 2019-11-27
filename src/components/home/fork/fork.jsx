@@ -58,7 +58,11 @@ export default class Fork extends Component {
   render() {
     return (
       <div className={s.Background_container}>
-        <div className={s.arrow_back}><GoBack /></div>
+        <header className={s.header}>
+                    <div className={s.arrow_back}><GoBack /></div>
+                    <div ></div>
+                    <div ></div>
+        </header>
         <div >
           {this.renderType()}
         </div>
