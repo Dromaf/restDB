@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6e1d05f10bb4360ba3fd24a060e2faaf",
+    "revision": "08edab58e3c1df150d7d48b27203bb10",
     "url": "/restDB/index.html"
   },
   {
-    "revision": "c2d47f1f974c9c81a091",
+    "revision": "9609a7c91993aae4abee",
     "url": "/restDB/static/css/2.72c2318d.chunk.css"
   },
   {
-    "revision": "217bdd18f7f0d5289bc4",
-    "url": "/restDB/static/css/main.872cdb02.chunk.css"
+    "revision": "ad02aac2743da4a53f17",
+    "url": "/restDB/static/css/main.956371a7.chunk.css"
   },
   {
-    "revision": "c2d47f1f974c9c81a091",
-    "url": "/restDB/static/js/2.a8e12b76.chunk.js"
+    "revision": "9609a7c91993aae4abee",
+    "url": "/restDB/static/js/2.b43c373f.chunk.js"
   },
   {
-    "revision": "217bdd18f7f0d5289bc4",
-    "url": "/restDB/static/js/main.5f53dd9b.chunk.js"
+    "revision": "ad02aac2743da4a53f17",
+    "url": "/restDB/static/js/main.545a4bd6.chunk.js"
   },
   {
     "revision": "885faaf424d677f3c92b",
