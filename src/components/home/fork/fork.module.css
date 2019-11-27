@@ -3,7 +3,7 @@
     flex-wrap: wrap;
 }
 .Background_container{
-  background: url(/static/media/bgloc.94c9d204.png) center center;
+  background: url(../../content/img/bgloc.png) center center;
   background-size: cover;
   min-height: 650px;
 }
