@@ -4,7 +4,6 @@ import ContentList from "../../content/contentlist";
 import { Link } from 'react-router-dom';
 import GoBack from "../../back/back";
 import Filter from "../../filter/filter";
-import filter from "../../content/img/filter.svg";
 class Favorite extends React.Component {
     constructor(props) {
         super(props)
@@ -49,7 +48,7 @@ class Favorite extends React.Component {
                 <header className={s.header}>
                     <div className={s.header_arrow}><GoBack /></div>
                     <div className={s.star}>Избранное</div>
-                    <div className={s.header_menu} onClick={this.togglePopup.bind(this)}><img src={filter} alt={filter} /></div>
+                    <div ></div>
                 </header>
                 {this.state.showPopup ?
                     <Filter {...this.props} onOptionChange={this.onOptionChange.bind(this)}

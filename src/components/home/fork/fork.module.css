@@ -3,7 +3,7 @@
     flex-wrap: wrap;
 }
 .Background_container{
-  background: url(/static/media/bgloc.94c9d204.png) center center;
+  background: url(../../content/img/bgloc.png) center center;
   background-size: cover;
   min-height: 650px;
 }
@@ -61,9 +61,14 @@
 }
 
 .arrow_back{
-  margin-left: 20px;
-  padding-top: 20px;
-  padding-left: 15px;
-  display: inline-block;
+  align-self: flex-end;
   cursor: pointer;
+}
+.header {
+  max-width: 300px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  min-height: 70px;
+  flex-wrap: wrap;
 }
