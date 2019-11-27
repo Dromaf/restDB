@@ -2,9 +2,11 @@
     background: url(./img/bgloc.png)no-repeat top center;
     background-size: cover;
     background-color: rgb(0, 0, 0);
-    min-height: 640px;
     padding-bottom: 10px;
     position: relative;
+    max-width: 414px;
+    margin: 0 auto;
+    height: 100vh;
 }
 
 
@@ -26,7 +28,8 @@
     background:#d8c6c0b5;
 }
 .header {
-    max-width: 300px;
+    width: 100%;
+    padding: 0 15px 0 15px;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;

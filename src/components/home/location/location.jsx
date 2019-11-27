@@ -43,7 +43,7 @@ export default class Location extends Component {
                 name="location"
                 value={type}
                 defaultChecked={checkedTarget}
-              />  <label for={index}>{childtypeFilter[index]}</label>
+              />  <label htmlFor={index}>{childtypeFilter[index]}</label>
             </div>
           </div>
       );
@@ -51,7 +51,7 @@ export default class Location extends Component {
   }
   render() {
     return (
-      <div >
+      <div className={s.location_main}>
          <header className={s.header}>
           <div className={s.header_arrow}> <GoBack /> </div>
           <div className={s.star}> <Link to={`/favorite`} ></Link></div>

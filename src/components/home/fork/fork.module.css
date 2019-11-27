@@ -5,7 +5,10 @@
 .Background_container{
   background: url(../../content/img/bgloc.png) center center;
   background-size: cover;
-  min-height: 650px;
+  height: 100vh;
+  padding-bottom: 10px;
+  max-width: 414px;
+  margin: 0 auto;
 }
 
 .forkButton{
@@ -65,7 +68,8 @@
   cursor: pointer;
 }
 .header {
-  max-width: 300px;
+  width: 100%;
+  padding: 0 15px 0 15px;
   margin: 0px auto;
   display: flex;
   justify-content: space-between;
