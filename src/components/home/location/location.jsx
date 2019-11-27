@@ -43,7 +43,7 @@ export default class Location extends Component {
                 name="location"
                 value={type}
                 defaultChecked={checkedTarget}
-              />  <label for={index}>{childtypeFilter[index]}</label>
+              />  <label htmlFor={index}>{childtypeFilter[index]}</label>
             </div>
           </div>
       );
