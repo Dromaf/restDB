@@ -5,8 +5,8 @@
   "background_color": "#222222",
   "display": "standalone",
   "orientation": "portrait",
-  "Scope": "/",
-  "start_url": "/",
+  "Scope": "/restDB",
+  "start_url": "/restDB",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
