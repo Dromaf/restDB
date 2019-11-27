@@ -17,7 +17,6 @@ export default class Worktime extends Component {
   
 
   render() {
-    console.log(this.props)
     return (
       <div className={s.bgfon}>
         <header className={s.header}>

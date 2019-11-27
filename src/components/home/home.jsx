@@ -9,7 +9,6 @@ import Content from "../content/content";
 import { BrowserRouter, Route } from "react-router-dom";
 
 const Home = props => {
-  console.log(props)
   return (
     <div className={s.sizeContainer}>
       <div className={s.main}>

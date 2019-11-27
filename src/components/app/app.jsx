@@ -41,8 +41,6 @@ export default class App extends Component {
       ...this.state,
       options: options,
     })
-    //this.props.onOptionChange(options);
-    console.log(options)
   }
   onOptionChangeFork = (e) => {
     const { options } = this.state;
@@ -58,15 +56,12 @@ export default class App extends Component {
       ...this.state,
       options: options,
     })
-    //this.props.onOptionChange(options);
-    console.log(options)
   }
   onOptionChangeLocation = (e) => {
     let { options } = this.state;
     let value1 = "Shevchenkovskiy";
     let value2 = "Kievskiy";
     let value3 = "Oktyabrksiy";
-    console.log(e.target.value)
     if (e.target.value === "Shevchenkovskiy" && e.target.checked === true) {
       options = options.filter(item => item !== value2)
       options = options.filter(item => item !== value3)
@@ -88,12 +83,9 @@ export default class App extends Component {
       ...this.state,
       options: options,
     })
-    //this.props.onOptionChange(options);
-    console.log(options)
   }
 
   timeChangeHandler = (time) => {
-    console.log(time)
     this.setState({
       ...this.state,
       filterTime: time
@@ -103,7 +95,6 @@ export default class App extends Component {
   resetOptionsChange = (e) => {
     let { options } = this.state;
     options = [];
-    console.log(options)
     this.setState({
       filterTime: {
         start: "00:00",
@@ -118,7 +109,6 @@ export default class App extends Component {
     let value1 = "Shevchenkovskiy";
     let value2 = "Kievskiy";
     let value3 = "Oktyabrksiy";
-    console.log(e.target.value)
     if (e.target.value === "Shevchenkovskiy") {
       options = options.filter(item => item !== value2)
       options = options.filter(item => item !== value3)
@@ -137,12 +127,10 @@ export default class App extends Component {
       options = options.filter(item => item !== value1)
     }
     this.setState({ options: options })
-    console.log(options)
   }
-  
+
   render() {
     const { props } = this;
-    console.log(props)
     return (
       <BrowserRouter>
         <div id="container">
@@ -179,9 +167,9 @@ export default class App extends Component {
               path="/card"
               exact
               render={() => <Content {...props}
-              timeValue={this.state.filterTime}
-              options={this.state.options}
-              timeChangeHandler={this.timeChangeHandler}
+                timeValue={this.state.filterTime}
+                options={this.state.options}
+                timeChangeHandler={this.timeChangeHandler}
                 filterTime={this.state.filterTime}
                 onOptionChangeSelect={this.onOptionChangeSelect}
                 onOptionChange={this.onOptionChange}

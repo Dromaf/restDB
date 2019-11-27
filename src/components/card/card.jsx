@@ -56,7 +56,6 @@ class Card extends React.Component {
     for (let key in obj) {
       if (!obj.hasOwnProperty(key)) continue;
       let value = obj[key];
-      console.log(value, key)
       if (value) {
         childtypeFilter.push(`${translation[key]}`);
       }
@@ -71,7 +70,6 @@ class Card extends React.Component {
       if (!obj.hasOwnProperty(key)) continue;
 
       let value = obj[key];
-      console.log(value, key)
       if (value) {
         childcuisineFilter.push(`${translation[key]}`);
       }
@@ -87,7 +85,6 @@ class Card extends React.Component {
       if (!obj.hasOwnProperty(key)) continue;
 
       let value = obj[key];
-      console.log(value, key)
       if (value) {
         childadvFilter.push(`${translation[key]}`);
       }
@@ -100,7 +97,7 @@ class Card extends React.Component {
     const type = this.typeFilter(restdb.type);
     const cuisine = this.cuisineFilter(restdb.cuisine);
     const advantages = this.advFilter(restdb.advantages);
-    console.log(type)
+ 
 
     return (
       <div className={s.bgfon}>
