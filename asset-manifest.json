@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/restDB/static/css/main.b360d2a7.chunk.css",
-    "main.js": "/restDB/static/js/main.d655568b.chunk.js",
-    "main.js.map": "/restDB/static/js/main.d655568b.chunk.js.map",
-    "runtime-main.js": "/restDB/static/js/runtime-main.ef90d2fd.js",
-    "runtime-main.js.map": "/restDB/static/js/runtime-main.ef90d2fd.js.map",
+    "main.css": "/restDB/static/css/main.30a15325.chunk.css",
+    "main.js": "/restDB/static/js/main.e60a8d18.chunk.js",
+    "main.js.map": "/restDB/static/js/main.e60a8d18.chunk.js.map",
+    "runtime-main.js": "/restDB/static/js/runtime-main.65e3d34e.js",
+    "runtime-main.js.map": "/restDB/static/js/runtime-main.65e3d34e.js.map",
     "static/css/2.72c2318d.chunk.css": "/restDB/static/css/2.72c2318d.chunk.css",
-    "static/js/2.7f0b0f73.chunk.js": "/restDB/static/js/2.7f0b0f73.chunk.js",
-    "static/js/2.7f0b0f73.chunk.js.map": "/restDB/static/js/2.7f0b0f73.chunk.js.map",
+    "static/js/2.086430a4.chunk.js": "/restDB/static/js/2.086430a4.chunk.js",
+    "static/js/2.086430a4.chunk.js.map": "/restDB/static/js/2.086430a4.chunk.js.map",
     "index.html": "/restDB/index.html",
-    "precache-manifest.bd571a46d65813a20559a5decc2d016d.js": "/restDB/precache-manifest.bd571a46d65813a20559a5decc2d016d.js",
+    "precache-manifest.771238723e2dd09e41c79c5bed99229a.js": "/restDB/precache-manifest.771238723e2dd09e41c79c5bed99229a.js",
     "service-worker.js": "/restDB/service-worker.js",
     "static/css/2.72c2318d.chunk.css.map": "/restDB/static/css/2.72c2318d.chunk.css.map",
-    "static/css/main.b360d2a7.chunk.css.map": "/restDB/static/css/main.b360d2a7.chunk.css.map",
+    "static/css/main.30a15325.chunk.css.map": "/restDB/static/css/main.30a15325.chunk.css.map",
     "static/media/app.css": "/restDB/static/media/appetite.e9ebf518.woff",
     "static/media/back.svg": "/restDB/static/media/back.30893e0d.svg",
     "static/media/location.module.css": "/restDB/static/media/bg-fon.dfbed061.jpg",
@@ -21,10 +21,10 @@
     "static/media/star.svg": "/restDB/static/media/star.7157e475.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ef90d2fd.js",
+    "static/js/runtime-main.65e3d34e.js",
     "static/css/2.72c2318d.chunk.css",
-    "static/js/2.7f0b0f73.chunk.js",
-    "static/css/main.b360d2a7.chunk.css",
-    "static/js/main.d655568b.chunk.js"
+    "static/js/2.086430a4.chunk.js",
+    "static/css/main.30a15325.chunk.css",
+    "static/js/main.e60a8d18.chunk.js"
   ]
 }

@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c2249ae47f23d61650c499dcad909c27",
+    "revision": "03d73710116fe3d242d4ebc0baa4354a",
     "url": "/restDB/index.html"
   },
   {
-    "revision": "9e75b3742f93e37fa6a7",
+    "revision": "0829f11177607c88b8fd",
     "url": "/restDB/static/css/2.72c2318d.chunk.css"
   },
   {
-    "revision": "d53a910f159ebbb71907",
-    "url": "/restDB/static/css/main.b360d2a7.chunk.css"
+    "revision": "5ddcde8770b218afe125",
+    "url": "/restDB/static/css/main.30a15325.chunk.css"
   },
   {
-    "revision": "9e75b3742f93e37fa6a7",
-    "url": "/restDB/static/js/2.7f0b0f73.chunk.js"
+    "revision": "0829f11177607c88b8fd",
+    "url": "/restDB/static/js/2.086430a4.chunk.js"
   },
   {
-    "revision": "d53a910f159ebbb71907",
-    "url": "/restDB/static/js/main.d655568b.chunk.js"
+    "revision": "5ddcde8770b218afe125",
+    "url": "/restDB/static/js/main.e60a8d18.chunk.js"
   },
   {
-    "revision": "885faaf424d677f3c92b",
-    "url": "/restDB/static/js/runtime-main.ef90d2fd.js"
+    "revision": "62885b1b8b4f730352ab",
+    "url": "/restDB/static/js/runtime-main.65e3d34e.js"
   },
   {
     "revision": "e9ebf5183a702ba6498d60b5092737bc",
