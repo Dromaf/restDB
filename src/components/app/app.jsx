@@ -37,9 +37,7 @@ export default class App extends Component {
     });
   }
   componentDidMount() {
-
     this.props.hideLoader();
-
   }
   onOptionChange = (e) => {
     const { options } = this.state;
@@ -53,6 +51,7 @@ export default class App extends Component {
     }
     this.setState({
       ...this.state,
+      currentTime: '',
       options: options,
     })
   }
@@ -68,6 +67,7 @@ export default class App extends Component {
     }
     this.setState({
       ...this.state,
+      currentTime: '',
       options: options,
     })
   }
@@ -95,6 +95,7 @@ export default class App extends Component {
     }
     this.setState({
       ...this.state,
+      currentTime: '',
       options: options,
     })
   }
@@ -102,6 +103,7 @@ export default class App extends Component {
   timeChangeHandler = (time) => {
     this.setState({
       ...this.state,
+      currentTime: '',
       filterTime: time
     });
   }
@@ -143,7 +145,7 @@ export default class App extends Component {
       options = options.filter(item => item !== value2)
       options = options.filter(item => item !== value1)
     }
-    this.setState({ options: options })
+    this.setState({ options: options,currentTime: '' })
   }
 
   render() {
