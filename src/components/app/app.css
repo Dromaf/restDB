@@ -364,13 +364,13 @@ h4 {
 }
 
 @media only screen and (max-width: 768px) {
-  .preloader .cooking{
+  .preloader {
       height: 100vh;
   }
 }
 
 @media only screen and (max-width: 320px) {
-  .preloader .cooking{
+  .preloader {
       height: 100%;
   }
 }
