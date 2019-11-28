@@ -59,3 +59,16 @@ img {
     margin:0 auto;
     height: 640px;
 }
+
+
+@media only screen and (max-width: 768px) {
+      .sizeContainer{
+          height: 100vh;
+      }
+}
+
+@media only screen and (max-width: 320px) {
+    .sizeContainer{
+        height: 100%;
+    }
+}

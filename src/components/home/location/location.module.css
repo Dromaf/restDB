@@ -66,3 +66,15 @@
     max-width: 414px;
     margin: 0 auto;
 }
+
+@media only screen and (max-width: 768px) {
+    .location_main{
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .location_main{
+        height: 100%;
+    }
+}
