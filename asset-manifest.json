@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/restDB/static/css/main.b360d2a7.chunk.css",
-    "main.js": "/restDB/static/js/main.c48155d9.chunk.js",
-    "main.js.map": "/restDB/static/js/main.c48155d9.chunk.js.map",
+    "main.js": "/restDB/static/js/main.dad2b936.chunk.js",
+    "main.js.map": "/restDB/static/js/main.dad2b936.chunk.js.map",
     "runtime-main.js": "/restDB/static/js/runtime-main.ef90d2fd.js",
     "runtime-main.js.map": "/restDB/static/js/runtime-main.ef90d2fd.js.map",
     "static/css/2.72c2318d.chunk.css": "/restDB/static/css/2.72c2318d.chunk.css",
     "static/js/2.7f0b0f73.chunk.js": "/restDB/static/js/2.7f0b0f73.chunk.js",
     "static/js/2.7f0b0f73.chunk.js.map": "/restDB/static/js/2.7f0b0f73.chunk.js.map",
     "index.html": "/restDB/index.html",
-    "precache-manifest.b2230acaf6f064887294c759b95b9168.js": "/restDB/precache-manifest.b2230acaf6f064887294c759b95b9168.js",
+    "precache-manifest.aacddbc4466cbff7fd1ae0800a575db0.js": "/restDB/precache-manifest.aacddbc4466cbff7fd1ae0800a575db0.js",
     "service-worker.js": "/restDB/service-worker.js",
     "static/css/2.72c2318d.chunk.css.map": "/restDB/static/css/2.72c2318d.chunk.css.map",
     "static/css/main.b360d2a7.chunk.css.map": "/restDB/static/css/main.b360d2a7.chunk.css.map",
@@ -25,6 +25,6 @@
     "static/css/2.72c2318d.chunk.css",
     "static/js/2.7f0b0f73.chunk.js",
     "static/css/main.b360d2a7.chunk.css",
-    "static/js/main.c48155d9.chunk.js"
+    "static/js/main.dad2b936.chunk.js"
   ]
 }
