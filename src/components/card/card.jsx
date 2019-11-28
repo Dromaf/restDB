@@ -167,7 +167,7 @@ class Card extends React.Component {
             </div>
             <br />
           </div>
-          <a className={s.make_route_button} href={this.state.mapRouteUrl} target="_blank">Построить маршрут</a>
+          <a className={s.make_route_button} href={this.state.mapRouteUrl} rel="noopener noreferrer" target="_blank">Построить маршрут</a>
         </div>
       </div>
 
