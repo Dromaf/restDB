@@ -8,7 +8,9 @@ import Filter from "../filter/filter";
 import filter from "./img/filter.svg";
 import star from "./img/star.svg";
 import GoBack from "../back/back";
-
+import Snackbar from '@material-ui/core/Snackbar';
+import IconButton from '@material-ui/core/IconButton';
+import CloseIcon from '@material-ui/icons/Close';
 class Content extends React.Component {
   constructor(props) {
     super(props)
@@ -17,8 +19,14 @@ class Content extends React.Component {
       showMore: false,
       term: '',
       favoriteList: [],
-      showPopup: false
+      showPopup: false,
+      snackbaropen:false, 
+      snackbarmasg:''
     }
+  }
+
+  snackbarClose = (event)=>{
+    this.setState({snackbaropen:false})
   }
 
   togglePopup() {
@@ -149,7 +157,7 @@ class Content extends React.Component {
     let a3 = Array.from(hash.values());
     localStorage.setItem('favorite', JSON.stringify(a3));
 
-    this.setState({ favorite: a3 })
+    this.setState({ favorite: a3,snackbaropen:true, snackbarmasg: 'Заведение добавлено в избранное' })
 
   }
   deleteFavorite(e) {
@@ -160,7 +168,7 @@ class Content extends React.Component {
     })
 
     localStorage.setItem('favorite', JSON.stringify(favorNew));
-    this.setState({ favorite: favorNew })
+    this.setState({ favorite: favorNew,snackbaropen:true, snackbarmasg: 'Заведение удалено из избранного' })
 
   }
   favoriteDeleteButton(item) {
@@ -173,6 +181,7 @@ class Content extends React.Component {
     );
   }
   favoriteAddButton(item) {
+
     return (
       <button
         id={item.id}
@@ -206,6 +215,27 @@ class Content extends React.Component {
           <div className={s.star}> <Link to={`/favorite`} ><img src={star} alt={star} /></Link></div>
           <div className={s.header_menu} onClick={this.togglePopup.bind(this)}><img src={filter} alt={filter} /></div>
         </header>
+
+        <Snackbar
+        anchorOrigin={{
+          vertical: 'center',
+          horizontal: 'center',
+        }}
+        open = {this.state.snackbaropen}
+        autoHideDuration = {1000}
+        onClose = {this.snackbarClose}
+        message = {<span id="massage_id">{this.state.snackbarmasg}</span>}
+        action={[
+          <IconButton
+            key="close"
+            aria-label="close"
+            color="inherit"
+            onClick={this.snackbarClose}
+          >
+            <CloseIcon />
+          </IconButton>
+        ]}
+        />
 
         <Search onSearchChange={this.onSearchChange.bind(this)} />
         {this.state.showPopup ?
