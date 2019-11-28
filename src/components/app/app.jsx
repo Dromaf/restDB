@@ -32,6 +32,10 @@ export default class App extends Component {
     this.setState({
       //Setting the value of the date time
       ...this.state,
+      filterTime: {
+        start: "00:00",
+        end: "23:59"
+      },
       currentTime:
         hours
     });
