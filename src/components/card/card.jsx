@@ -138,9 +138,12 @@ class Card extends React.Component {
           <br />
           <div className={s.telephone}>Телефон:
             <br />
-            <div className={s.insideInfoStyle}>
-            {restdb.telephone + ' '}</div>
+              <a href={"tel:" + restdb.links}>
+                <br />
+              {restdb.telephone + ','}
+              </a>
             </div>
+
           <br />
           <div className={s.cuisine}>
             Кухня:
