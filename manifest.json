@@ -1,6 +1,6 @@
 {
-  "name": "RDB - Rest data base",
-  "short_name": "Rest data base",
+  "name": "RESTDB",
+  "short_name": "RESTDB",
   "theme_color": "#041d32",
   "background_color": "#222222",
   "display": "standalone",
