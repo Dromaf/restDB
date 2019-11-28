@@ -4,6 +4,10 @@ import ContentList from "../../content/contentlist";
 import { Link } from 'react-router-dom';
 import GoBack from "../../back/back";
 import Filter from "../../filter/filter";
+
+import Snackbar from '@material-ui/core/Snackbar';
+import IconButton from '@material-ui/core/IconButton';
+import CloseIcon from '@material-ui/icons/Close';
 class Favorite extends React.Component {
     constructor(props) {
         super(props)
@@ -11,9 +15,13 @@ class Favorite extends React.Component {
             favorite: JSON.parse(localStorage.getItem('favorite')) || [],
             showPopup: false,
             options: [],
+      snackbaropen:false, 
+      snackbarmasg:''
         }
     }
-
+    snackbarClose = (event)=>{
+        this.setState({snackbaropen:false})
+      }
 
     togglePopup() {
         this.setState({
@@ -35,7 +43,7 @@ class Favorite extends React.Component {
             }
         }
         localStorage.setItem('favorite', JSON.stringify(favorite));
-        this.setState({ favorite: favorite })
+        this.setState({ favorite: favorite,snackbaropen:true, snackbarmasg: 'Заведение удалено из избранного' })
 
     }
 
@@ -76,7 +84,26 @@ class Favorite extends React.Component {
                         })
                         : <p style={{ textAlign: 'center' }}>Ваш список избранного пуст!</p>
                 }
-
+ <Snackbar
+        anchorOrigin={{
+          vertical: 'center',
+          horizontal: 'center',
+        }}
+        open = {this.state.snackbaropen}
+        autoHideDuration = {1000}
+        onClose = {this.snackbarClose}
+        message = {<span id="massage_id">{this.state.snackbarmasg}</span>}
+        action={[
+          <IconButton
+            key="close"
+            aria-label="close"
+            color="inherit"
+            onClick={this.snackbarClose}
+          >
+            <CloseIcon />
+          </IconButton>
+        ]}
+        />
             </div>
         );
     }
