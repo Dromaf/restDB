@@ -63,3 +63,15 @@
     background: #53403c;
     color: #ffe4dc;
 }
+
+@media only screen and (max-width: 768px) {
+    .main{
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .main{
+        height: 100%;
+    }
+}

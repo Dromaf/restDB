@@ -83,3 +83,14 @@
     background: url(./img/trash.svg) no-repeat center center;
 }
 
+@media only screen and (max-width: 768px) {
+    .bgfon{
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .bgfon{
+        height: 100%;
+    }
+}
