@@ -5,11 +5,10 @@ body {
     color: #fff;
    
 }
-button:active, button:focus {
-  outline: none;
-}
-button::-moz-focus-inner {
-  border: 0;
+:active,:hover,:focus {
+  outline-style: none;
+  outline-width: 0px !important;
+  outline-color: none !important;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC");
