@@ -78,7 +78,7 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (066) 313-30-19',
+        ' (066) 313-30-19'
       ],
       links: 'https://vk.com/valberpub',
       openTime: '11:00',
@@ -133,7 +133,7 @@ let state = {
         Kievskiy: true,
       },
       telephone: [
-        ' (096) 676 0808',
+        ' (096) 676 0808'
       ],
       links: 'https://www.instagram.com/melrose_sensuyaki/',
       openTime: '11:00',
@@ -188,7 +188,7 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (050) 352 2111',
+        ' (050) 352 2111'
       ],
       links: 'https://www.instagram.com/pub.surzhik/',
       openTime: '11:00',
@@ -242,7 +242,7 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (050) 510 0550',
+        ' (050) 510 0550'
       ],
       links: 'https://www.instagram.com/chichikov.plt/',
       openTime: '08:00',
@@ -295,7 +295,7 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (050) 927 0553',
+        ' (050) 927 0553'
       ],
       links: 'https://www.instagram.com/1europub.plt/',
       openTime: '11:00',
@@ -348,7 +348,7 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (099) 677 6333',
+        ' (099) 677 6333'
       ],
       links: 'https://www.instagram.com/tse.bar.plt/',
       openTime: '18:00',
@@ -402,7 +402,7 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (099) 358 78 88',
+        ' (099) 358 78 88'
       ],
       links: 'https://www.instagram.com/tau.poltava/',
       openTime: '10:00',
@@ -455,7 +455,7 @@ let state = {
         Oktyabrksiy: false,
         Kievskiy: false,
       }, telephone: [
-        ' (066) 223-01-56',
+        ' (066) 223 01 56'
       ],
       links: 'https://www.instagram.com/kipyatok_poltava',
       openTime: '10:00',
@@ -509,7 +509,7 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (095) 326 77 77',
+        ' (095) 326 77 77'
       ],
       links: 'https://www.instagram.com/the.cheese.cake/',
       openTime: '12:00',
@@ -562,7 +562,7 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (050) 582-69-20'
+        ' (050) 582 69 20'
       ],
       links: 'https://pechers.com.ua/',
       openTime: '9:00',
@@ -617,7 +617,7 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (050) 500-52-52'
+        ' (050) 500 52 52'
       ],
       links: 'https://barashek.com.ua/',
       openTime: '12:00',
@@ -671,7 +671,7 @@ let state = {
         Kievskiy: true,
       },
       telephone: [
-        ' (053)  222-99-55', 
+        ' (053) 222 99 55'
       ],
       links: 'https://www.instagram.com/scorinipoltava',
       openTime: '10:00',
@@ -725,8 +725,8 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (0532) 56-00-03', 
-        ' (050) 806-46-86', 
+        ' (0532) 56 00 03', 
+        ' (050) 806 46 86'
 
       ],
       links: 'http://lileya.pl.ua/',
@@ -781,8 +781,8 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (0532) 61-26-97', 
-        ' (095) 390-19-99', 
+        ' (0532) 61 26 97', 
+        ' (095) 390 19 99' 
 
       ],
       links: 'http://shkvarka.com.ua/poltava/',
@@ -837,7 +837,7 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (050) 900-78-78', 
+        ' (050) 900 78 78' 
 
       ],
       links: 'https://www.instagram.com/tesno.govorya',
@@ -892,7 +892,7 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (095) 817-22-02', 
+        ' (095) 817 22 02' 
 
       ],
       links: 'http://sob.pizza.poltava.ua/',
@@ -900,13 +900,13 @@ let state = {
       closeTime: '23:00',
       cuisine: {
         ukrainian: false,
-        europinian: false,
+        europinian: true,
         сaucasian: false,
         itlian: true,
         grill: false,
         seafood: false,
         japaneese: false,
-        desserts: false,
+        desserts: true,
         asian: false,
         chineese: false,
         mexican: false,
@@ -947,7 +947,7 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (050) 721-18-18', 
+        ' (050) 721 18 18' 
 
       ],
       links: 'https://www.instagram.com/g_coffee_ua/',
@@ -1002,7 +1002,7 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (095) 472-34-34', 
+        ' (095) 472 34 34'
 
       ],
       links: 'https://www.instagram.com/g_coffee_ua/',
@@ -1058,7 +1058,7 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (066) 782-89-21', 
+        ' (066) 782 89 21' 
 
       ],
       links: 'https://www.instagram.com/buns_brew_bar',
@@ -1113,8 +1113,8 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (097) 755-83-83',
- 	' (066) 773-58-08',  
+      ' (097) 755 83 83',
+ 	    ' (066) 773 58 08'  
 
       ],
       links: 'https://kiotorich.com',

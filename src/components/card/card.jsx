@@ -107,9 +107,11 @@ class Card extends React.Component {
     const type = this.typeFilter(restdb.type);
     const cuisine = this.cuisineFilter(restdb.cuisine);
     const advantages = this.advFilter(restdb.advantages);
- 
+    let str = ",";
+    
 
     return (
+
       <div className={s.bgfon}>
          <header className={s.header}>
           <div className={s.header_arrow}> <GoBack /> </div>
@@ -140,7 +142,7 @@ class Card extends React.Component {
             <br />
               <a href={"tel:" + restdb.links}>
                 <br />
-              {restdb.telephone + ','}
+              {restdb.telephone + `${str.substring(0, str.length - 1)}`}
               </a>
             </div>
 
