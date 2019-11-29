@@ -4,9 +4,8 @@ import time from "./img/time.png";
 import place from "./img/place.png";
 import fork from "./img/fork.png";
 import list from "./img/list.png";
+import qr from "./img/qr-code.gif";
 import { Link } from 'react-router-dom';
-import Content from "../content/content";
-import { BrowserRouter, Route } from "react-router-dom";
 
 const Home = props => {
   return (
@@ -45,13 +44,11 @@ const Home = props => {
           </Link>
         </div>
       </div>
-      <BrowserRouter>
-
-        <Route
-          path="/info"
-          render={() => <Content {...props} />}
-        />
-      </BrowserRouter>
+      <div className={s.qr}>
+      <Link to={`/qr`}>
+              <img  src={qr} alt={qr} />
+          </Link>
+      </div>
     </div>
 
   );

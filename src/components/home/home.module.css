@@ -60,6 +60,18 @@ img {
     height: 640px;
 }
 
+.qr {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 50px;
+    
+}
+
+.qr img{
+    width: 50px;
+    cursor: pointer;
+}
+
 
 @media only screen and (max-width: 768px) {
       .sizeContainer{

@@ -5,6 +5,7 @@ import Home from "../home/home";
 import Location from "../home/location/location";
 import Worktime from "../home/worktime/worktime";
 import Fork from "../home/fork/fork";
+import Qr from "../home/qr/qr";
 import "normalize.css";
 import "./app.css";
 
@@ -170,6 +171,10 @@ export default class App extends Component {
             <Route
               path="/favorite"
               render={() => <Favorite  {...props} />}
+            />
+            <Route
+              path="/qr"
+              render={() => <Qr  {...props} />}
             />
             <Route
               path="/worktime"
