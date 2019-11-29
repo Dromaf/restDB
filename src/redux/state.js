@@ -595,7 +595,7 @@ let state = {
       },
     },
 
- {
+    {
       id: 12,
       image: 'https://lh3.googleusercontent.com/toErxWv_CHPdSN00YPTstF3FcQV7hQA8gvZqHYBXY-W1Nls9XEMoZonEM4wjlbnHKGNdVbtgsf_PCYNa=w768-h768-n-o-v1',
       title: 'Тот самый Барашек',
@@ -705,7 +705,7 @@ let state = {
     },
     {
       id: 14,
-      image: 'http://lileya.pl.ua/images/logo.png',
+      image: 'data:image/jpeg;base64,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',
       title: 'Лилея',
       type: {
         pub: false,
@@ -724,11 +724,11 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (0532) 56 00 03', 
+        ' (0532) 56 00 03',
         ' (050) 806 46 86'
 
       ],
-      links: 'http://lileya.pl.ua/',
+      links: 'https://www.instagram.com/lileya__restaurant',
       openTime: '12:00',
       closeTime: '23:00',
       cuisine: {
@@ -759,9 +759,9 @@ let state = {
         iqosFriendly: false,
       },
     },
-{
+    {
       id: 15,
-      image: 'http://shkvarka.com.ua/templates/shkvarka_v1/images/logo.png',
+      image: 'https://assets.misteram.com.ua/misteram-public/9a3f4d3f0bfc6980f945c31d25677833-400x0.png',
       title: 'Шалена шкварка',
       type: {
         pub: false,
@@ -780,11 +780,11 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (0532) 61 26 97', 
-        ' (095) 390 19 99' 
+        ' (0532) 61 26 97',
+        ' (095) 390 19 99'
 
       ],
-      links: 'http://shkvarka.com.ua/poltava/',
+      links: 'https://www.instagram.com/shalena.shkvarka.poltava',
       openTime: '11:00',
       closeTime: '23:00',
       cuisine: {
@@ -815,7 +815,7 @@ let state = {
         iqosFriendly: false,
       },
     },
-{
+    {
       id: 16,
       image: 'https://scontent-waw1-1.cdninstagram.com/vp/d7d5ed3b04fcf047d494bbb0f796e49a/5E7A0B3A/t51.2885-19/s150x150/69396377_2353689211557899_6121737665764130816_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com',
       title: 'Тєсно Говоря',
@@ -836,7 +836,7 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (050) 900 78 78' 
+        ' (050) 900 78 78'
 
       ],
       links: 'https://www.instagram.com/tesno.govorya',
@@ -870,9 +870,9 @@ let state = {
         iqosFriendly: false,
       },
     },
-{
+    {
       id: 17,
-      image: 'http://sob.pizza.poltava.ua/wp-content/themes/Steakhouse/images/logo-small.png',
+      image: 'https://poltava.mixfood.ua/upload/catalog_categories/images/s_logo_tele_pizza1538565490.jpg',
       title: 'Теле-пицца',
       type: {
         pub: false,
@@ -891,10 +891,10 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (095) 817 22 02' 
+        ' (095) 817 22 02'
 
       ],
-      links: 'http://sob.pizza.poltava.ua/',
+      links: 'https://www.facebook.com/pages/Теле-Пицца',
       openTime: '8:00',
       closeTime: '23:00',
       cuisine: {
@@ -925,7 +925,7 @@ let state = {
         iqosFriendly: false,
       },
     },
-{
+    {
       id: 18,
       image: 'https://gpoltava.com/assets/profiles_photo/03567960c132f72b9d94dc137ad71344.jpg',
       title: 'G-coffe (Стретенская, 28)',
@@ -946,7 +946,7 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (050) 721 18 18' 
+        ' (050) 721 18 18'
 
       ],
       links: 'https://www.instagram.com/g_coffee_ua/',
@@ -980,7 +980,7 @@ let state = {
         iqosFriendly: false,
       },
     },
-{
+    {
       id: 19,
       image: 'https://gpoltava.com/assets/profiles_photo/03567960c132f72b9d94dc137ad71344.jpg',
       title: 'G-coffe (Пушкина , 27)',
@@ -1036,7 +1036,7 @@ let state = {
       },
     },
 
-{
+    {
       id: 20,
       image: 'https://scontent-waw1-1.cdninstagram.com/vp/2c2df17ac95377f3e10dcc9055a6f337/5E65C171/t51.2885-19/s150x150/46411723_519451585208624_395033048728469504_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com',
       title: 'Buns Brew Bar',
@@ -1057,7 +1057,7 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-        ' (066) 782 89 21' 
+        ' (066) 782 89 21'
 
       ],
       links: 'https://www.instagram.com/buns_brew_bar',
@@ -1091,7 +1091,7 @@ let state = {
         iqosFriendly: false,
       },
     },
-{
+    {
       id: 21,
       image: 'https://scontent-waw1-1.cdninstagram.com/vp/b84a8f63203be5d20116fad2858bcfab/5E8C2A57/t51.2885-19/s150x150/64231070_2535506556462039_5648425432156995584_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com',
       title: 'Kioto Rich',
@@ -1112,8 +1112,8 @@ let state = {
         Kievskiy: false,
       },
       telephone: [
-      ' (097) 755 83 83',
- 	    ' (066) 773 58 08'  
+        ' (097) 755 83 83',
+        ' (066) 773 58 08'
 
       ],
       links: 'https://kiotorich.com',
@@ -1201,7 +1201,7 @@ let state = {
         iqosFriendly: false,
       },
     },
-{
+    {
       id: 23,
       image: 'https://gpoltava.com/assets/profiles_photo/259ee6ec8d2393160d67717d326ea59a.jpg',
       title: 'Valber (Подол)',
@@ -1719,7 +1719,7 @@ let state = {
         Oktyabrksiy: false,
         Kievskiy: true,
       },
-      telephone: [  
+      telephone: [
         ' 068 555 2575',
       ],
       links: 'https://www.instagram.com/v.myaso_',
