@@ -894,7 +894,7 @@ let state = {
         ' (095) 817 22 02'
 
       ],
-      links: 'https://www.facebook.com/pages/Теле-Пицца',
+      links: 'https://sob.pizza.poltava.ua/',
       openTime: '8:00',
       closeTime: '23:00',
       cuisine: {
