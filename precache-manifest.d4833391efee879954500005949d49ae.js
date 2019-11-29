@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e494b30e1624984073b54abf295ecac1",
+    "revision": "8dd3870a868a438ce2e91ff18ace0b54",
     "url": "/restDB/index.html"
   },
   {
