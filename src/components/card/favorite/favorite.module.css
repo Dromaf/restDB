@@ -68,7 +68,7 @@
 
 @media only screen and (max-width: 768px) {
     .bgfon{
-        height: 100vh;
+        height: 100%;
     }
 }
 
