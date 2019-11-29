@@ -18,7 +18,7 @@ export default class Qr extends Component {
             <img  src={qr} alt={qr} />
         </div>
         <div className={s.descr}>
-           <p><span style={{color:"#ffe4db"}}>Povered by:</span>  Alina Yuskanli, Dima Padalka</p>
+           <p><span style={{color:"#ffe4db"}}>Powered by:</span>  Alina Yuskanli, Dima Padalka</p>
            <p>© 2019</p>
 
         </div>
