@@ -51,11 +51,32 @@ class Favorite extends React.Component {
         return (
             <div className={s.bgfon} >
                 {/* <Header /> */}
+                <Snackbar
+        anchorOrigin={{
+          vertical: 'center',
+          horizontal: 'center',
+        }}
+        open = {this.state.snackbaropen}
+        autoHideDuration = {1000}
+        onClose = {this.snackbarClose}
+        message = {<span id="massage_id">{this.state.snackbarmasg}</span>}
+        action={[
+          <IconButton
+            key="close"
+            aria-label="close"
+            color="inherit"
+            onClick={this.snackbarClose}
+          >
+            <CloseIcon />
+          </IconButton>
+        ]}
+        />
                 <header className={s.header}>
                     <div className={s.header_arrow}><GoBack /></div>
                     <div className={s.star}>Избранное</div>
                     <div ></div>
                 </header>
+               
                 {this.state.showPopup ?
                     <Filter {...this.props} onOptionChange={this.onOptionChange.bind(this)}
                         text='Close Me'
@@ -84,26 +105,7 @@ class Favorite extends React.Component {
                         })
                         : <p style={{ textAlign: 'center' }}>Ваш список избранного пуст!</p>
                 }
- <Snackbar
-        anchorOrigin={{
-          vertical: 'center',
-          horizontal: 'center',
-        }}
-        open = {this.state.snackbaropen}
-        autoHideDuration = {1000}
-        onClose = {this.snackbarClose}
-        message = {<span id="massage_id">{this.state.snackbarmasg}</span>}
-        action={[
-          <IconButton
-            key="close"
-            aria-label="close"
-            color="inherit"
-            onClick={this.snackbarClose}
-          >
-            <CloseIcon />
-          </IconButton>
-        ]}
-        />
+ 
             </div>
         );
     }

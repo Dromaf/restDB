@@ -1,7 +1,6 @@
 .bgfon {
-    background: url(../../content/img/bgloc.png) no-repeat top center;
+    background: url(../../content/img/bgloc.png) repeat top center;
     background-color: rgb(0, 0, 0);
-    background-size:cover;
     min-height: 640px;
     padding-bottom: 10px;
     max-width: 414px;
