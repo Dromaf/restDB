@@ -871,6 +871,7 @@ let state = {
       },
     },
     {
+      
       id: 17,
       image: 'https://sob.pizza.poltava.ua/wp-content/themes/Steakhouse/images/logo.png',
       title: 'Теле-пицца',
