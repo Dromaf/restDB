@@ -872,7 +872,7 @@ let state = {
     },
     {
       id: 17,
-      image: 'https://poltava.mixfood.ua/upload/catalog_categories/images/s_logo_tele_pizza1538565490.jpg',
+      image: 'https://sob.pizza.poltava.ua/wp-content/themes/Steakhouse/images/logo.png',
       title: 'Теле-пицца',
       type: {
         pub: false,
