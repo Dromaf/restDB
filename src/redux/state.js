@@ -60,7 +60,7 @@ let state = {
     {
       id: 2,
       image: 'https://gpoltava.com/assets/profiles_photo/259ee6ec8d2393160d67717d326ea59a.jpg',
-      title: 'Valber Центр',
+      title: 'Valber (Центр)',
       type: {
         pub: true,
         restaurant: false,
@@ -71,18 +71,18 @@ let state = {
         hookah: false,
         steakhouse: false,//заведения с грилем
       },
-      adress: 'Полтава, Октябрьская, 32',
+      adress: 'Полтава, ул. Соборная площадь, 32',
       district: {
-        Shevchenkovskiy: false,
-        Oktyabrksiy: true,
+        Shevchenkovskiy: true,
+        Oktyabrksiy: false,
         Kievskiy: false,
       },
       telephone: [
-        ' (066) 313-30-19'
+        ' (050)  402 89 86',
       ],
       links: 'https://vk.com/valberpub',
-      openTime: '11:00',
-      closeTime: '23:00',
+      openTime: '10:00',
+      closeTime: '24:00',
       cuisine: {
         ukrainian: false,
         europinian: true,
@@ -111,7 +111,6 @@ let state = {
         iqosFriendly: false,
       },
     },
-
     {
       id: 3,
       image: 'https://media-cdn.tripadvisor.com/media/photo-s/03/a5/a5/81/melrose.jpg',
@@ -1148,6 +1147,115 @@ let state = {
         iqosFriendly: false,
       },
     },
+    {
+      id: 22,
+      image: 'https://gpoltava.com/assets/profiles_photo/259ee6ec8d2393160d67717d326ea59a.jpg',
+      title: 'Valber (ЖБИ)',
+      type: {
+        pub: true,
+        restaurant: false,
+        cafe: false,
+        teahouse: false, //чайная
+        coffeehouse: false,//кофейня
+        bar: false,
+        hookah: false,
+        steakhouse: false,//заведения с грилем
+      },
+      adress: 'Полтава, ул. Маршала Бирюзова, 50/1',
+      district: {
+        Shevchenkovskiy: false,
+        Oktyabrksiy: false,
+        Kievskiy: true,
+      },
+      telephone: [
+        ' (050)  402 89 85',
+      ],
+      links: 'https://vk.com/valberpub',
+      openTime: '11:00',
+      closeTime: '24:00',
+      cuisine: {
+        ukrainian: false,
+        europinian: true,
+        сaucasian: false,
+        itlian: false,
+        grill: false,
+        seafood: true,
+        japaneese: false,
+        desserts: true,
+        asian: false,
+        chineese: false,
+        mexican: false,
+        american: false,
+
+      },
+      advantages: {
+        kidsRoom: false, //Детские комнаты
+        reservation: true,  // Бронь столов
+        DressingRoom: false,//гардероб
+        cardPayment: true, //Оплата картой
+        parking: false, //Парковка
+        delivery: true, //доставка
+        wifi: true,
+        takeaway: true, //еда или напитки на вынос
+        plaseForSmoking: true,
+        iqosFriendly: false,
+      },
+    },
+{
+      id: 23,
+      image: 'https://gpoltava.com/assets/profiles_photo/259ee6ec8d2393160d67717d326ea59a.jpg',
+      title: 'Valber (Подол)',
+      type: {
+        pub: true,
+        restaurant: false,
+        cafe: false,
+        teahouse: false, //чайная
+        coffeehouse: false,//кофейня
+        bar: false,
+        hookah: false,
+        steakhouse: false,//заведения с грилем
+      },
+      adress: 'Полтава, ул. Небесной Сотни, 61',
+      district: {
+        Shevchenkovskiy: false,
+        Oktyabrksiy: true,
+        Kievskiy: false,
+      },
+      telephone: [
+        ' (050)  402 89 88',
+      ],
+      links: 'https://vk.com/valberpub',
+      openTime: '11:00',
+      closeTime: '24:00',
+      cuisine: {
+        ukrainian: false,
+        europinian: true,
+        сaucasian: false,
+        itlian: false,
+        grill: false,
+        seafood: true,
+        japaneese: false,
+        desserts: true,
+        asian: false,
+        chineese: false,
+        mexican: false,
+        american: false,
+
+      },
+      advantages: {
+        kidsRoom: false, //Детские комнаты
+        reservation: true,  // Бронь столов
+        DressingRoom: false,//гардероб
+        cardPayment: true, //Оплата картой
+        parking: false, //Парковка
+        delivery: true, //доставка
+        wifi: true,
+        takeaway: true, //еда или напитки на вынос
+        plaseForSmoking: true,
+        iqosFriendly: false,
+      },
+    },
+
   ]
 }
 
