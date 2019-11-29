@@ -541,8 +541,613 @@ let state = {
         iqosFriendly: true,
       },
     },
+    {
+      id: 11,
+      image: 'https://pechers.com.ua/wp-content/uploads/2019/08/cropped-photo_2019-05-07_21-01-47.jpg',
+      title: 'PECHER’S COFFEE&TEA',
+      type: {
+        pub: false,
+        restaurant: false,
+        cafe: false,
+        teahouse: true, //чайная
+        coffeehouse: true,//кофейня
+        bar: false,
+        hookah: false,
+        steakhouse: false,//заведения с грилем
+      },
+      adress: 'Полтава, ул. Небесной Сотни, 14/18',
+      district: {
+        Shevchenkovskiy: true,
+        Oktyabrksiy: false,
+        Kievskiy: false,
+      },
+      telephone: [
+        ' (050) 582-69-20'
+      ],
+      links: 'https://pechers.com.ua/',
+      openTime: '9:00',
+      closeTime: '22:00',
+      cuisine: {
+        ukrainian: false,
+        europinian: true,
+        сaucasian: false,
+        itlian: false,
+        grill: false,
+        seafood: false,
+        japaneese: false,
+        desserts: true,
+        asian: false,
+        chineese: false,
+        mexican: false,
+        american: true,
 
+      },
+      advantages: {
+        kidsRoom: false, //Детские комнаты
+        reservation: false,  // Бронь столов
+        DressingRoom: false,//гардероб
+        cardPayment: true, //Оплата картой
+        parking: false, //Парковка
+        delivery: false, //доставка
+        wifi: true,
+        takeaway: false, //еда или напитки на вынос
+        plaseForSmoking: false,
+        iqosFriendly: false,
+      },
+    },
 
+ {
+      id: 12,
+      image: 'https://lh3.googleusercontent.com/toErxWv_CHPdSN00YPTstF3FcQV7hQA8gvZqHYBXY-W1Nls9XEMoZonEM4wjlbnHKGNdVbtgsf_PCYNa=w768-h768-n-o-v1',
+      title: 'Тот самый Барашек',
+      type: {
+        pub: false,
+        restaurant: true,
+        cafe: false,
+        teahouse: false, //чайная
+        coffeehouse: false,//кофейня
+        bar: false,
+        hookah: false,
+        steakhouse: true,//заведения с грилем
+      },
+      adress: 'Полтава, ул. Соборности, 29/15',
+      district: {
+        Shevchenkovskiy: true,
+        Oktyabrksiy: false,
+        Kievskiy: false,
+      },
+      telephone: [
+        ' (050) 500-52-52'
+      ],
+      links: 'https://barashek.com.ua/',
+      openTime: '12:00',
+      closeTime: '23:00',
+      cuisine: {
+        ukrainian: false,
+        europinian: false,
+        сaucasian: true,
+        itlian: false,
+        grill: true,
+        seafood: false,
+        japaneese: false,
+        desserts: true,
+        asian: false,
+        chineese: false,
+        mexican: false,
+        american: false,
+
+      },
+      advantages: {
+        kidsRoom: false, //Детские комнаты
+        reservation: true,  // Бронь столов
+        DressingRoom: false,//гардероб
+        cardPayment: true, //Оплата картой
+        parking: false, //Парковка
+        delivery: true, //доставка
+        wifi: true,
+        takeaway: true, //еда или напитки на вынос
+        plaseForSmoking: true,
+        iqosFriendly: true,
+      },
+    },
+    {
+      id: 13,
+      image: 'https://eda.ua/images/222317-195-195-logo__scorini.png',
+      title: 'Кав’ярня-піцерія “Scorini”',
+      type: {
+        pub: false,
+        restaurant: false,
+        cafe: true,
+        teahouse: false, //чайная
+        coffeehouse: true,//кофейня
+        bar: false,
+        hookah: false,
+        steakhouse: false,//заведения с грилем
+      },
+      adress: 'Полтава, ул. Соборности, 60',
+      district: {
+        Shevchenkovskiy: false,
+        Oktyabrksiy: false,
+        Kievskiy: true,
+      },
+      telephone: [
+        ' (053)  222-99-55', 
+      ],
+      links: 'https://www.instagram.com/scorinipoltava',
+      openTime: '10:00',
+      closeTime: '23:00',
+      cuisine: {
+        ukrainian: false,
+        europinian: true,
+        сaucasian: false,
+        itlian: true,
+        grill: false,
+        seafood: false,
+        japaneese: true,
+        desserts: true,
+        asian: false,
+        chineese: false,
+        mexican: false,
+        american: false,
+
+      },
+      advantages: {
+        kidsRoom: false, //Детские комнаты
+        reservation: false,  // Бронь столов
+        DressingRoom: false,//гардероб
+        cardPayment: true, //Оплата картой
+        parking: true, //Парковка
+        delivery: false, //доставка
+        wifi: true,
+        takeaway: true, //еда или напитки на вынос
+        plaseForSmoking: false,
+        iqosFriendly: false,
+      },
+    },
+    {
+      id: 14,
+      image: 'http://lileya.pl.ua/images/logo.png',
+      title: 'Лилея',
+      type: {
+        pub: false,
+        restaurant: true,
+        cafe: false,
+        teahouse: false, //чайная
+        coffeehouse: false,//кофейня
+        bar: false,
+        hookah: false,
+        steakhouse: false,//заведения с грилем
+      },
+      adress: 'Полтава, ул. Соборная площадь, 2',
+      district: {
+        Shevchenkovskiy: true,
+        Oktyabrksiy: false,
+        Kievskiy: false,
+      },
+      telephone: [
+        ' (0532) 56-00-03', 
+        ' (050) 806-46-86', 
+
+      ],
+      links: 'http://lileya.pl.ua/',
+      openTime: '12:00',
+      closeTime: '23:00',
+      cuisine: {
+        ukrainian: false,
+        europinian: true,
+        сaucasian: false,
+        itlian: false,
+        grill: false,
+        seafood: false,
+        japaneese: false,
+        desserts: false,
+        asian: false,
+        chineese: false,
+        mexican: false,
+        american: false,
+
+      },
+      advantages: {
+        kidsRoom: false, //Детские комнаты
+        reservation: true,  // Бронь столов
+        DressingRoom: false,//гардероб
+        cardPayment: true, //Оплата картой
+        parking: true, //Парковка
+        delivery: false, //доставка
+        wifi: true,
+        takeaway: false, //еда или напитки на вынос
+        plaseForSmoking: true,
+        iqosFriendly: false,
+      },
+    },
+{
+      id: 15,
+      image: 'http://shkvarka.com.ua/templates/shkvarka_v1/images/logo.png',
+      title: 'Шалена шкварка',
+      type: {
+        pub: false,
+        restaurant: true,
+        cafe: false,
+        teahouse: false, //чайная
+        coffeehouse: false,//кофейня
+        bar: false,
+        hookah: false,
+        steakhouse: false,//заведения с грилем
+      },
+      adress: 'Полтава, ул. Соборная площадь, 24',
+      district: {
+        Shevchenkovskiy: true,
+        Oktyabrksiy: false,
+        Kievskiy: false,
+      },
+      telephone: [
+        ' (0532) 61-26-97', 
+        ' (095) 390-19-99', 
+
+      ],
+      links: 'http://shkvarka.com.ua/poltava/',
+      openTime: '11:00',
+      closeTime: '23:00',
+      cuisine: {
+        ukrainian: true,
+        europinian: false,
+        сaucasian: false,
+        itlian: false,
+        grill: false,
+        seafood: false,
+        japaneese: false,
+        desserts: true,
+        asian: false,
+        chineese: false,
+        mexican: false,
+        american: false,
+
+      },
+      advantages: {
+        kidsRoom: false, //Детские комнаты
+        reservation: true,  // Бронь столов
+        DressingRoom: true,//гардероб
+        cardPayment: true, //Оплата картой
+        parking: true, //Парковка
+        delivery: false, //доставка
+        wifi: true,
+        takeaway: false, //еда или напитки на вынос
+        plaseForSmoking: true,
+        iqosFriendly: false,
+      },
+    },
+{
+      id: 16,
+      image: 'https://scontent-waw1-1.cdninstagram.com/vp/d7d5ed3b04fcf047d494bbb0f796e49a/5E7A0B3A/t51.2885-19/s150x150/69396377_2353689211557899_6121737665764130816_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com',
+      title: 'Тєсно Говоря',
+      type: {
+        pub: false,
+        restaurant: true,
+        cafe: false,
+        teahouse: false, //чайная
+        coffeehouse: false,//кофейня
+        bar: false,
+        hookah: false,
+        steakhouse: false,//заведения с грилем
+      },
+      adress: 'Полтава, ул. Соборная площадь, 20',
+      district: {
+        Shevchenkovskiy: true,
+        Oktyabrksiy: false,
+        Kievskiy: false,
+      },
+      telephone: [
+        ' (050) 900-78-78', 
+
+      ],
+      links: 'https://www.instagram.com/tesno.govorya',
+      openTime: '8:00',
+      closeTime: '23:00',
+      cuisine: {
+        ukrainian: false,
+        europinian: true,
+        сaucasian: false,
+        itlian: false,
+        grill: false,
+        seafood: false,
+        japaneese: false,
+        desserts: true,
+        asian: false,
+        chineese: false,
+        mexican: false,
+        american: false,
+
+      },
+      advantages: {
+        kidsRoom: false, //Детские комнаты
+        reservation: true,  // Бронь столов
+        DressingRoom: true,//гардероб
+        cardPayment: true, //Оплата картой
+        parking: false, //Парковка
+        delivery: false, //доставка
+        wifi: true,
+        takeaway: false, //еда или напитки на вынос
+        plaseForSmoking: false,
+        iqosFriendly: false,
+      },
+    },
+{
+      id: 17,
+      image: 'http://sob.pizza.poltava.ua/wp-content/themes/Steakhouse/images/logo-small.png',
+      title: 'Теле-пицца',
+      type: {
+        pub: false,
+        restaurant: true,
+        cafe: false,
+        teahouse: false, //чайная
+        coffeehouse: false,//кофейня
+        bar: false,
+        hookah: false,
+        steakhouse: false,//заведения с грилем
+      },
+      adress: 'Полтава, ул. Соборная площадь, 44',
+      district: {
+        Shevchenkovskiy: true,
+        Oktyabrksiy: false,
+        Kievskiy: false,
+      },
+      telephone: [
+        ' (095) 817-22-02', 
+
+      ],
+      links: 'http://sob.pizza.poltava.ua/',
+      openTime: '8:00',
+      closeTime: '23:00',
+      cuisine: {
+        ukrainian: false,
+        europinian: false,
+        сaucasian: false,
+        itlian: true,
+        grill: false,
+        seafood: false,
+        japaneese: false,
+        desserts: false,
+        asian: false,
+        chineese: false,
+        mexican: false,
+        american: false,
+
+      },
+      advantages: {
+        kidsRoom: false, //Детские комнаты
+        reservation: true,  // Бронь столов
+        DressingRoom: false,//гардероб
+        cardPayment: true, //Оплата картой
+        parking: false, //Парковка
+        delivery: true, //доставка
+        wifi: true,
+        takeaway: true, //еда или напитки на вынос
+        plaseForSmoking: false,
+        iqosFriendly: false,
+      },
+    },
+{
+      id: 18,
+      image: 'https://gpoltava.com/assets/profiles_photo/03567960c132f72b9d94dc137ad71344.jpg',
+      title: 'G-coffe (Стретенская, 28)',
+      type: {
+        pub: false,
+        restaurant: false,
+        cafe: false,
+        teahouse: false, //чайная
+        coffeehouse: true,//кофейня
+        bar: false,
+        hookah: false,
+        steakhouse: false,//заведения с грилем
+      },
+      adress: 'Полтава, ул. Стретенская, 28',
+      district: {
+        Shevchenkovskiy: true,
+        Oktyabrksiy: false,
+        Kievskiy: false,
+      },
+      telephone: [
+        ' (050) 721-18-18', 
+
+      ],
+      links: 'https://www.instagram.com/g_coffee_ua/',
+      openTime: '10:00',
+      closeTime: '23:00',
+      cuisine: {
+        ukrainian: false,
+        europinian: false,
+        сaucasian: false,
+        itlian: false,
+        grill: false,
+        seafood: false,
+        japaneese: false,
+        desserts: true,
+        asian: false,
+        chineese: false,
+        mexican: false,
+        american: false,
+
+      },
+      advantages: {
+        kidsRoom: false, //Детские комнаты
+        reservation: false,  // Бронь столов
+        DressingRoom: false,//гардероб
+        cardPayment: true, //Оплата картой
+        parking: false, //Парковка
+        delivery: false, //доставка
+        wifi: true,
+        takeaway: true, //еда или напитки на вынос
+        plaseForSmoking: false,
+        iqosFriendly: false,
+      },
+    },
+{
+      id: 19,
+      image: 'https://gpoltava.com/assets/profiles_photo/03567960c132f72b9d94dc137ad71344.jpg',
+      title: 'G-coffe (Пушкина , 27)',
+      type: {
+        pub: false,
+        restaurant: false,
+        cafe: false,
+        teahouse: false, //чайная
+        coffeehouse: true,//кофейня
+        bar: false,
+        hookah: false,
+        steakhouse: false,//заведения с грилем
+      },
+      adress: 'Полтава, ул. Пушкина , 27',
+      district: {
+        Shevchenkovskiy: true,
+        Oktyabrksiy: false,
+        Kievskiy: false,
+      },
+      telephone: [
+        ' (095) 472-34-34', 
+
+      ],
+      links: 'https://www.instagram.com/g_coffee_ua/',
+      openTime: '9:00',
+      closeTime: '22:00',
+      cuisine: {
+        ukrainian: false,
+        europinian: false,
+        сaucasian: false,
+        itlian: false,
+        grill: false,
+        seafood: false,
+        japaneese: false,
+        desserts: true,
+        asian: false,
+        chineese: false,
+        mexican: false,
+        american: false,
+
+      },
+      advantages: {
+        kidsRoom: false, //Детские комнаты
+        reservation: false,  // Бронь столов
+        DressingRoom: false,//гардероб
+        cardPayment: true, //Оплата картой
+        parking: false, //Парковка
+        delivery: false, //доставка
+        wifi: true,
+        takeaway: true, //еда или напитки на вынос
+        plaseForSmoking: false,
+        iqosFriendly: false,
+      },
+    },
+
+{
+      id: 20,
+      image: 'https://scontent-waw1-1.cdninstagram.com/vp/2c2df17ac95377f3e10dcc9055a6f337/5E65C171/t51.2885-19/s150x150/46411723_519451585208624_395033048728469504_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com',
+      title: 'Buns Brew Bar',
+      type: {
+        pub: false,
+        restaurant: false,
+        cafe: false,
+        teahouse: false, //чайная
+        coffeehouse: true,//кофейня
+        bar: false,
+        hookah: false,
+        steakhouse: false,//заведения с грилем
+      },
+      adress: 'Полтава, ул. Пушкина , 27',
+      district: {
+        Shevchenkovskiy: true,
+        Oktyabrksiy: false,
+        Kievskiy: false,
+      },
+      telephone: [
+        ' (066) 782-89-21', 
+
+      ],
+      links: 'https://www.instagram.com/buns_brew_bar',
+      openTime: '7:30',
+      closeTime: '20:00',
+      cuisine: {
+        ukrainian: false,
+        europinian: false,
+        сaucasian: false,
+        itlian: false,
+        grill: false,
+        seafood: false,
+        japaneese: false,
+        desserts: true,
+        asian: false,
+        chineese: false,
+        mexican: false,
+        american: false,
+
+      },
+      advantages: {
+        kidsRoom: false, //Детские комнаты
+        reservation: false,  // Бронь столов
+        DressingRoom: false,//гардероб
+        cardPayment: true, //Оплата картой
+        parking: false, //Парковка
+        delivery: false, //доставка
+        wifi: true,
+        takeaway: true, //еда или напитки на вынос
+        plaseForSmoking: false,
+        iqosFriendly: false,
+      },
+    },
+{
+      id: 21,
+      image: 'https://scontent-waw1-1.cdninstagram.com/vp/b84a8f63203be5d20116fad2858bcfab/5E8C2A57/t51.2885-19/s150x150/64231070_2535506556462039_5648425432156995584_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com',
+      title: 'Kioto Rich',
+      type: {
+        pub: false,
+        restaurant: true,
+        cafe: false,
+        teahouse: false, //чайная
+        coffeehouse: false,//кофейня
+        bar: false,
+        hookah: false,
+        steakhouse: false,//заведения с грилем
+      },
+      adress: 'Полтава, ул. Европейская, 8',
+      district: {
+        Shevchenkovskiy: true,
+        Oktyabrksiy: false,
+        Kievskiy: false,
+      },
+      telephone: [
+        ' (097) 755-83-83',
+ 	' (066) 773-58-08',  
+
+      ],
+      links: 'https://kiotorich.com',
+      openTime: '11:00',
+      closeTime: '23:00',
+      cuisine: {
+        ukrainian: false,
+        europinian: false,
+        сaucasian: false,
+        itlian: false,
+        grill: false,
+        seafood: false,
+        japaneese: true,
+        desserts: true,
+        asian: false,
+        chineese: false,
+        mexican: false,
+        american: false,
+
+      },
+      advantages: {
+        kidsRoom: false, //Детские комнаты
+        reservation: false,  // Бронь столов
+        DressingRoom: false,//гардероб
+        cardPayment: true, //Оплата картой
+        parking: false, //Парковка
+        delivery: true, //доставка
+        wifi: true,
+        takeaway: true, //еда или напитки на вынос
+        plaseForSmoking: false,
+        iqosFriendly: false,
+      },
+    },
   ]
 }
 
