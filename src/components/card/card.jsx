@@ -107,6 +107,7 @@ class Card extends React.Component {
     const type = this.typeFilter(restdb.type);
     const cuisine = this.cuisineFilter(restdb.cuisine);
     const advantages = this.advFilter(restdb.advantages);
+    const adressPlace = `https://www.google.com/maps/place/${restdb.adress}`
     let str = ",";
     
 
@@ -173,6 +174,8 @@ class Card extends React.Component {
             <br />
           </div>
           <a className={s.make_route_button} href={this.state.mapRouteUrl} rel="noopener noreferrer" target="_blank">Построить маршрут</a>
+          <a className={s.make_route_button} href={adressPlace} rel="noopener noreferrer" target="_blank">Показать на карте</a>
+       
         </div>
       </div>
 
