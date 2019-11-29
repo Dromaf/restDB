@@ -1256,6 +1256,504 @@ let state = {
       },
     },
 
+
+    {
+      id: 24,
+      image: 'https://scontent.fhrk5-1.fna.fbcdn.net/v/t1.0-9/22688613_1432755060110843_8999882159332909568_n.jpg?_nc_cat=108&_nc_ohc=9Z05oOskGwIAQl1OheOA6UHWJ7laNnCgy1XPnqQXEiHFBeP_VcOo-WJZA&_nc_ht=scontent.fhrk5-1.fna&oh=fcfa6d3e9cfec39da4c8c920114d1de9&oe=5E831327',
+      title: 'Corizza',
+      type: {
+        pub: false,
+        restaurant: false,
+        cafe: false,
+        teahouse: false, //чайная
+        coffeehouse: true,//кофейня
+        bar: false,
+        hookah: false,
+        steakhouse: false,//заведения с грилем
+      },
+      adress: 'Полтава, Европейская, 60а',
+      district: {
+        Shevchenkovskiy: true,
+        Oktyabrksiy: false,
+        Kievskiy: false,
+      },
+      telephone: [
+        ' 066 545 2744',
+      ],
+      links: 'https://www.instagram.com/corizza.plt',
+      openTime: '09:00',
+      closeTime: '22:00',
+      cuisine: {
+        ukrainian: false,
+        europinian: true,
+        сaucasian: false,
+        itlian: false,
+        grill: false,
+        seafood: false,
+        japaneese: false,
+        desserts: true,
+        asian: false,
+        chineese: false,
+        mexican: false,
+        american: false,
+
+      },
+      advantages: {
+        kidsRoom: false, //Детские комнаты
+        reservation: true,  // Бронь столов
+        DressingRoom: false,//гардероб
+        cardPayment: true, //Оплата картой
+        parking: false, //Парковка
+        delivery: false, //доставка
+        wifi: true,
+        takeaway: false, //еда или напитки на вынос
+        plaseForSmoking: false,
+        iqosFriendly: false,
+      },
+    },
+
+    {
+      id: 25,
+      image: 'https://scontent.fhrk5-2.fna.fbcdn.net/v/t1.0-9/28168804_1748614275190241_2212704777493111314_n.jpg?_nc_cat=107&_nc_ohc=0Bh_WyuDl_0AQkHbeOe4lnt6r7TPpxW6f22zOTVyoy6ZlAjPDvpYasF8A&_nc_ht=scontent.fhrk5-2.fna&oh=572954da96d290a2f5826f6feabc5c98&oe=5E3EB8C2',
+      title: 'Scorini',
+      type: {
+        pub: false,
+        restaurant: true,
+        cafe: false,
+        teahouse: false, //чайная
+        coffeehouse: false,//кофейня
+        bar: false,
+        hookah: false,
+        steakhouse: false,//заведения с грилем
+      },
+      adress: 'Полтава, Соборності, 50',
+      district: {
+        Shevchenkovskiy: false,
+        Oktyabrksiy: false,
+        Kievskiy: true,
+      },
+      telephone: [
+        ' 099 479 7989',
+      ],
+      links: 'https://www.facebook.com/pg/scorinipizza',
+      openTime: '09:00',
+      closeTime: '23:00',
+      cuisine: {
+        ukrainian: false,
+        europinian: true,
+        сaucasian: false,
+        itlian: true,
+        grill: false,
+        seafood: false,
+        japaneese: false,
+        desserts: true,
+        asian: false,
+        chineese: false,
+        mexican: false,
+        american: false,
+
+      },
+      advantages: {
+        kidsRoom: false, //Детские комнаты
+        reservation: true,  // Бронь столов
+        DressingRoom: false,//гардероб
+        cardPayment: true, //Оплата картой
+        parking: false, //Парковка
+        delivery: true, //доставка
+        wifi: true,
+        takeaway: true, //еда или напитки на вынос
+        plaseForSmoking: true,
+        iqosFriendly: false,
+      },
+    },
+
+    {
+      id: 26,
+      image: 'https://scontent.fhrk5-2.fna.fbcdn.net/v/t31.0-8/p960x960/12045340_513181865525207_8762474319426748429_o.jpg?_nc_cat=104&_nc_ohc=hF5MgOM55L8AQkJEROJNbWT3iNZD37zLwDQLiqqLDNsQdNZNTaGRGsekw&_nc_ht=scontent.fhrk5-2.fna&oh=f79da314aebe99681f5501673a03c02c&oe=5E81783C',
+      title: 'Panorama',
+      type: {
+        pub: false,
+        restaurant: true,
+        cafe: false,
+        teahouse: false, //чайная
+        coffeehouse: false,//кофейня
+        bar: false,
+        hookah: false,
+        steakhouse: false,//заведения с грилем
+      },
+      adress: 'Полтава, Соборності, 43',
+      district: {
+        Shevchenkovskiy: false,
+        Oktyabrksiy: false,
+        Kievskiy: true,
+      },
+      telephone: [
+        '+380504051331',
+        '+380674051330'
+      ],
+      links: 'https://www.facebook.com/pg/restarauntpanorama',
+      openTime: '09:00',
+      closeTime: '02:00',
+      cuisine: {
+        ukrainian: false,
+        europinian: true,
+        сaucasian: false,
+        itlian: true,
+        grill: false,
+        seafood: false,
+        japaneese: false,
+        desserts: true,
+        asian: false,
+        chineese: false,
+        mexican: false,
+        american: false,
+
+      },
+      advantages: {
+        kidsRoom: false, //Детские комнаты
+        reservation: true,  // Бронь столов
+        DressingRoom: true,//гардероб
+        cardPayment: true, //Оплата картой
+        parking: true, //Парковка
+        delivery: true, //доставка
+        wifi: true,
+        takeaway: true, //еда или напитки на вынос
+        plaseForSmoking: true,
+        iqosFriendly: false,
+      },
+    },
+
+    {
+      id: 27,
+      image: 'https://scontent.fhrk5-2.fna.fbcdn.net/v/t1.0-9/48411147_1863556203770769_5614747661581156352_n.jpg?_nc_cat=104&_nc_ohc=Oh4XgV_yG64AQlvjJnMjyaGk-cJZ8sfAtz_E1TxQS_bt0tddJf-9n216A&_nc_ht=scontent.fhrk5-2.fna&oh=b2a404a98d64df458f78a1b5a61381da&oe=5E4A68C7',
+      title: 'Кавун',
+      type: {
+        pub: false,
+        restaurant: false,
+        cafe: false,
+        teahouse: true, //чайная
+        coffeehouse: true,//кофейня
+        bar: false,
+        hookah: false,
+        steakhouse: false,//заведения с грилем
+      },
+      adress: 'Полтава, Стрітенська, 34 ',
+      district: {
+        Shevchenkovskiy: false,
+        Oktyabrksiy: true,
+        Kievskiy: false,
+      },
+      telephone: [
+        ' 067 528 8675',
+      ],
+      links: 'https://www.instagram.com/kavun_plt',
+      openTime: '11:00',
+      closeTime: '22:00',
+      cuisine: {
+        ukrainian: false,
+        europinian: false,
+        сaucasian: false,
+        itlian: false,
+        grill: false,
+        seafood: false,
+        japaneese: false,
+        desserts: true,
+        asian: false,
+        chineese: false,
+        mexican: false,
+        american: false,
+
+      },
+      advantages: {
+        kidsRoom: false, //Детские комнаты
+        reservation: false,  // Бронь столов
+        DressingRoom: false,//гардероб
+        cardPayment: true, //Оплата картой
+        parking: false, //Парковка
+        delivery: false, //доставка
+        wifi: true,
+        takeaway: true, //еда или напитки на вынос
+        plaseForSmoking: false,
+        iqosFriendly: false,
+      },
+    },
+
+    {
+      id: 28,
+      image: 'data:image/jpeg;base64,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yNLXt65DQGmVg1eARbr5QSNr87741w5azET2WmaSlKKrwN1g/p479jg8jzLQSuv08DLVHpvDsdK2FvsZaYTchzXZwTsbkkm+nauukViPlaxrXRJq6RAQEBAQEBAQEBAQEBAQEBAQEBAQfCEGqSIFBxT0IPYoEbPhI10Gu6jSNKtU8JvMuW14X5rntb1Tb429FjOP5tq66o2swiaKAsfH+1hN2PtpI1pDm2Phdtt1E1mK/ZGlmwvhSKYxVMZtG8Bzoy1r45GuF7lp912u42N9CpriiZi0Jisd1woKFkDcsbQ1v4QA0egW8RpfTqUggICAgICAgICAgICAgICAgICAgICAg+EIMTGgwMIQaqihbILEeBUaGyjpWxMEbAA0Xs0bC5ubeZKRGhvUggICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIP/9k=',
+      title: 'Viva Olive',
+      type: {
+        pub: false,
+        restaurant: true,
+        cafe: false,
+        teahouse: false, //чайная
+        coffeehouse: false,//кофейня
+        bar: false,
+        hookah: false,
+        steakhouse: false,//заведения с грилем
+      },
+      adress: 'Полтава, Гоголя, 19',
+      district: {
+        Shevchenkovskiy: true,
+        Oktyabrksiy: false,
+        Kievskiy: false,
+      },
+      telephone: [
+        ' 099 033 3599',
+      ],
+      links: 'https://www.facebook.com/pages/Viva-Olive',
+      openTime: '11:00',
+      closeTime: '23:00',
+      cuisine: {
+        ukrainian: false,
+        europinian: true,
+        сaucasian: false,
+        itlian: true,
+        grill: false,
+        seafood: true,
+        japaneese: false,
+        desserts: true,
+        asian: false,
+        chineese: false,
+        mexican: false,
+        american: false,
+
+      },
+      advantages: {
+        kidsRoom: false, //Детские комнаты
+        reservation: true,  // Бронь столов
+        DressingRoom: false,//гардероб
+        cardPayment: true, //Оплата картой
+        parking: false, //Парковка
+        delivery: true, //доставка
+        wifi: true,
+        takeaway: true, //еда или напитки на вынос
+        plaseForSmoking: false,
+        iqosFriendly: false,
+      },
+    },
+
+    {
+      id: 29,
+      image: 'https://gpoltava.com/assets/profiles_photo/259ee6ec8d2393160d67717d326ea59a.jpg',
+      title: 'Valber ЖБИ',
+      type: {
+        pub: true,
+        restaurant: false,
+        cafe: false,
+        teahouse: false, //чайная
+        coffeehouse: false,//кофейня
+        bar: false,
+        hookah: false,
+        steakhouse: false,//заведения с грилем
+      },
+      adress: 'Полтава, Октябрьская, 32',
+      district: {
+        Shevchenkovskiy: false,
+        Oktyabrksiy: true,
+        Kievskiy: false,
+      },
+      telephone: [
+        ' (066) 313-30-19',
+      ],
+      links: 'https://vk.com/valberpub',
+      openTime: '11:00',
+      closeTime: '23:00',
+      cuisine: {
+        ukrainian: false,
+        europinian: true,
+        сaucasian: false,
+        itlian: false,
+        grill: false,
+        seafood: true,
+        japaneese: false,
+        desserts: true,
+        asian: false,
+        chineese: false,
+        mexican: false,
+        american: false,
+
+      },
+      advantages: {
+        kidsRoom: false, //Детские комнаты
+        reservation: true,  // Бронь столов
+        DressingRoom: false,//гардероб
+        cardPayment: true, //Оплата картой
+        parking: false, //Парковка
+        delivery: true, //доставка
+        wifi: true,
+        takeaway: true, //еда или напитки на вынос
+        plaseForSmoking: true,
+        iqosFriendly: false,
+      },
+    },
+
+    {
+      id: 30,
+      image: 'https://scontent.fhrk5-2.fna.fbcdn.net/v/t1.0-9/44703471_2384125268269725_7104330843404894208_n.jpg?_nc_cat=102&_nc_ohc=Ea-F8GzpVoMAQkSBvVVFm1pEpnJVCDfSUojEFvX2Oqd0w-4VZYVbVq9sA&_nc_ht=scontent.fhrk5-2.fna&oh=c1276448be1aebf98b127a4e4d403efa&oe=5E822449',
+      title: 'Del Resto',
+      type: {
+        pub: false,
+        restaurant: true,
+        cafe: false,
+        teahouse: false, //чайная
+        coffeehouse: false,//кофейня
+        bar: false,
+        hookah: false,
+        steakhouse: false,//заведения с грилем
+      },
+      adress: 'Полтава, Октябрьская, 32',
+      district: {
+        Shevchenkovskiy: false,
+        Oktyabrksiy: true,
+        Kievskiy: false,
+      },
+      telephone: [
+        '  095 524 8284',
+      ],
+      links: 'https://www.facebook.com/pg/delrestoo',
+      openTime: '11:00',
+      closeTime: '22:00',
+      cuisine: {
+        ukrainian: false,
+        europinian: true,
+        сaucasian: false,
+        itlian: true,
+        grill: true,
+        seafood: true,
+        japaneese: false,
+        desserts: true,
+        asian: false,
+        chineese: false,
+        mexican: false,
+        american: false,
+
+      },
+      advantages: {
+        kidsRoom: false, //Детские комнаты
+        reservation: true,  // Бронь столов
+        DressingRoom: false,//гардероб
+        cardPayment: true, //Оплата картой
+        parking: false, //Парковка
+        delivery: true, //доставка
+        wifi: true,
+        takeaway: true, //еда или напитки на вынос
+        plaseForSmoking: true,
+        iqosFriendly: false,
+      },
+    },
+
+    {
+      id: 31,
+      image: 'https://scontent.fhrk5-1.fna.fbcdn.net/v/t1.0-9/54417758_519959541862498_3663309140131840000_n.jpg?_nc_cat=103&_nc_ohc=NnsfnUcR440AQk__IBv0MLe0R4eGbmMGNSNXpYqPz86G7uiqR_4eGE1Ig&_nc_ht=scontent.fhrk5-1.fna&oh=a7ef787c8883ca200733e2422dccef26&oe=5E80920B',
+      title: 'Chopper Grill',
+      type: {
+        pub: true,
+        restaurant: true,
+        cafe: false,
+        teahouse: false, //чайная
+        coffeehouse: false,//кофейня
+        bar: false,
+        hookah: false,
+        steakhouse: true,//заведения с грилем
+      },
+      adress: 'Полтава, Небесної сотні 14/18',
+      district: {
+        Shevchenkovskiy: true,
+        Oktyabrksiy: false,
+        Kievskiy: false,
+      },
+      telephone: [
+        '050-500-46-11',
+        '068-500-46-11'
+      ],
+      links: 'https://www.instagram.com/chopper_grill',
+      openTime: '11:00',
+      closeTime: '23:00',
+      cuisine: {
+        ukrainian: false,
+        europinian: true,
+        сaucasian: false,
+        itlian: true,
+        grill: true,
+        seafood: true,
+        japaneese: false,
+        desserts: true,
+        asian: false,
+        chineese: false,
+        mexican: false,
+        american: true,
+
+      },
+      advantages: {
+        kidsRoom: false, //Детские комнаты
+        reservation: true,  // Бронь столов
+        DressingRoom: false,//гардероб
+        cardPayment: true, //Оплата картой
+        parking: false, //Парковка
+        delivery: true, //доставка
+        wifi: true,
+        takeaway: true, //еда или напитки на вынос
+        plaseForSmoking: true,
+        iqosFriendly: false,
+      },
+    },
+
+    {
+      id: 32,
+      image: 'https://scontent.fhrk5-2.fna.fbcdn.net/v/t1.0-9/p960x960/40684411_732536653751674_6643164601217187840_o.png?_nc_cat=101&_nc_ohc=8V0qa_OIX54AQm-M7ZKXQEyCDqcnhpYjYf5QiQwMyla96Ru0Zo5KxH4FA&_nc_ht=scontent.fhrk5-2.fna&oh=6196d0e91cf927e151f1f88aaf400b14&oe=5E447F82',
+      title: 'В мясо',
+      type: {
+        pub: true,
+        restaurant: true,
+        cafe: false,
+        teahouse: false, //чайная
+        coffeehouse: false,//кофейня
+        bar: false,
+        hookah: false,
+        steakhouse: true,//заведения с грилем
+      },
+      adress: 'Полтава, Соборності, 72',
+      district: {
+        Shevchenkovskiy: false,
+        Oktyabrksiy: false,
+        Kievskiy: true,
+      },
+      telephone: [  
+        ' 068 555 2575',
+      ],
+      links: 'https://www.instagram.com/v.myaso_',
+      openTime: '11:00',
+      closeTime: '23:00',
+      cuisine: {
+        ukrainian: true,
+        europinian: true,
+        сaucasian: false,
+        itlian: true,
+        grill: true,
+        seafood: true,
+        japaneese: false,
+        desserts: true,
+        asian: false,
+        chineese: false,
+        mexican: false,
+        american: true,
+
+      },
+      advantages: {
+        kidsRoom: false, //Детские комнаты
+        reservation: true,  // Бронь столов
+        DressingRoom: false,//гардероб
+        cardPayment: true, //Оплата картой
+        parking: true, //Парковка
+        delivery: true, //доставка
+        wifi: true,
+        takeaway: true, //еда или напитки на вынос
+        plaseForSmoking: true,
+        iqosFriendly: false,
+      },
+    },
+
   ]
 }
 
