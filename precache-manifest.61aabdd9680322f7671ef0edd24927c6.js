@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1b42af0e62374a0dc8272fb048b9da16",
+    "revision": "6c318de77c42b3110154e13367692fde",
     "url": "/restDB/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/restDB/static/css/2.72c2318d.chunk.css"
   },
   {
-    "revision": "bfbd75e1cd1a5528a6cd",
+    "revision": "079e65b3b1e73fe3f91c",
     "url": "/restDB/static/css/main.2f4578f0.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/restDB/static/js/2.1fd98b8e.chunk.js"
   },
   {
-    "revision": "bfbd75e1cd1a5528a6cd",
-    "url": "/restDB/static/js/main.e63a5c95.chunk.js"
+    "revision": "079e65b3b1e73fe3f91c",
+    "url": "/restDB/static/js/main.1721a50a.chunk.js"
   },
   {
     "revision": "62885b1b8b4f730352ab",
