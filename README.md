@@ -9,7 +9,7 @@ https://github.com/Dromaf/restDB
 3) Creation of structures bases
 4) Creation and separation of the application into independent components
 ### App components:
-- Pre-Loader
+- Pre-Loader-1
 - Home page
 - Footer
 - Page of types catering
