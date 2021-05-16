@@ -1,7 +1,7 @@
 {
   "name": "restaurdb",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://dromaf.github.io/restDB",
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
@@ -12,8 +12,7 @@
     "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.2.0",
-    "react-time-range-slider": "^1.1.2",
-    "homepage": "https://dromaf.github.io/restDB"
+    "react-time-range-slider": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -38,5 +37,4 @@
       "last 1 safari version"
     ]
   }
-  
 }

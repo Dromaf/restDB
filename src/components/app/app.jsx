@@ -156,7 +156,7 @@ export default class App extends Component {
   render() {
     const { props } = this;
     return (
-      <BrowserRouter>
+      <BrowserRouter basename="/restDB">
         <div id="container">
           <Switch>
             <Route
