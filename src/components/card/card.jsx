@@ -121,7 +121,7 @@ class Card extends React.Component {
         <div className={s.main_content}>
           
           {this.state.telephoneBlockStatus && <PopUpTel telephone={restdb.telephone} />}
-          <img src={restdb.image} alt={restdb.image}/>
+          <div className={s.img} style={{backgroundImage: `url(${restdb.image})`}} aria-label={restdb.title} role="img" />
           <h1>{restdb.title}</h1>
           <h2 className={s.type}>
             {type + ''}
